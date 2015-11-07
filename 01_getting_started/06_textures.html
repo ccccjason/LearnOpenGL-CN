@@ -1,0 +1,1203 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <!-- Start book LearnOpenGL-CN -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>紋理 | LearnOpenGL-CN</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.4.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-google_code_prettify/google-code-prettify.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-maxiang/maxiang.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../01_getting_started/07_transformations.html" />
+    
+    
+    <link rel="prev" href="../01_getting_started/05_shaders.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book" data-level="1.1.4" data-basepath=".." data-revision="Sun Nov 08 2015 03:25:42 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search" role="search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        LearnOpenGL-CN
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01_getting_started/01_opengl.html">
+            
+                
+                    <a href="../01_getting_started/01_opengl.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        入門(Getting started)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01_getting_started/02_creating_a_window.html">
+            
+                
+                    <a href="../01_getting_started/02_creating_a_window.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        創建窗口
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="01_getting_started/03_hello_window.html">
+            
+                
+                    <a href="../01_getting_started/03_hello_window.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.1.</b>
+                        
+                        你好，窗口
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="01_getting_started/04_hello_triangle.html">
+            
+                
+                    <a href="../01_getting_started/04_hello_triangle.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.2.</b>
+                        
+                        你好，三角形
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="01_getting_started/05_shaders.html">
+            
+                
+                    <a href="../01_getting_started/05_shaders.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.3.</b>
+                        
+                        著色器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.4" data-path="01_getting_started/06_textures.html">
+            
+                
+                    <a href="../01_getting_started/06_textures.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.4.</b>
+                        
+                        紋理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="01_getting_started/07_transformations.html">
+            
+                
+                    <a href="../01_getting_started/07_transformations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.5.</b>
+                        
+                        變換
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="01_getting_started/08_coordinate_systems.html">
+            
+                
+                    <a href="../01_getting_started/08_coordinate_systems.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.6.</b>
+                        
+                        座標系統
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="01_getting_started/09_camera.html">
+            
+                
+                    <a href="../01_getting_started/09_camera.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.7.</b>
+                        
+                        攝像機
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="01_getting_started/10_review.html">
+            
+                
+                    <a href="../01_getting_started/10_review.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.8.</b>
+                        
+                        複習
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02_creating_a_window/01_colors.html">
+            
+            <span><b>2.</b> 光照(Lighting)</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02_lighting/01_colors.html">
+            
+                
+                    <a href="../02_lighting/01_colors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        顏色
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02_lighting/02_basic_lighting.html">
+            
+                
+                    <a href="../02_lighting/02_basic_lighting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        光照基礎
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02_lighting/03_materials.html">
+            
+                
+                    <a href="../02_lighting/03_materials.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        材質
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02_lighting/04_hello_triangle.html">
+            
+            <span><b>2.4.</b> 光照貼圖</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="02_lighting/05_light_casters.html">
+            
+                
+                    <a href="../02_lighting/05_light_casters.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        投光物
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="02_lighting/06_multiple_lights.html">
+            
+                
+                    <a href="../02_lighting/06_multiple_lights.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        多光源
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="02_lighting/07_review.html">
+            
+                
+                    <a href="../02_lighting/07_review.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        複習
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03_model_loading/01_assimp.html">
+            
+                
+                    <a href="../03_model_loading/01_assimp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        加載模型(Model Loading)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03_model_loading/02_mesh.html">
+            
+                
+                    <a href="../03_model_loading/02_mesh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        網格
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03_model_loading/03_model.html">
+            
+                
+                    <a href="../03_model_loading/03_model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        模型
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04_advanced_opengl/01_depth_testing.html">
+            
+                
+                    <a href="../04_advanced_opengl/01_depth_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        高級OpenGL(Advanced OpenGL)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04_advanced_opengl/02_stencil_testing.html">
+            
+                
+                    <a href="../04_advanced_opengl/02_stencil_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        模板測試
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04_advanced_opengl/03_blending.html">
+            
+                
+                    <a href="../04_advanced_opengl/03_blending.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        混合
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04_advanced_opengl/04_face_culling.html">
+            
+                
+                    <a href="../04_advanced_opengl/04_face_culling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        面剔除
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04_advanced_opengl/05_framebuffers.html">
+            
+                
+                    <a href="../04_advanced_opengl/05_framebuffers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        幀緩衝
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04_advanced_opengl/06_cubemaps.html">
+            
+                
+                    <a href="../04_advanced_opengl/06_cubemaps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        立方體貼圖
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="04_advanced_opengl/07_advanced_data.html">
+            
+                
+                    <a href="../04_advanced_opengl/07_advanced_data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        高級數據
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="04_advanced_opengl/08_advanced_glsl.html">
+            
+                
+                    <a href="../04_advanced_opengl/08_advanced_glsl.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        高級GLSL
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="04_advanced_opengl/09_geometry_shader.html">
+            
+                
+                    <a href="../04_advanced_opengl/09_geometry_shader.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        幾何著色器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="04_advanced_opengl/10_instancing.html">
+            
+                
+                    <a href="../04_advanced_opengl/10_instancing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        實例化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="04_advanced_opengl/11_anti_aliasing.html">
+            
+                
+                    <a href="../04_advanced_opengl/11_anti_aliasing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.10.</b>
+                        
+                        抗鋸齒
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05_advanced_lighting/01_advanced_lighting.html">
+            
+                
+                    <a href="../05_advanced_lighting/01_advanced_lighting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        高級光照(Advanced Lighting)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05_advanced_lighting/02_gamma_correction.html">
+            
+                
+                    <a href="../05_advanced_lighting/02_gamma_correction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Gamma校正
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05_advanced_lighting/03_shadows/01_shadow_mapping.html">
+            
+                
+                    <a href="../05_advanced_lighting/03_shadows/01_shadow_mapping.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        陰影
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="05_advanced_lighting/03_shadows/02_point_shadows.html">
+            
+                
+                    <a href="../05_advanced_lighting/03_shadows/02_point_shadows.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.1.</b>
+                        
+                        點陰影
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="05_advanced_lighting/03_shadows/03_csm.html">
+            
+                
+                    <a href="../05_advanced_lighting/03_shadows/03_csm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.2.</b>
+                        
+                        CSM
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05_advanced_lighting/04_normal_mapping.html">
+            
+                
+                    <a href="../05_advanced_lighting/04_normal_mapping.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        法線貼圖
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05_advanced_lighting/05_parallax_mapping.html">
+            
+                
+                    <a href="../05_advanced_lighting/05_parallax_mapping.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        視差貼圖
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="05_advanced_lighting/06_hdr.html">
+            
+                
+                    <a href="../05_advanced_lighting/06_hdr.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        HDR
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="05_advanced_lighting/07_bloom.html">
+            
+                
+                    <a href="../05_advanced_lighting/07_bloom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        泛光
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="05_advanced_lighting/08_deferred_shading.html">
+            
+                
+                    <a href="../05_advanced_lighting/08_deferred_shading.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        延遲著色法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="05_advanced_lighting/09_ssao.html">
+            
+                
+                    <a href="../05_advanced_lighting/09_ssao.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        SSAO
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >LearnOpenGL-CN</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E7%B4%8B%E7%90%86-textures">&#x7D0B;&#x7406;(Textures)</h1>
+<table>
+<thead>
+<tr>
+<th>&#x539F;&#x6587;</th>
+<th><a href="http://learnopengl.com/#!Getting-started/Textures" target="_blank">Textures</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x4F5C;&#x8005;</td>
+<td>JoeyDeVries</td>
+</tr>
+<tr>
+<td>&#x7FFB;&#x8B6F;</td>
+<td><a href="http://bullteacher.com/" target="_blank">Django</a></td>
+</tr>
+<tr>
+<td>&#x6821;&#x5C0D;</td>
+<td>Geequlim</td>
+</tr>
+</tbody>
+</table>
+<p>&#x6211;&#x5011;&#x5DF2;&#x7D93;&#x77AD;&#x89E3;&#x5230;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x70BA;&#x6BCF;&#x500B;&#x9802;&#x9EDE;&#x4F7F;&#x7528;&#x984F;&#x8272;&#x4F86;&#x589E;&#x52A0;&#x5716;&#x5F62;&#x7684;&#x7D30;&#x7BC0;&#xFF0C;&#x5F9E;&#x800C;&#x5275;&#x5EFA;&#x51FA;&#x6709;&#x8DA3;&#x7684;&#x5716;&#x50CF;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x8B93;&#x5716;&#x5F62;&#x770B;&#x8D77;&#x4F86;&#x66F4;&#x771F;&#x5BE6;&#x6211;&#x5011;&#x5C31;&#x5FC5;&#x9808;&#x6709;&#x8DB3;&#x5920;&#x591A;&#x7684;&#x9802;&#x9EDE;&#xFF0C;&#x5F9E;&#x800C;&#x6307;&#x5B9A;&#x8DB3;&#x5920;&#x591A;&#x7684;&#x984F;&#x8272;&#x3002;&#x9019;&#x5C07;&#x6703;&#x7522;&#x751F;&#x5F88;&#x591A;&#x984D;&#x5916;&#x958B;&#x92B7;&#xFF0C;&#x56E0;&#x70BA;&#x6BCF;&#x500B;&#x6A21;&#x578B;&#x90FD;&#x6703;&#x9700;&#x6C42;&#x66F4;&#x591A;&#x7684;&#x9802;&#x9EDE;&#x548C;&#x9802;&#x9EDE;&#x984F;&#x8272;&#x3002;</p>
+<p>&#x85DD;&#x8853;&#x5BB6;&#x548C;&#x7A0B;&#x5E8F;&#x54E1;&#x66F4;&#x559C;&#x6B61;&#x4F7F;&#x7528;<strong>&#x7D0B;&#x7406;(Texture)</strong>&#x3002;&#x7D0B;&#x7406;&#x662F;&#x4E00;&#x500B;2D&#x5716;&#x7247;(&#x4E5F;&#x6709;1D&#x548C;3D)&#xFF0C;&#x5B83;&#x7528;&#x4F86;&#x6DFB;&#x52A0;&#x7269;&#x9AD4;&#x7684;&#x7D30;&#x7BC0;&#xFF1B;&#x9019;&#x5C31;&#x50CF;&#x6709;&#x4E00;&#x5F35;&#x7E6A;&#x6709;&#x78DA;&#x584A;&#x7684;&#x5716;&#x7247;&#x8CBC;&#x5230;&#x4F60;&#x7684;3D&#x7684;&#x623F;&#x5B50;&#x4E0A;&#xFF0C;&#x4F60;&#x7684;&#x623F;&#x5B50;&#x770B;&#x8D77;&#x4F86;&#x5C31;&#x50CF;&#x4E00;&#x5835;&#x78DA;&#x7246;&#x3002;&#x56E0;&#x70BA;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x5F35;&#x5716;&#x7247;&#x4E0A;&#x63D2;&#x5165;&#x8DB3;&#x5920;&#x591A;&#x7684;&#x7D30;&#x7BC0;&#xFF0C;&#x9019;&#x6A23;&#x7269;&#x9AD4;&#x5C31;&#x6703;&#x64C1;&#x6709;&#x5F88;&#x591A;&#x7D30;&#x7BC0;&#x800C;&#x4E0D;&#x7528;&#x589E;&#x52A0;&#x984D;&#x5916;&#x7684;&#x9802;&#x9EDE;&#x3002;</p>
+<p>!!! Important</p>
+<pre><code>&#x9664;&#x4E86;&#x5716;&#x50CF;&#x4EE5;&#x5916;&#xFF0C;&#x7D0B;&#x7406;&#x4E5F;&#x53EF;&#x4EE5;&#x5132;&#x5B58;&#x5927;&#x91CF;&#x7684;&#x6578;&#x64DA;&#xFF0C;&#x9019;&#x4E9B;&#x6578;&#x64DA;&#x7528;&#x4F86;&#x767C;&#x9001;&#x5230;&#x8457;&#x8272;&#x5668;&#x4E0A;&#xFF0C;&#x4F46;&#x662F;&#x9019;&#x4E0D;&#x662F;&#x6211;&#x5011;&#x73FE;&#x5728;&#x7684;&#x4E3B;&#x984C;&#x3002;
+</code></pre><p>&#x4E0B;&#x9762;&#x4F60;&#x6703;&#x770B;&#x5230;&#x4E4B;&#x524D;&#x6559;&#x7A0B;&#x7684;&#x90A3;&#x500B;&#x4E09;&#x89D2;&#x5F62;&#x8CBC;&#x4E0A;&#x4E86;&#x4E00;&#x5F35;<a href="http://learnopengl.com/img/textures/wall.jpg" target="_blank">&#x78DA;&#x7246;</a>&#x5716;&#x7247;&#x3002;</p>
+<p><img src="http://learnopengl.com/img/getting-started/textures.png" alt=""></p>
+<p>&#x70BA;&#x4E86;&#x80FD;&#x5920;&#x628A;&#x7D0B;&#x7406;&#x6620;&#x5C04;&#x5230;&#x4E09;&#x89D2;&#x5F62;&#x4E0A;&#xFF0C;&#x6211;&#x5011;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x6BCF;&#x500B;&#x9802;&#x9EDE;&#x5404;&#x81EA;&#x5C0D;&#x61C9;&#x7D0B;&#x7406;&#x7684;&#x54EA;&#x500B;&#x90E8;&#x5206;&#x3002;&#x9019;&#x6A23;&#x6BCF;&#x500B;&#x9802;&#x9EDE;&#x5C31;&#x6703;&#x6709;&#x4E00;&#x500B;<strong>&#x7D0B;&#x7406;&#x5EA7;&#x6A19;(Texture Coordinate)</strong>&#xFF0C;&#x5B83;&#x6307;&#x660E;&#x5F9E;&#x7D0B;&#x7406;&#x5716;&#x50CF;&#x7684;&#x54EA;&#x500B;&#x5730;&#x65B9;&#x63A1;&#x6A23;(&#x63A1;&#x96C6;&#x50CF;&#x7D20;&#x984F;&#x8272;)&#x3002;&#x4E4B;&#x5F8C;&#x5728;&#x6240;&#x6709;&#x7684;&#x5176;&#x4ED6;&#x7684;&#x7247;&#x6BB5;&#x4E0A;&#x9032;&#x884C;&#x7247;&#x6BB5;&#x63D2;&#x503C;(Fragment Interpolation)&#x3002;</p>
+<p>&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x662F;x&#x548C;y&#x8EF8;&#x4E0A;0&#x5230;1&#x4E4B;&#x9593;&#x7684;&#x7BC4;&#x570D;(&#x6CE8;&#x610F;&#x6211;&#x5011;&#x4F7F;&#x7528;&#x7684;&#x662F;2D&#x7D0B;&#x7406;&#x5716;&#x7247;)&#x3002;&#x4F7F;&#x7528;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x7372;&#x53D6;&#x7D0B;&#x7406;&#x984F;&#x8272;&#x53EB;&#x505A;<strong>&#x63A1;&#x6A23;(Sampling)</strong>&#x3002;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x8D77;&#x59CB;&#x65BC;(0,0)&#x4E5F;&#x5C31;&#x662F;&#x7D0B;&#x7406;&#x5716;&#x7247;&#x7684;&#x5DE6;&#x4E0B;&#x89D2;&#xFF0C;&#x7D42;&#x7D50;&#x65BC;&#x7D0B;&#x7406;&#x5716;&#x7247;&#x7684;&#x53F3;&#x4E0A;&#x89D2;(1,1)&#x3002;&#x4E0B;&#x9762;&#x7684;&#x5716;&#x7247;&#x5C55;&#x793A;&#x4E86;&#x6211;&#x5011;&#x662F;&#x5982;&#x4F55;&#x628A;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x6620;&#x5C04;&#x5230;&#x4E09;&#x89D2;&#x5F62;&#x4E0A;&#x7684;&#x3002;</p>
+<p><img src="http://learnopengl.com/img/getting-started/tex_coords.png" alt=""></p>
+<p>&#x6211;&#x5011;&#x70BA;&#x4E09;&#x89D2;&#x5F62;&#x6E96;&#x5099;&#x4E86;3&#x500B;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x9EDE;&#x3002;&#x5982;&#x4E0A;&#x5716;&#x6240;&#x793A;&#xFF0C;&#x6211;&#x5011;&#x5E0C;&#x671B;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x5DE6;&#x4E0B;&#x89D2;&#x5C0D;&#x61C9;&#x7D0B;&#x7406;&#x7684;&#x5DE6;&#x4E0B;&#x89D2;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x5011;&#x628A;&#x4E09;&#x89D2;&#x5DE6;&#x4E0B;&#x89D2;&#x7684;&#x9802;&#x9EDE;&#x7684;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x8A2D;&#x7F6E;&#x70BA;(0,0)&#xFF1B;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x4E0A;&#x9802;&#x9EDE;&#x5C0D;&#x61C9;&#x65BC;&#x5716;&#x7247;&#x7684;&#x4E2D;&#x9593;&#x6240;&#x4EE5;&#x6211;&#x5011;&#x628A;&#x5B83;&#x7684;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x8A2D;&#x7F6E;&#x70BA;(0.5,1.0)&#xFF1B;&#x540C;&#x7406;&#x53F3;&#x4E0B;&#x65B9;&#x7684;&#x9802;&#x9EDE;&#x8A2D;&#x7F6E;&#x70BA;(1.0,0)&#x3002;&#x6211;&#x5011;&#x53EA;&#x8981;&#x50B3;&#x905E;&#x9019;&#x4E09;&#x500B;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x7D66;&#x9802;&#x9EDE;&#x8457;&#x8272;&#x5668;&#x5C31;&#x884C;&#x4E86;&#xFF0C;&#x63A5;&#x8457;&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;&#x6703;&#x70BA;&#x6BCF;&#x500B;&#x7247;&#x6BB5;&#x751F;&#x6210;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x7684;&#x63D2;&#x503C;&#x3002;</p>
+<p>&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x770B;&#x8D77;&#x4F86;&#x5C31;&#x50CF;&#x9019;&#x6A23;&#xFF1A;</p>
+<pre><code class="lang-c++">GLfloat texCoords[] = {
+    <span class="hljs-number">0.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-comment">// &#x5DE6;&#x4E0B;&#x89D2;</span>
+    <span class="hljs-number">1.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-comment">// &#x53F3;&#x4E0B;&#x89D2;</span>
+    <span class="hljs-number">0.5f</span>, <span class="hljs-number">1.0f</span> <span class="hljs-comment">// &#x9802;&#x90E8;&#x4F4D;&#x7F6E;</span>
+};
+</code></pre>
+<p>&#x7D0B;&#x7406;&#x63A1;&#x6A23;&#x6709;&#x5E7E;&#x7A2E;&#x4E0D;&#x540C;&#x7684;&#x63D2;&#x503C;&#x65B9;&#x5F0F;&#x3002;&#x6211;&#x5011;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x544A;&#x8A34;OpenGL&#x5728;&#x7D0B;&#x7406;&#x4E2D;&#x63A1;&#x7528;&#x54EA;&#x7A2E;&#x63A1;&#x6A23;&#x65B9;&#x5F0F;&#x3002;</p>
+<h3 id="%E7%B4%8B%E7%90%86%E7%92%B0%E7%B9%9E%E6%96%B9%E5%BC%8F-texture-wrapping">&#x7D0B;&#x7406;&#x74B0;&#x7E5E;&#x65B9;&#x5F0F;(Texture Wrapping)</h3>
+<p>&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x901A;&#x5E38;&#x7684;&#x7BC4;&#x570D;&#x662F;&#x5F9E;(0, 0)&#x5230;(1, 1)&#xFF0C;&#x5982;&#x679C;&#x6211;&#x5011;&#x628A;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x8A2D;&#x7F6E;&#x70BA;&#x7BC4;&#x570D;&#x4EE5;&#x5916;&#x6703;&#x767C;&#x751F;&#x4EC0;&#x9EBC;&#xFF1F;OpenGL&#x9ED8;&#x8A8D;&#x7684;&#x884C;&#x70BA;&#x662F;&#x91CD;&#x8907;&#x9019;&#x500B;&#x7D0B;&#x7406;&#x5716;&#x50CF;(&#x6211;&#x5011;&#x7C21;&#x55AE;&#x5730;&#x5FFD;&#x7565;&#x6D6E;&#x9EDE;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x7684;&#x6574;&#x6578;&#x90E8;&#x5206;)&#xFF0C;&#x4F46;OpenGL&#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x591A;&#x7684;&#x9078;&#x64C7;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x74B0;&#x7E5E;&#x65B9;&#x5F0F;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GL_REPEAT</td>
+<td>&#x7D0B;&#x7406;&#x7684;&#x9ED8;&#x8A8D;&#x884C;&#x70BA;&#xFF0C;&#x91CD;&#x8907;&#x7D0B;&#x7406;&#x5716;&#x50CF;</td>
+</tr>
+<tr>
+<td>GL_MIRRORED_REPEAET</td>
+<td>&#x548C;<code>GL_REPEAT</code>&#x4E00;&#x6A23;&#xFF0C;&#x9664;&#x4E86;&#x91CD;&#x8907;&#x7684;&#x5716;&#x7247;&#x662F;&#x93E1;&#x50CF;&#x653E;&#x7F6E;&#x7684;</td>
+</tr>
+<tr>
+<td>GL_CLAMP_TO_EDGE</td>
+<td>&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x6703;&#x5728;0&#x5230;1&#x4E4B;&#x9593;&#xFF0C;&#x8D85;&#x51FA;&#x7684;&#x90E8;&#x5206;&#x6703;&#x91CD;&#x8907;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x7684;&#x908A;&#x7DE3;&#xFF0C;&#x5C31;&#x662F;&#x908A;&#x7DE3;&#x88AB;&#x62C9;&#x4F38;</td>
+</tr>
+<tr>
+<td>GL_CLAMP_TO_BORDER</td>
+<td>&#x8D85;&#x51FA;&#x7684;&#x90E8;&#x5206;&#x662F;&#x7528;&#x6236;&#x6307;&#x5B9A;&#x7684;&#x908A;&#x7DE3;&#x7684;&#x984F;&#x8272;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x7576;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x8D85;&#x51FA;&#x9ED8;&#x8A8D;&#x7BC4;&#x570D;&#x6642;&#xFF0C;&#x6BCF;&#x500B;&#x503C;&#x90FD;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x8996;&#x89BA;&#x6548;&#x679C;&#x8F38;&#x51FA;&#x3002;&#x6211;&#x5011;&#x4F86;&#x770B;&#x770B;&#x9019;&#x4E9B;&#x7D0B;&#x7406;&#x5716;&#x50CF;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/getting-started/texture_wrapping.png" alt=""></p>
+<p>&#x524D;&#x9762;&#x63D0;&#x5230;&#x7684;&#x9078;&#x9805;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>glTexParameter</code>&#x51FD;&#x6578;&#x55AE;&#x7368;&#x8A2D;&#x7F6E;&#x6BCF;&#x500B;&#x5EA7;&#x6A19;&#x8EF8;<code>s</code>&#x3001;<code>t</code>(&#x5982;&#x679C;&#x662F;&#x4F7F;&#x7528;3D&#x7D0B;&#x7406;&#x90A3;&#x9EBC;&#x9084;&#x6709;&#x4E00;&#x500B;<code>r</code>)&#x5B83;&#x5011;&#x548C;<code>x</code>&#x3001;<code>y</code>(<code>z</code>)&#x662F;&#x76F8;&#x7B49;&#x7684;&#xFF1A;</p>
+<p><code>glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);</code>
+<code>glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);</code></p>
+<p>&#x7B2C;&#x4E00;&#x500B;&#x53C3;&#x6578;&#x6307;&#x5B9A;&#x4E86;&#x7D0B;&#x7406;&#x76EE;&#x6A19;&#xFF1B;&#x6211;&#x5011;&#x4F7F;&#x7528;&#x7684;&#x662F;2D&#x7D0B;&#x7406;&#xFF0C;&#x56E0;&#x6B64;&#x7D0B;&#x7406;&#x76EE;&#x6A19;&#x662F;<code>GL_TEXTURE_2D</code>&#x3002;</p>
+<p>&#x7B2C;&#x4E8C;&#x500B;&#x53C3;&#x6578;&#x9700;&#x8981;&#x6211;&#x5011;&#x53BB;&#x544A;&#x77E5;&#x6211;&#x5011;&#x5E0C;&#x671B;&#x53BB;&#x8A2D;&#x7F6E;&#x54EA;&#x500B;&#x7D0B;&#x7406;&#x8EF8;&#x3002;</p>
+<p>&#x6211;&#x5011;&#x6253;&#x7B97;&#x8A2D;&#x7F6E;&#x7684;&#x662F;<code>WRAP</code>&#x9078;&#x9805;&#xFF0C;&#x4E26;&#x4E14;&#x6307;&#x5B9A;S&#x548C;T&#x8EF8;&#x3002;&#x6700;&#x5F8C;&#x4E00;&#x500B;&#x53C3;&#x6578;&#x9700;&#x8981;&#x6211;&#x5011;&#x50B3;&#x905E;&#x653E;&#x7F6E;&#x65B9;&#x5F0F;&#xFF0C;&#x5728;&#x9019;&#x500B;&#x4F8B;&#x5B50;&#x88E1;&#x6211;&#x5011;&#x5728;&#x7576;&#x524D;&#x6FC0;&#x6D3B;&#x7D0B;&#x7406;&#x4E0A;&#x61C9;&#x7528;<code>GL_MIRRORED_REPEAT</code>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6211;&#x5011;&#x9078;&#x64C7;<code>GL_CLAMP_TO_BORDER</code>&#x9078;&#x9805;&#xFF0C;&#x6211;&#x5011;&#x9084;&#x8981;&#x6307;&#x5B9A;&#x4E00;&#x500B;&#x908A;&#x7DE3;&#x7684;&#x984F;&#x8272;&#x3002;&#x9019;&#x6B21;&#x4F7F;&#x7528;<code>glTexParameter</code>&#x51FD;&#x6578;&#x7684;<code>fv</code>&#x5F8C;&#x7DB4;&#x5F62;&#x5F0F;&#xFF0C;&#x52A0;&#x4E0A;<code>GL_TEXTURE_BORDER_COLOR</code>&#x4F5C;&#x70BA;&#x9078;&#x9805;&#xFF0C;&#x9019;&#x500B;&#x51FD;&#x6578;&#x9700;&#x8981;&#x6211;&#x5011;&#x50B3;&#x905E;&#x4E00;&#x500B;&#x908A;&#x7DE3;&#x984F;&#x8272;&#x7684;float&#x6578;&#x7D44;&#x4F5C;&#x70BA;&#x984F;&#x8272;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-c++"><span class="hljs-keyword">float</span> borderColor[] = { <span class="hljs-number">1.0f</span>, <span class="hljs-number">1.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">1.0f</span> };
+glTexParameterfv(GL_TEXTURE_2D, GL_TEXTURE_BORDER_COLOR, borderColor);
+</code></pre>
+<h3 id="%E7%B4%8B%E7%90%86%E9%81%8E%E6%BF%BE-texture-filtering">&#x7D0B;&#x7406;&#x904E;&#x6FFE;(Texture Filtering)</h3>
+<p>&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x4E0D;&#x4F9D;&#x8CF4;&#x65BC;&#x89E3;&#x6790;&#x5EA6;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x4F55;&#x6D6E;&#x9EDE;&#x6578;&#x503C;&#xFF0C;&#x9019;&#x6A23;OpenGL&#x9700;&#x8981;&#x63CF;&#x8FF0;&#x51FA;&#x54EA;&#x500B;&#x7D0B;&#x7406;&#x50CF;&#x7D20;&#x5C0D;&#x61C9;&#x54EA;&#x500B;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;(Texture Pixel&#xFF0C;&#x4E5F;&#x53EB;Texel&#xFF0C;<a href="http://learnopengl-cn.readthedocs.org/zh/latest/01%20Getting%20started/06%20Textures/" title="Texture Pixel&#x4E5F;&#x53EB;Texel&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x60F3;&#x8C61;&#x4F60;&#x6253;&#x958B;&#x4E00;&#x5F35;.jpg&#x683C;&#x5F0F;&#x5716;&#x7247;&#x4E0D;&#x65B7;&#x653E;&#x5927;&#x4F60;&#x6703;&#x767C;&#x73FE;&#x5B83;&#x662F;&#x7531;&#x7121;&#x6578;&#x50CF;&#x7D20;&#x9EDE;&#x7D44;&#x6210;&#x7684;&#xFF0C;&#x9019;&#x500B;&#x9EDE;&#x5C31;&#x662F;&#x7D0B;&#x7406;&#x50CF;&#x7D20;&#xFF1B;&#x6CE8;&#x610F;&#x4E0D;&#x8981;&#x548C;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x641E;&#x6DF7;&#xFF0C;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x662F;&#x4F60;&#x7D66;&#x6A21;&#x578B;&#x9802;&#x9EDE;&#x8A2D;&#x7F6E;&#x7684;&#x90A3;&#x500B;&#x6578;&#x7D44;&#xFF0C;OpenGL&#x4EE5;&#x9019;&#x500B;&#x9802;&#x9EDE;&#x7684;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x6578;&#x64DA;&#x53BB;&#x67E5;&#x627E;&#x7D0B;&#x7406;&#x5716;&#x50CF;&#x4E0A;&#x7684;&#x50CF;&#x7D20;&#xFF0C;&#x7136;&#x5F8C;&#x9032;&#x884C;&#x63A1;&#x6A23;&#x63D0;&#x53D6;&#x7D0B;&#x7406;&#x50CF;&#x7D20;&#x7684;&#x984F;&#x8272;" target="_blank">&#x8B6F;&#x8A3B;1</a>)&#x3002;&#x7576;&#x4F60;&#x6709;&#x4E00;&#x500B;&#x5F88;&#x5927;&#x7684;&#x7269;&#x9AD4;&#x4F46;&#x662F;&#x7D0B;&#x7406;&#x89E3;&#x6790;&#x5EA6;&#x5F88;&#x4F4E;&#x7684;&#x6642;&#x5019;&#x9019;&#x5C31;&#x8B8A;&#x5F97;&#x5F88;&#x91CD;&#x8981;&#x4E86;&#x3002;&#x4F60;&#x53EF;&#x80FD;&#x5DF2;&#x7D93;&#x731C;&#x5230;&#x4E86;&#xFF0C;OpenGL&#x4E5F;&#x6709;&#x4E00;&#x500B;&#x53EB;&#x505A;&#x7D0B;&#x7406;&#x904E;&#x6FFE;&#x7684;&#x9078;&#x9805;&#x3002;&#x6709;&#x591A;&#x7A2E;&#x4E0D;&#x540C;&#x7684;&#x9078;&#x9805;&#x53EF;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x73FE;&#x5728;&#x6211;&#x5011;&#x53EA;&#x8A0E;&#x8AD6;&#x6700;&#x91CD;&#x8981;&#x7684;&#x5169;&#x7A2E;&#xFF1A;<code>GL_NEAREST</code>&#x548C;<code>GL_LINEAR</code>&#x3002;</p>
+<p><strong>GL_NEAREST(Nearest Neighbor Filtering&#xFF0C;&#x9130;&#x8FD1;&#x904E;&#x6FFE;)</strong> &#x662F;&#x4E00;&#x7A2E;OpenGL&#x9ED8;&#x8A8D;&#x7684;&#x7D0B;&#x7406;&#x904E;&#x6FFE;&#x65B9;&#x5F0F;&#x3002;&#x7576;&#x8A2D;&#x7F6E;&#x70BA;<code>GL_NEAREST</code>&#x7684;&#x6642;&#x5019;&#xFF0C;OpenGL&#x9078;&#x64C7;&#x6700;&#x63A5;&#x8FD1;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x4E2D;&#x5FC3;&#x9EDE;&#x7684;&#x90A3;&#x500B;&#x50CF;&#x7D20;&#x3002;&#x4E0B;&#x5716;&#x4F60;&#x6703;&#x770B;&#x5230;&#x56DB;&#x500B;&#x50CF;&#x7D20;&#xFF0C;&#x52A0;&#x865F;&#x4EE3;&#x8868;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x3002;&#x5DE6;&#x4E0A;&#x89D2;&#x7684;&#x7D0B;&#x7406;&#x50CF;&#x7D20;&#x662F;&#x8DDD;&#x96E2;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x6700;&#x8FD1;&#x7684;&#x90A3;&#x500B;&#xFF0C;&#x9019;&#x6A23;&#x5B83;&#x5C31;&#x6703;&#x9078;&#x64C7;&#x9019;&#x500B;&#x4F5C;&#x70BA;&#x63A1;&#x6A23;&#x984F;&#x8272;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/getting-started/filter_nearest.png" alt=""></p>
+<p><strong>GL_LINEAR((Bi)linear Filtering&#xFF0C;&#x7DDA;&#x6027;&#x904E;&#x6FFE;)</strong> &#x5B83;&#x6703;&#x5F9E;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x7684;&#x81E8;&#x8FD1;&#x7D0B;&#x7406;&#x50CF;&#x7D20;&#x9032;&#x884C;&#x8A08;&#x7B97;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x500B;&#x591A;&#x500B;&#x7D0B;&#x7406;&#x50CF;&#x7D20;&#x7684;&#x8FD1;&#x4F3C;&#x503C;&#x3002;&#x4E00;&#x500B;&#x7D0B;&#x7406;&#x50CF;&#x7D20;&#x8DDD;&#x96E2;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x8D8A;&#x8FD1;&#xFF0C;&#x90A3;&#x9EBC;&#x9019;&#x500B;&#x7D0B;&#x7406;&#x50CF;&#x7D20;&#x5C0D;&#x6700;&#x7D42;&#x7684;&#x63A1;&#x6A23;&#x984F;&#x8272;&#x7684;&#x5F71;&#x97FF;&#x8D8A;&#x5927;&#x3002;&#x4E0B;&#x9762;&#x4F60;&#x6703;&#x770B;&#x5230;&#x81E8;&#x8FD1;&#x50CF;&#x7D20;&#x8FD4;&#x56DE;&#x7684;&#x6DF7;&#x5408;&#x984F;&#x8272;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/getting-started/filter_linear.png" alt=""></p>
+<p>&#x4E0D;&#x540C;&#x7684;&#x7D0B;&#x7406;&#x904E;&#x6FFE;&#x65B9;&#x5F0F;&#x6709;&#x600E;&#x6A23;&#x7684;&#x8996;&#x89BA;&#x6548;&#x679C;&#x5462;&#xFF1F;&#x8B93;&#x6211;&#x5011;&#x770B;&#x770B;&#x7576;&#x5728;&#x4E00;&#x500B;&#x5F88;&#x5927;&#x7684;&#x7269;&#x9AD4;&#x4E0A;&#x61C9;&#x7528;&#x4E00;&#x5F35;&#x5730;&#x89E3;&#x6790;&#x5EA6;&#x7684;&#x7D0B;&#x7406;&#x6703;&#x767C;&#x751F;&#x4EC0;&#x9EBC;&#x5427;(&#x7D0B;&#x7406;&#x88AB;&#x653E;&#x5927;&#x4E86;&#xFF0C;&#x7D0B;&#x7406;&#x50CF;&#x7D20;&#x4E5F;&#x80FD;&#x770B;&#x5230;)&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/getting-started/texture_filtering.png" alt=""></p>
+<p>&#x5982;&#x4E0A;&#x9762;&#x5169;&#x5F35;&#x5716;&#x7247;&#x6240;&#x793A;&#xFF0C;<code>GL_NEAREST</code>&#x8FD4;&#x56DE;&#x4E86;&#x683C;&#x5B50;&#x4E00;&#x6A23;&#x7684;&#x6A23;&#x5F0F;&#xFF0C;&#x6211;&#x5011;&#x80FD;&#x5920;&#x6E05;&#x6670;&#x770B;&#x5230;&#x7D0B;&#x7406;&#x7531;&#x50CF;&#x7D20;&#x7D44;&#x6210;&#xFF0C;&#x800C;<code>GL_LINEAR</code>&#x7522;&#x751F;&#x51FA;&#x66F4;&#x5E73;&#x6ED1;&#x7684;&#x6A23;&#x5F0F;&#xFF0C;&#x770B;&#x4E0D;&#x51FA;&#x7D0B;&#x7406;&#x50CF;&#x7D20;&#x3002;<code>GL_LINEAR</code>&#x662F;&#x4E00;&#x7A2E;&#x66F4;&#x771F;&#x5BE6;&#x7684;&#x8F38;&#x51FA;&#xFF0C;&#x4F46;&#x6709;&#x4E9B;&#x958B;&#x767C;&#x8005;&#x66F4;&#x559C;&#x6B61;8-bit&#x98A8;&#x683C;&#xFF0C;&#x6240;&#x4EE5;&#x4ED6;&#x5011;&#x9084;&#x662F;&#x7528;<code>GL_NEAREST</code>&#x9078;&#x9805;&#x3002;</p>
+<p>&#x7D0B;&#x7406;&#x904E;&#x6FFE;&#x53EF;&#x4EE5;&#x70BA;&#x653E;&#x5927;&#x548C;&#x7E2E;&#x5C0F;&#x8A2D;&#x7F6E;&#x4E0D;&#x540C;&#x7684;&#x9078;&#x9805;&#xFF0C;&#x9019;&#x6A23;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x7D0B;&#x7406;&#x88AB;&#x7E2E;&#x5C0F;&#x7684;&#x6642;&#x5019;&#x4F7F;&#x7528;&#x6700;&#x81E8;&#x8FD1;&#x904E;&#x6FFE;&#xFF0C;&#x88AB;&#x653E;&#x5927;&#x6642;&#x4F7F;&#x7528;&#x7DDA;&#x6027;&#x904E;&#x6FFE;&#x3002;&#x6211;&#x5011;&#x5FC5;&#x9808;&#x901A;&#x904E;<code>glTexParameter</code>&#x70BA;&#x653E;&#x5927;&#x548C;&#x7E2E;&#x5C0F;&#x6307;&#x5B9A;&#x904E;&#x6FFE;&#x65B9;&#x5F0F;&#x3002;&#x9019;&#x6BB5;&#x4EE3;&#x78BC;&#x770B;&#x8D77;&#x4F86;&#x548C;&#x7D0B;&#x7406;&#x74B0;&#x7E5E;&#x65B9;&#x5F0F;(Texture Wrapping)&#x7684;&#x8A2D;&#x7F6E;&#x76F8;&#x4F3C;&#xFF1A;</p>
+<pre><code class="lang-c++">glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+</code></pre>
+<h4 id="%E5%A4%9A%E7%B4%9A%E6%BC%B8%E9%81%A0%E7%B4%8B%E7%90%86-mipmaps">&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;(Mipmaps)</h4>
+<p>&#x60F3;&#x8C61;&#x4E00;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x5011;&#x5728;&#x4E00;&#x500B;&#x6709;&#x8457;&#x4E0A;&#x5343;&#x7269;&#x9AD4;&#x7684;&#x5927;&#x623F;&#x9593;&#xFF0C;&#x6BCF;&#x500B;&#x7269;&#x9AD4;&#x4E0A;&#x90FD;&#x6709;&#x7D0B;&#x7406;&#x3002;&#x8DDD;&#x96E2;&#x89C0;&#x5BDF;&#x8005;&#x9060;&#x7684;&#x8207;&#x8DDD;&#x96E2;&#x8FD1;&#x7684;&#x7269;&#x9AD4;&#x7684;&#x7D0B;&#x7406;&#x7684;&#x89E3;&#x6790;&#x5EA6;&#x662F;&#x76F8;&#x540C;&#x7684;&#x3002;&#x7531;&#x65BC;&#x9060;&#x8655;&#x7684;&#x7269;&#x9AD4;&#x53EF;&#x80FD;&#x53EA;&#x7522;&#x751F;&#x5F88;&#x5C11;&#x7684;&#x7247;&#x6BB5;&#xFF0C;OpenGL&#x5F9E;&#x9AD8;&#x89E3;&#x6790;&#x5EA6;&#x7D0B;&#x7406;&#x4E2D;&#x70BA;&#x9019;&#x4E9B;&#x7247;&#x6BB5;&#x7372;&#x53D6;&#x6B63;&#x78BA;&#x7684;&#x984F;&#x8272;&#x503C;&#x5C31;&#x5F88;&#x56F0;&#x96E3;&#x3002;&#x9019;&#x662F;&#x56E0;&#x70BA;&#x5B83;&#x4E0D;&#x5F97;&#x4E0D;&#x62FE;&#x70BA;&#x4E00;&#x500B;&#x7D0B;&#x7406;&#x8DE8;&#x5EA6;&#x5F88;&#x5927;&#x7684;&#x7247;&#x6BB5;&#x53D6;&#x7D0B;&#x7406;&#x984F;&#x8272;&#x3002;&#x5728;&#x5C0F;&#x7269;&#x9AD4;&#x4E0A;&#x9019;&#x6703;&#x7522;&#x751F;&#x4EBA;&#x5DE5;&#x611F;&#xFF0C;&#x66F4;&#x4E0D;&#x7528;&#x8AAA;&#x5728;&#x5C0F;&#x7269;&#x9AD4;&#x4E0A;&#x4F7F;&#x7528;&#x9AD8;&#x89E3;&#x6790;&#x5EA6;&#x7D0B;&#x7406;&#x6D6A;&#x8CBB;&#x5167;&#x5B58;&#x7684;&#x554F;&#x984C;&#x4E86;&#x3002;</p>
+<p>OpenGL&#x4F7F;&#x7528;&#x4E00;&#x7A2E;&#x53EB;&#x505A; <strong>&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;(Mipmap)</strong> &#x7684;&#x6982;&#x5FF5;&#x89E3;&#x6C7A;&#x9019;&#x500B;&#x554F;&#x984C;&#xFF0C;&#x5927;&#x6982;&#x4F86;&#x8AAA;&#x5C31;&#x662F;&#x4E00;&#x7CFB;&#x5217;&#x7D0B;&#x7406;&#xFF0C;&#x6BCF;&#x500B;&#x5F8C;&#x9762;&#x7684;&#x4E00;&#x500B;&#x7D0B;&#x7406;&#x662F;&#x524D;&#x4E00;&#x500B;&#x7684;&#x4E8C;&#x5206;&#x4E4B;&#x4E00;&#x3002;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x80CC;&#x5F8C;&#x7684;&#x601D;&#x60F3;&#x5F88;&#x7C21;&#x55AE;&#xFF1A;&#x8DDD;&#x96E2;&#x89C0;&#x5BDF;&#x8005;&#x66F4;&#x9060;&#x7684;&#x8DDD;&#x96E2;&#x7684;&#x4E00;&#x6BB5;&#x78BA;&#x5B9A;&#x7684;&#x95BE;&#x503C;&#xFF0C;OpenGL&#x6703;&#x628A;&#x6700;&#x9069;&#x5408;&#x9019;&#x500B;&#x8DDD;&#x96E2;&#x7684;&#x7269;&#x9AD4;&#x7684;&#x4E0D;&#x540C;&#x7684;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x7D0B;&#x7406;&#x61C9;&#x7528;&#x5176;&#x4E0A;&#x3002;&#x7531;&#x65BC;&#x8DDD;&#x96E2;&#x9060;&#xFF0C;&#x89E3;&#x6790;&#x5EA6;&#x4E0D;&#x9AD8;&#x4E5F;&#x4E0D;&#x6703;&#x88AB;&#x4F7F;&#x7528;&#x8005;&#x6CE8;&#x610F;&#x5230;&#x3002;&#x540C;&#x6642;&#xFF0C;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x53E6;&#x4E00;&#x52A0;&#x5206;&#x4E4B;&#x8655;&#x662F;&#xFF0C;&#x57F7;&#x884C;&#x6548;&#x7387;&#x4E0D;&#x932F;&#x3002;&#x8B93;&#x6211;&#x5011;&#x8FD1;&#x8DDD;&#x96E2;&#x770B;&#x4E00;&#x770B;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x7D0B;&#x7406;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/getting-started/mipmaps.png" alt=""></p>
+<p>&#x624B;&#x5DE5;&#x70BA;&#x6BCF;&#x500B;&#x7D0B;&#x7406;&#x5716;&#x50CF;&#x5275;&#x5EFA;&#x4E00;&#x7CFB;&#x5217;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x5F88;&#x9EBB;&#x7169;&#xFF0C;&#x5E78;&#x597D;OpenGL&#x6709;&#x4E00;&#x500B;<code>glGenerateMipmaps</code>&#x51FD;&#x6578;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x5728;&#x6211;&#x5011;&#x5275;&#x5EFA;&#x5B8C;&#x4E00;&#x500B;&#x7D0B;&#x7406;&#x5F8C;&#x5E6B;&#x6211;&#x5011;&#x505A;&#x6240;&#x6709;&#x7684;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x5275;&#x5EFA;&#x5DE5;&#x4F5C;&#x3002;&#x5F8C;&#x9762;&#x7684;&#x7D0B;&#x7406;&#x6559;&#x7A0B;&#x4E2D;&#x4F60;&#x6703;&#x770B;&#x5230;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x5B83;&#x3002;</p>
+<p>OpenGL&#x6E32;&#x67D3;&#x7684;&#x6642;&#x5019;&#xFF0C;&#x5169;&#x500B;&#x4E0D;&#x540C;&#x7D1A;&#x5225;&#x7684;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x4E4B;&#x9593;&#x6703;&#x7522;&#x751F;&#x4E0D;&#x771F;&#x5BE6;&#x611F;&#x7684;&#x751F;&#x786C;&#x7684;&#x908A;&#x754C;&#x3002;&#x5C31;&#x50CF;&#x666E;&#x901A;&#x7684;&#x7D0B;&#x7406;&#x904E;&#x6FFE;&#x4E00;&#x6A23;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x5169;&#x500B;&#x4E0D;&#x540C;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x7D1A;&#x5225;&#x4E4B;&#x9593;&#x4F7F;&#x7528;<code>NEAREST</code>&#x548C;<code>LINEAR</code>&#x904E;&#x6FFE;&#x3002;&#x6307;&#x5B9A;&#x4E0D;&#x540C;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x7D1A;&#x5225;&#x4E4B;&#x9593;&#x7684;&#x904E;&#x6FFE;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x56DB;&#x7A2E;&#x9078;&#x9805;&#x4EE3;&#x66FF;&#x539F;&#x4F86;&#x7684;&#x904E;&#x6FFE;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x904E;&#x6FFE;&#x65B9;&#x5F0F;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GL_NEAREST_MIPMAP_NEAREST</td>
+<td>&#x63A5;&#x6536;&#x6700;&#x8FD1;&#x7684;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x4F86;&#x5339;&#x914D;&#x50CF;&#x7D20;&#x5927;&#x5C0F;&#xFF0C;&#x4E26;&#x4F7F;&#x7528;&#x6700;&#x81E8;&#x8FD1;&#x63D2;&#x503C;&#x9032;&#x884C;&#x7D0B;&#x7406;&#x63A1;&#x6A23;</td>
+</tr>
+<tr>
+<td>GL_LINEAR_MIPMAP_NEAREST</td>
+<td>&#x63A5;&#x6536;&#x6700;&#x8FD1;&#x7684;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x7D1A;&#x5225;&#xFF0C;&#x4E26;&#x4F7F;&#x7528;&#x7DDA;&#x6027;&#x63D2;&#x503C;&#x63A1;&#x6A23;</td>
+</tr>
+<tr>
+<td>GL_NEAREST_MIPMAP_LINEAR</td>
+<td>&#x5728;&#x5169;&#x500B;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x4E4B;&#x9593;&#x9032;&#x884C;&#x7DDA;&#x6027;&#x63D2;&#x503C;&#xFF0C;&#x901A;&#x904E;&#x6700;&#x9130;&#x8FD1;&#x63D2;&#x503C;&#x63A1;&#x6A23;</td>
+</tr>
+<tr>
+<td>GL_LINEAR_MIPMAP_LINEAR</td>
+<td>&#x5728;&#x5169;&#x500B;&#x76F8;&#x9130;&#x7684;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x9032;&#x884C;&#x7DDA;&#x6027;&#x63D2;&#x503C;&#xFF0C;&#x4E26;&#x901A;&#x904E;&#x7DDA;&#x6027;&#x63D2;&#x503C;&#x9032;&#x884C;&#x63A1;&#x6A23;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5C31;&#x50CF;&#x7D0B;&#x7406;&#x904E;&#x6FFE;&#x4E00;&#x6A23;&#xFF0C;&#x524D;&#x9762;&#x63D0;&#x5230;&#x7684;&#x56DB;&#x7A2E;&#x65B9;&#x6CD5;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>glTexParameteri</code>&#x8A2D;&#x7F6E;&#x904E;&#x6FFE;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-c++">glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+</code></pre>
+<p>&#x5E38;&#x898B;&#x7684;&#x932F;&#x8AA4;&#x662F;&#xFF0C;&#x70BA;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x904E;&#x6FFE;&#x9078;&#x9805;&#x8A2D;&#x7F6E;&#x653E;&#x5927;&#x904E;&#x6FFE;&#x3002;&#x9019;&#x6A23;&#x6C92;&#x6709;&#x4EFB;&#x4F55;&#x6548;&#x679C;&#xFF0C;&#x56E0;&#x70BA;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x4E3B;&#x8981;&#x4F7F;&#x7528;&#x5728;&#x7D0B;&#x7406;&#x88AB;&#x7E2E;&#x5C0F;&#x7684;&#x60C5;&#x6CC1;&#x4E0B;&#x7684;&#xFF1A;&#x7D0B;&#x7406;&#x653E;&#x5927;&#x4E0D;&#x6703;&#x4F7F;&#x7528;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#xFF0C;&#x70BA;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x8A2D;&#x7F6E;&#x653E;&#x5927;&#x904E;&#x6FFE;&#x9078;&#x9805;&#x6703;&#x7522;&#x751F;&#x4E00;&#x500B;<code>GL_INVALID_ENUM</code>&#x932F;&#x8AA4;&#x3002;</p>
+<h2 id="%E5%8A%A0%E8%BC%89%E5%92%8C%E5%89%B5%E5%BB%BA%E7%B4%8B%E7%90%86">&#x52A0;&#x8F09;&#x548C;&#x5275;&#x5EFA;&#x7D0B;&#x7406;</h2>
+<p>&#x4F7F;&#x7528;&#x7D0B;&#x7406;&#x4E4B;&#x524D;&#x8981;&#x505A;&#x7684;&#x7B2C;&#x4E00;&#x4EF6;&#x4E8B;&#x662F;&#x628A;&#x5B83;&#x5011;&#x52A0;&#x8F09;&#x5230;&#x61C9;&#x7528;&#x4E2D;&#x3002;&#x7D0B;&#x7406;&#x5716;&#x50CF;&#x53EF;&#x80FD;&#x5132;&#x5B58;&#x70BA;&#x5404;&#x7A2E;&#x5404;&#x6A23;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x6BCF;&#x7A2E;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x6578;&#x64DA;&#x7D50;&#x69CB;&#x548C;&#x6392;&#x5217;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x5011;&#x5982;&#x4F55;&#x624D;&#x80FD;&#x628A;&#x9019;&#x4E9B;&#x5716;&#x50CF;&#x52A0;&#x8F09;&#x5230;&#x61C9;&#x7528;&#x4E2D;&#x5462;&#xFF1F;&#x4E00;&#x500B;&#x89E3;&#x6C7A;&#x65B9;&#x6848;&#x662F;&#x5BEB;&#x4E00;&#x500B;&#x6211;&#x5011;&#x81EA;&#x5DF1;&#x7684;&#x67D0;&#x7A2E;&#x5716;&#x50CF;&#x683C;&#x5F0F;&#x52A0;&#x8F09;&#x5668;&#x6BD4;&#x5982;.PNG&#xFF0C;&#x7528;&#x5B83;&#x4F86;&#x628A;&#x5716;&#x50CF;&#x8F49;&#x5316;&#x70BA;byte&#x5E8F;&#x5217;&#x3002;&#x5BEB;&#x81EA;&#x5DF1;&#x7684;&#x5716;&#x50CF;&#x52A0;&#x8F09;&#x5668;&#x96D6;&#x7136;&#x4E0D;&#x96E3;&#xFF0C;&#x4F46;&#x662F;&#x4ECD;&#x7136;&#x633A;&#x7169;&#x4EBA;&#x7684;&#xFF0C;&#x800C;&#x4E14;&#x5982;&#x679C;&#x8981;&#x652F;&#x6301;&#x66F4;&#x591A;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x5462;&#xFF1F;&#x4F60;&#x5C31;&#x4E0D;&#x5F97;&#x4E0D;&#x70BA;&#x6BCF;&#x7A2E;&#x4F60;&#x5E0C;&#x671B;&#x652F;&#x6301;&#x7684;&#x683C;&#x5F0F;&#x5BEB;&#x52A0;&#x8F09;&#x5668;&#x4E86;&#x3002;</p>
+<p>&#x53E6;&#x4E00;&#x500B;&#x89E3;&#x6C7A;&#x65B9;&#x6848;&#x662F;&#xFF0C;&#x4E5F;&#x8A31;&#x662F;&#x66F4;&#x597D;&#x7684;&#x4E00;&#x7A2E;&#x9078;&#x64C7;&#xFF0C;&#x5C31;&#x662F;&#x4F7F;&#x7528;&#x4E00;&#x500B;&#x652F;&#x6301;&#x591A;&#x7A2E;&#x6D41;&#x884C;&#x683C;&#x5F0F;&#x7684;&#x5716;&#x50CF;&#x52A0;&#x8F09;&#x5EAB;&#xFF0C;&#x4F86;&#x70BA;&#x6211;&#x5011;&#x89E3;&#x6C7A;&#x9019;&#x500B;&#x554F;&#x984C;&#x3002;&#x5C31;&#x50CF;SOIL&#x9019;&#x7A2E;&#x5EAB;&#x2460;&#x3002;</p>
+<h3 id="soil">SOIL</h3>
+<p>SOIL&#x662F;Simple OpenGL Image Library(&#x7C21;&#x6613;OpenGL&#x5716;&#x50CF;&#x5EAB;)&#x7684;&#x7E2E;&#x5BEB;&#xFF0C;&#x5B83;&#x652F;&#x6301;&#x5927;&#x591A;&#x6578;&#x6D41;&#x884C;&#x7684;&#x5716;&#x50CF;&#x683C;&#x5F0F;&#xFF0C;&#x4F7F;&#x7528;&#x8D77;&#x4F86;&#x4E5F;&#x5F88;&#x7C21;&#x55AE;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5F9E;&#x4ED6;&#x5011;&#x7684;&#x4E3B;&#x9801;&#x4E0B;&#x8F09;&#x3002;&#x50CF;&#x5927;&#x591A;&#x6578;&#x5176;&#x4ED6;&#x5EAB;&#x4E00;&#x6A23;&#xFF0C;&#x4F60;&#x5FC5;&#x9808;&#x81EA;&#x5DF1;&#x751F;&#x6210;<strong>.lib</strong>&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<strong>/projects</strong>&#x6587;&#x4EF6;&#x593E;&#x88E1;&#x7684;&#x89E3;&#x6C7A;&#x65B9;&#x6848;(Solution)&#x6587;&#x4EF6;&#x4E4B;&#x4E00;(&#x4E0D;&#x7528;&#x64D4;&#x5FC3;&#x4ED6;&#x5011;&#x7684;Visual Studio&#x7248;&#x672C;&#x592A;&#x8001;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x5B83;&#x5011;&#x8F49;&#x8B8A;&#x70BA;&#x65B0;&#x7684;&#x7248;&#x672C;&#xFF1B;&#x9019;&#x7E3D;&#x662F;&#x53EF;&#x884C;&#x7684;&#x3002;&#x8B6F;&#x8A3B;&#xFF1A;&#x7528;VS2010&#x7684;&#x6642;&#x5019;&#xFF0C;&#x4F60;&#x8981;&#x7528;VC8&#x800C;&#x4E0D;&#x662F;VC9&#x7684;&#x89E3;&#x6C7A;&#x65B9;&#x6848;&#xFF0C;&#x60F3;&#x5FC5;&#x66F4;&#x9AD8;&#x7248;&#x672C;&#x7684;&#x60C5;&#x6CC1;&#x4EA6;&#x662F;&#x5982;&#x6B64;)&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;CMake&#x81EA;&#x5DF1;&#x751F;&#x6210;&#x3002;&#x4F60;&#x9084;&#x8981;&#x6DFB;&#x52A0;<strong>src</strong>&#x6587;&#x4EF6;&#x593E;&#x88E1;&#x9762;&#x7684;&#x6587;&#x4EF6;&#x5230;&#x4F60;&#x7684;<strong>includes</strong>&#x6587;&#x4EF6;&#x593E;&#xFF1B;&#x5C0D;&#x4E86;&#xFF0C;&#x4E0D;&#x8981;&#x5FD8;&#x8A18;&#x6DFB;&#x52A0;<strong>SOIL.lib</strong>&#x5230;&#x4F60;&#x7684;&#x9023;&#x63A5;&#x5668;&#x9078;&#x9805;&#xFF0C;&#x4E26;&#x5728;&#x4F60;&#x4EE3;&#x78BC;&#x6587;&#x4EF6;&#x7684;&#x958B;&#x982D;&#x52A0;&#x4E0A;<code>#include &lt;SOIL.h&gt;</code>&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x7D0B;&#x7406;&#x90E8;&#x5206;&#xFF0C;&#x6211;&#x5011;&#x6703;&#x4F7F;&#x7528;&#x4E00;&#x5F35;&#x6728;&#x7BB1;&#x7684;&#x5716;&#x7247;&#x3002;&#x4F7F;&#x7528;SOIL&#x52A0;&#x8F09;&#x5716;&#x7247;&#xFF0C;&#x6211;&#x5011;&#x6703;&#x4F7F;&#x7528;&#x5B83;&#x7684;<code>SOIL_load_image</code>&#x51FD;&#x6578;&#xFF1A;</p>
+<pre><code class="lang-c++"><span class="hljs-keyword">int</span> width, height;
+<span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">char</span>* image = SOIL_load_image(&#x201C;container..jpg&#x201D;, &amp;width, &amp;height, <span class="hljs-number">0</span>, SOIL_LOAD_RGB);
+</code></pre>
+<p>&#x51FD;&#x6578;&#x9996;&#x5148;&#x9700;&#x8981;&#x8F38;&#x5165;&#x5716;&#x7247;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F91;&#x3002;&#x7136;&#x5F8C;&#x9700;&#x8981;&#x5169;&#x500B;int&#x6307;&#x91DD;&#x4F5C;&#x70BA;&#x7B2C;&#x4E8C;&#x500B;&#x548C;&#x7B2C;&#x4E09;&#x500B;&#x53C3;&#x6578;&#xFF0C;SOIL&#x6703;&#x8FD4;&#x56DE;&#x5716;&#x7247;&#x7684;&#x5BEC;&#x5EA6;&#x548C;&#x9AD8;&#x5EA6;&#x5230;&#x5176;&#x4E2D;&#x3002;&#x4E4B;&#x5F8C;&#xFF0C;&#x6211;&#x5011;&#x9700;&#x8981;&#x5716;&#x7247;&#x7684;&#x5BEC;&#x5EA6;&#x548C;&#x9AD8;&#x5EA6;&#x4F86;&#x751F;&#x6210;&#x7D0B;&#x7406;&#x3002;&#x7B2C;&#x56DB;&#x500B;&#x53C3;&#x6578;&#x6307;&#x5B9A;&#x5716;&#x7247;&#x7684;&#x901A;&#x9053;(Channel)&#x6578;&#x91CF;&#xFF0C;&#x4F46;&#x662F;&#x9019;&#x88E1;&#x6211;&#x5011;&#x53EA;&#x9700;&#x7559;<code>0</code>&#x3002;&#x6700;&#x5F8C;&#x4E00;&#x500B;&#x53C3;&#x6578;&#x544A;&#x8A34;SOIL&#x5982;&#x4F55;&#x4F86;&#x52A0;&#x8F09;&#x5716;&#x7247;&#xFF1A;&#x6211;&#x5011;&#x53EA;&#x5C0D;&#x5716;&#x7247;&#x7684;RGB&#x611F;&#x8208;&#x8DA3;&#x3002;&#x7D50;&#x679C;&#x5132;&#x5B58;&#x70BA;&#x4E00;&#x500B;&#x5927;&#x7684;char/byte&#x6578;&#x7D44;&#x3002;</p>
+<h3 id="%E7%94%9F%E6%88%90%E7%B4%8B%E7%90%86">&#x751F;&#x6210;&#x7D0B;&#x7406;</h3>
+<p>&#x548C;&#x4E4B;&#x524D;&#x751F;&#x6210;&#x7684;OpenGL&#x5C0D;&#x8C61;&#x4E00;&#x6A23;&#xFF0C;&#x7D0B;&#x7406;&#x4E5F;&#x662F;&#x4F7F;&#x7528;ID&#x5F15;&#x7528;&#x7684;&#x3002;</p>
+<pre><code class="lang-c++">GLuint texture;
+glGenTextures(<span class="hljs-number">1</span>, &amp;texture);
+</code></pre>
+<p><code>glGenTextures</code>&#x51FD;&#x6578;&#x9996;&#x5148;&#x9700;&#x8981;&#x8F38;&#x5165;&#x7D0B;&#x7406;&#x751F;&#x6210;&#x7684;&#x6578;&#x91CF;&#xFF0C;&#x7136;&#x5F8C;&#x628A;&#x5B83;&#x5011;&#x5132;&#x5B58;&#x5728;&#x7B2C;&#x4E8C;&#x500B;&#x53C3;&#x6578;&#x7684;<code>GLuint</code>&#x6578;&#x7D44;&#x4E2D;(&#x6211;&#x5011;&#x7684;&#x4F8B;&#x5B50;&#x88E1;&#x53EA;&#x6709;&#x4E00;&#x500B;<code>GLuint</code>)&#xFF0C;&#x5C31;&#x50CF;&#x5176;&#x4ED6;&#x5C0D;&#x8C61;&#x4E00;&#x6A23;&#xFF0C;&#x6211;&#x5011;&#x9700;&#x8981;&#x7D81;&#x5B9A;&#x5B83;&#xFF0C;&#x6240;&#x4EE5;&#x4E0B;&#x9762;&#x7684;&#x7D0B;&#x7406;&#x547D;&#x4EE4;&#x6703;&#x914D;&#x7F6E;&#x7576;&#x524D;&#x7D81;&#x5B9A;&#x7684;&#x7D0B;&#x7406;&#xFF1A;</p>
+<pre><code class="lang-c++">glBindTexture(GL_TEXTURE_2D, texture);
+</code></pre>
+<p>&#x73FE;&#x5728;&#x7D0B;&#x7406;&#x7D81;&#x5B9A;&#x4E86;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x524D;&#x9762;&#x8F09;&#x5165;&#x7684;&#x5716;&#x7247;&#x6578;&#x64DA;&#x751F;&#x6210;&#x7D0B;&#x7406;&#x4E86;&#xFF0C;&#x7D0B;&#x7406;&#x901A;&#x904E;<code>glTexImage2D</code>&#x4F86;&#x751F;&#x6210;&#xFF1A;</p>
+<pre><code class="lang-c++">glTexImage2D(GL_TEXTURE_2D, <span class="hljs-number">0</span>, GL_RGB, width, height, <span class="hljs-number">0</span>, GL_RGB, GL_UNSIGNED_BYTE, image);
+glGenerateMipmap(GL_TEXTURE_2D);
+</code></pre>
+<p>&#x51FD;&#x6578;&#x5F88;&#x9577;&#xFF0C;&#x53C3;&#x6578;&#x4E5F;&#x4E0D;&#x5C11;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x5011;&#x4E00;&#x500B;&#x4E00;&#x500B;&#x5730;&#x8B1B;&#x89E3;&#xFF1A;</p>
+<ul>
+<li>&#x7B2C;&#x4E00;&#x500B;&#x53C3;&#x6578;&#x6307;&#x5B9A;&#x7D0B;&#x7406;&#x76EE;&#x6A19;(&#x74B0;&#x5883;)&#xFF1B;&#x8A2D;&#x7F6E;&#x70BA;<code>GL_TEXTURE_2D</code>&#x610F;&#x5473;&#x8457;&#x6703;&#x751F;&#x6210;&#x8207;&#x7576;&#x524D;&#x7D81;&#x5B9A;&#x7684;&#x7D0B;&#x7406;&#x5C0D;&#x8C61;&#x5728;&#x540C;&#x4E00;&#x500B;&#x76EE;&#x6A19;(Target)&#x4E0A;&#x7684;&#x7D0B;&#x7406;(&#x4EFB;&#x4F55;&#x7D81;&#x5B9A;&#x5230;<code>GL_TEXTURE_1D</code>&#x548C;<code>GL_TEXTURE_3D</code>&#x7684;&#x7D0B;&#x7406;&#x4E0D;&#x6703;&#x53D7;&#x5230;&#x5F71;&#x97FF;)&#x3002;</li>
+<li>&#x7B2C;&#x4E8C;&#x500B;&#x53C3;&#x6578;&#x70BA;&#x6211;&#x5011;&#x6253;&#x7B97;&#x5275;&#x5EFA;&#x7684;&#x7D0B;&#x7406;&#x6307;&#x5B9A;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x7684;&#x5C64;&#x7D1A;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x55AE;&#x7368;&#x624B;&#x5DE5;&#x8A2D;&#x7F6E;&#x6BCF;&#x500B;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x7684;&#x5C64;&#x7D1A;&#x7684;&#x8A71;&#x3002;&#x9019;&#x88E1;&#x6211;&#x5011;&#x586B;0&#x57FA;&#x672C;&#x7D1A;&#x3002;</li>
+<li>&#x7B2C;&#x4E09;&#x500B;&#x53C3;&#x6578;&#x544A;&#x8A34;OpenGL&#xFF0C;&#x6211;&#x5011;&#x5E0C;&#x671B;&#x628A;&#x7D0B;&#x7406;&#x5132;&#x5B58;&#x70BA;&#x4F55;&#x7A2E;&#x683C;&#x5F0F;&#x3002;&#x6211;&#x5011;&#x7684;&#x5716;&#x50CF;&#x53EA;&#x6709;RGB&#x503C;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x5011;&#x628A;&#x7D0B;&#x7406;&#x5132;&#x5B58;&#x70BA;<code>GL_RGB</code>&#x503C;&#x3002;</li>
+<li>&#x7B2C;&#x56DB;&#x500B;&#x548C;&#x7B2C;&#x4E94;&#x500B;&#x53C3;&#x6578;&#x8A2D;&#x7F6E;&#x6700;&#x7D42;&#x7684;&#x7D0B;&#x7406;&#x7684;&#x5BEC;&#x5EA6;&#x548C;&#x9AD8;&#x5EA6;&#x3002;&#x6211;&#x5011;&#x52A0;&#x8F09;&#x5716;&#x50CF;&#x7684;&#x6642;&#x5019;&#x63D0;&#x524D;&#x5132;&#x5B58;&#x5B83;&#x5011;&#x9019;&#x6A23;&#x6211;&#x5011;&#x5C31;&#x80FD;&#x4F7F;&#x7528;&#x76F8;&#x61C9;&#x8B8A;&#x91CF;&#x4E86;&#x3002;
+&#x4E0B;&#x500B;&#x53C3;&#x6578;&#x61C9;&#x8A72;&#x4E00;&#x76F4;&#x88AB;&#x8A2D;&#x70BA;<code>0</code>(&#x907A;&#x7559;&#x554F;&#x984C;)&#x3002;</li>
+<li>&#x7B2C;&#x4E03;&#x7B2C;&#x516B;&#x500B;&#x53C3;&#x6578;&#x5B9A;&#x7FA9;&#x4E86;&#x6E90;&#x5716;&#x7684;&#x683C;&#x5F0F;&#x548C;&#x6578;&#x64DA;&#x985E;&#x578B;&#x3002;&#x6211;&#x5011;&#x4F7F;&#x7528;RGB&#x503C;&#x52A0;&#x8F09;&#x9019;&#x500B;&#x5716;&#x50CF;&#xFF0C;&#x4E26;&#x628A;&#x5B83;&#x5011;&#x5132;&#x5B58;&#x5728;char(byte)&#xFF0C;&#x6211;&#x5011;&#x5C07;&#x6703;&#x50B3;&#x5165;&#x76F8;&#x61C9;&#x503C;&#x3002;</li>
+<li>&#x6700;&#x5F8C;&#x4E00;&#x500B;&#x53C3;&#x6578;&#x662F;&#x771F;&#x5BE6;&#x7684;&#x5716;&#x50CF;&#x6578;&#x64DA;&#x3002;</li>
+</ul>
+<p>&#x7576;&#x8ABF;&#x7528;<code>glTexImage2D</code>&#xFF0C;&#x7576;&#x524D;&#x7D81;&#x5B9A;&#x7684;&#x7D0B;&#x7406;&#x5C0D;&#x8C61;&#x5C31;&#x6703;&#x88AB;&#x9644;&#x52A0;&#x4E0A;&#x7D0B;&#x7406;&#x5716;&#x50CF;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x7576;&#x524D;&#x53EA;&#x6709;&#x57FA;&#x672C;&#x7D1A;&#x5225;(Base-level)&#x7D0B;&#x7406;&#x5716;&#x50CF;&#x52A0;&#x8F09;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x4F7F;&#x7528;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#xFF0C;&#x6211;&#x5011;&#x5FC5;&#x9808;&#x624B;&#x5DE5;&#x8A2D;&#x7F6E;&#x4E0D;&#x540C;&#x7684;&#x5716;&#x50CF;(&#x901A;&#x904E;&#x4E0D;&#x65B7;&#x628A;&#x7B2C;&#x4E8C;&#x500B;&#x53C3;&#x6578;&#x589E;&#x52A0;&#x7684;&#x65B9;&#x5F0F;)&#x6216;&#x8005;&#xFF0C;&#x5728;&#x751F;&#x6210;&#x7D0B;&#x7406;&#x4E4B;&#x5F8C;&#x8ABF;&#x7528;<code>glGenerateMipmap</code>&#x3002;&#x9019;&#x6703;&#x70BA;&#x7576;&#x524D;&#x7D81;&#x5B9A;&#x7684;&#x7D0B;&#x7406;&#x81EA;&#x52D5;&#x751F;&#x6210;&#x6240;&#x6709;&#x9700;&#x8981;&#x7684;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x3002;</p>
+<p>&#x751F;&#x6210;&#x4E86;&#x7D0B;&#x7406;&#x548C;&#x76F8;&#x61C9;&#x7684;&#x591A;&#x7D1A;&#x6F38;&#x9060;&#x7D0B;&#x7406;&#x5F8C;&#xFF0C;&#x89E3;&#x7D81;&#x7D0B;&#x7406;&#x5C0D;&#x8C61;&#x3001;&#x91CB;&#x653E;&#x5716;&#x50CF;&#x7684;&#x5167;&#x5B58;&#x5F88;&#x91CD;&#x8981;&#x3002;</p>
+<pre><code class="lang-c++">SOIL_free_image_data(image);
+glBindTexture(GL_TEXTURE_2D, <span class="hljs-number">0</span>);
+</code></pre>
+<p>&#x751F;&#x6210;&#x4E00;&#x500B;&#x7D0B;&#x7406;&#x7684;&#x904E;&#x7A0B;&#x61C9;&#x8A72;&#x770B;&#x8D77;&#x4F86;&#x50CF;&#x9019;&#x6A23;&#xFF1A;</p>
+<pre><code class="lang-c++">GLuint texture;
+glGenTextures(<span class="hljs-number">1</span>, &amp;texture);
+glBindTexture(GL_TEXTURE_2D, texture);
+<span class="hljs-comment">//&#x70BA;&#x7576;&#x524D;&#x7D81;&#x5B9A;&#x7684;&#x7D0B;&#x7406;&#x5C0D;&#x8C61;&#x8A2D;&#x7F6E;&#x74B0;&#x7E5E;&#x3001;&#x904E;&#x6FFE;&#x65B9;&#x5F0F;</span>
+...
+<span class="hljs-comment">//&#x52A0;&#x8F09;&#x4E26;&#x751F;&#x6210;&#x7D0B;&#x7406;</span>
+<span class="hljs-keyword">int</span> width, height;
+<span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">char</span> * image = SOIL_load_image(<span class="hljs-string">&quot;container.jpg&quot;</span>, &amp;width, &amp;eight, <span class="hljs-number">0</span>, SOIL_LOAD_RGB);
+glTexImage2D(GL_TEXTURE_2D, <span class="hljs-number">0</span>, GL_RGB, width, height, <span class="hljs-number">0</span>, GL_RGB, GL_UNSIGNED_BYTE, image);
+glGenerateMipmap(GL_TEXTURE_2D);
+SOIL_free_image_data(image);
+glBindTexture(GL_TEXTURE_2D, <span class="hljs-number">0</span>);
+</code></pre>
+<h3 id="%E6%87%89%E7%94%A8%E7%B4%8B%E7%90%86">&#x61C9;&#x7528;&#x7D0B;&#x7406;</h3>
+<p>&#x5F8C;&#x9762;&#x7684;&#x90E8;&#x5206;&#x6211;&#x5011;&#x6703;&#x4F7F;&#x7528;<code>glDrawElements</code>&#x7E6A;&#x88FD;<a href="http://learnopengl-cn.readthedocs.org/zh/latest/01%20Getting%20started/04%20Hello%20Triangle/" target="_blank">Hello Triangle</a>&#x6559;&#x7A0B;&#x7684;&#x6700;&#x5F8C;&#x4E00;&#x90E8;&#x5206;&#x7684;&#x77E9;&#x5F62;&#x3002;&#x6211;&#x5011;&#x9700;&#x8981;&#x544A;&#x77E5;OpenGL&#x5982;&#x4F55;&#x63A1;&#x6A23;&#x7D0B;&#x7406;&#xFF0C;&#x9019;&#x6A23;&#x6211;&#x5011;&#x5FC5;&#x9808;&#x66F4;&#x65B0;&#x9802;&#x9EDE;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x6578;&#x64DA;&#xFF1A;</p>
+<pre><code class="lang-c++">GLfloat vertices[] = {
+<span class="hljs-comment">//  ---- &#x4F4D;&#x7F6E; ----     ---- &#x984F;&#x8272; ----  ---- &#x7D0B;&#x7406;&#x5EA7;&#x6A19; ----</span>
+    <span class="hljs-number">0.5f</span>, <span class="hljs-number">0.5f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">1.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">1.0f</span>, <span class="hljs-number">1.0f</span>,  <span class="hljs-comment">// &#x53F3;&#x4E0A;</span>
+    <span class="hljs-number">0.5f</span>, -<span class="hljs-number">0.5f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">1.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">1.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-comment">// &#x53F3;&#x4E0B;</span>
+    -<span class="hljs-number">0.5f</span>, -<span class="hljs-number">0.5f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">1.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">0.0f</span>,<span class="hljs-comment">// &#x5DE6;&#x4E0B;</span>
+    -<span class="hljs-number">0.5f</span>, <span class="hljs-number">0.5f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">1.0f</span>, <span class="hljs-number">1.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">1.0f</span>  <span class="hljs-comment">// &#x5DE6;&#x4E0A;</span>
+};
+</code></pre>
+<p>&#x7531;&#x65BC;&#x6211;&#x5011;&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x500B;&#x984D;&#x5916;&#x7684;&#x9802;&#x9EDE;&#x5C6C;&#x6027;&#xFF0C;&#x6211;&#x5011;&#x5FC5;&#x9808;&#x901A;&#x77E5;OpenGL&#x65B0;&#x7684;&#x9802;&#x9EDE;&#x683C;&#x5F0F;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/getting-started/vertex_attribute_pointer_interleaved_textures.png" alt=""></p>
+<pre><code class="lang-c++">glVertexAttribPointer(<span class="hljs-number">2</span>, <span class="hljs-number">2</span>, GL_FLOAT,GL_FALSE, <span class="hljs-number">8</span> * <span class="hljs-keyword">sizeof</span>(GLfloat), (GLvoid*)(<span class="hljs-number">6</span> * <span class="hljs-keyword">sizeof</span>(GLfloat)));
+glEnableVertexAttribArray(<span class="hljs-number">2</span>);
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x6211;&#x5011;&#x5FC5;&#x9808;&#x4FEE;&#x6B63;&#x524D;&#x9762;&#x5169;&#x500B;&#x9802;&#x9EDE;&#x5C6C;&#x6027;&#x7684;&#x6B65;&#x9577;&#x53C3;&#x6578;&#x70BA;<code>8 * sizeof(GLfloat)</code>&#x3002;</p>
+<p>&#x63A5;&#x8457;&#x6211;&#x5011;&#x9700;&#x8981;&#x8B93;&#x9802;&#x9EDE;&#x8457;&#x8272;&#x5668;&#x628A;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x4F5C;&#x70BA;&#x4E00;&#x500B;&#x9802;&#x9EDE;&#x5C6C;&#x6027;&#xFF0C;&#x628A;&#x5EA7;&#x6A19;&#x50B3;&#x7D66;&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;&#xFF1A;</p>
+<pre><code class="lang-c++"><span class="hljs-preprocessor">#version <span class="hljs-number">330</span> core</span>
+layout (location = <span class="hljs-number">0</span>) in vec3 position;
+layout (location = <span class="hljs-number">1</span>) in vec3 color;
+layout (location = <span class="hljs-number">2</span>) in vec2 texCoord;
+out vec3 ourColor;
+out vec2 TexCoord;
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    gl_Position = vec4(position, <span class="hljs-number">1.0f</span>);
+    ourColor = color;
+    TexCoord = texCoord;
+}
+</code></pre>
+<p>&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;&#x61C9;&#x8A72;&#x628A;&#x8F38;&#x51FA;&#x8B8A;&#x91CF;<code>TexCoord</code>&#x4F5C;&#x70BA;&#x8F38;&#x5165;&#x8B8A;&#x91CF;&#x3002;</p>
+<p>&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;&#x61C9;&#x8A72;&#x4E5F;&#x7372;&#x53D6;&#x7D0B;&#x7406;&#x5C0D;&#x8C61;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x5011;&#x600E;&#x6A23;&#x628A;&#x7D0B;&#x7406;&#x5C0D;&#x8C61;&#x50B3;&#x7D66;&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;&#xFF1F;GLSL&#x6709;&#x4E00;&#x500B;&#x5167;&#x5EFA;&#x6578;&#x64DA;&#x985E;&#x578B;&#xFF0C;&#x4F9B;&#x7D0B;&#x7406;&#x5C0D;&#x8C61;&#x4F7F;&#x7528;&#xFF0C;&#x53EB;&#x505A;&#x63A1;&#x6A23;&#x5668;(Sampler)&#xFF0C;&#x5B83;&#x4EE5;&#x7D0B;&#x7406;&#x985E;&#x578B;&#x4F5C;&#x70BA;&#x5F8C;&#x7DB4;&#xFF0C;&#x6BD4;&#x5982;<code>sampler1D</code>&#x3001;<code>sampler3D</code>&#xFF0C;&#x5728;&#x6211;&#x5011;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#x5B83;&#x662F;<code>sampler2D</code>&#x3002;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x7C21;&#x55AE;&#x7684;&#x8072;&#x660E;&#x4E00;&#x500B;<code>uniform sampler2D</code>&#x628A;&#x4E00;&#x500B;&#x7D0B;&#x7406;&#x50B3;&#x5230;&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;&#x4E2D;&#xFF0C;&#x7A0D;&#x5F8C;&#x6211;&#x5011;&#x628A;&#x6211;&#x5011;&#x7684;&#x7D0B;&#x7406;&#x8CE6;&#x503C;&#x7D66;&#x9019;&#x500B;uniform&#x3002;</p>
+<pre><code class="lang-c++"><span class="hljs-preprocessor">#version <span class="hljs-number">330</span> core</span>
+in vec3 ourColor;
+in vec2 TexCoord;
+out vec4 color;
+uniform sampler2D ourTexture;
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    color = texture(ourTexture, TexCoord);
+}
+</code></pre>
+<p>&#x6211;&#x5011;&#x4F7F;&#x7528;GLSL&#x7684;&#x5167;&#x5EFA;<code>texture</code>&#x51FD;&#x6578;&#x4F86;&#x63A1;&#x6A23;&#x7D0B;&#x7406;&#x7684;&#x984F;&#x8272;&#xFF0C;&#x5B83;&#x7B2C;&#x4E00;&#x500B;&#x53C3;&#x6578;&#x662F;&#x7D0B;&#x7406;&#x63A1;&#x6A23;&#x5668;&#xFF0C;&#x7B2C;&#x4E8C;&#x500B;&#x53C3;&#x6578;&#x662F;&#x76F8;&#x61C9;&#x7684;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x3002;<code>texture</code>&#x51FD;&#x6578;&#x4F7F;&#x7528;&#x524D;&#x9762;&#x8A2D;&#x7F6E;&#x7684;&#x7D0B;&#x7406;&#x53C3;&#x6578;&#x5C0D;&#x76F8;&#x61C9;&#x984F;&#x8272;&#x503C;&#x9032;&#x884C;&#x63A1;&#x6A23;&#x3002;&#x9019;&#x500B;&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;&#x7684;&#x8F38;&#x51FA;&#x5C31;&#x662F;&#x7D0B;&#x7406;&#x7684;(&#x63D2;&#x503C;)&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x4E0A;&#x7684;(&#x904E;&#x6FFE;)&#x984F;&#x8272;&#x3002;</p>
+<p>&#x73FE;&#x5728;&#x8981;&#x505A;&#x7684;&#x5C31;&#x662F;&#x5728;&#x8ABF;&#x7528;<code>glDrawElements</code>&#x4E4B;&#x524D;&#x7D81;&#x5B9A;&#x7D0B;&#x7406;&#xFF0C;&#x5B83;&#x6703;&#x81EA;&#x52D5;&#x628A;&#x7D0B;&#x7406;&#x8CE6;&#x503C;&#x7D66;&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;&#x7684;&#x63A1;&#x6A23;&#x5668;&#xFF1A;</p>
+<pre><code class="lang-c++">glBindTexture(GL_TEXTURE_2D, texture);
+glBindVertexArray(VAO);
+glDrawElements(GL_TRIANGLES, <span class="hljs-number">6</span>, GL_UNSIGNED_INT, <span class="hljs-number">0</span>);
+glBindVertexArray(<span class="hljs-number">0</span>);
+</code></pre>
+<p>&#x5982;&#x679C;&#x4F60;&#x8DDF;&#x8457;&#x9019;&#x500B;&#x6559;&#x7A0B;&#x6B63;&#x78BA;&#x7684;&#x505A;&#x5B8C;&#x4E86;&#xFF0C;&#x4F60;&#x6703;&#x770B;&#x5230;&#x4E0B;&#x9762;&#x7684;&#x5716;&#x50CF;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/getting-started/textures2.png" alt=""></p>
+<p>&#x5982;&#x679C;&#x4F60;&#x7684;&#x77E9;&#x5F62;&#x662F;&#x5168;&#x9ED1;&#x6216;&#x5168;&#x767D;&#x7684;&#x4F60;&#x53EF;&#x80FD;&#x5728;&#x54EA;&#x5152;&#x505A;&#x932F;&#x4E86;&#x4EC0;&#x9EBC;&#x3002;&#x6AA2;&#x67E5;&#x4F60;&#x7684;&#x8457;&#x8272;&#x5668;&#x65E5;&#x8A8C;&#xFF0C;&#x6216;&#x8005;&#x5617;&#x8A66;&#x5C0D;&#x6BD4;&#x4E00;&#x4E0B;<a href="http://learnopengl.com/code_viewer.php?code=getting-started/textures" target="_blank">&#x6E90;&#x78BC;</a>&#x3002;</p>
+<p>&#x6211;&#x5011;&#x9084;&#x53EF;&#x4EE5;&#x628A;&#x7D0B;&#x7406;&#x984F;&#x8272;&#x548C;&#x9802;&#x9EDE;&#x984F;&#x8272;&#x6DF7;&#x5408;&#xFF0C;&#x4F86;&#x7372;&#x5F97;&#x6709;&#x8DA3;&#x7684;&#x6548;&#x679C;&#x3002;&#x6211;&#x5011;&#x7C21;&#x55AE;&#x7684;&#x628A;&#x7D0B;&#x7406;&#x984F;&#x8272;&#x8207;&#x9802;&#x9EDE;&#x984F;&#x8272;&#x5728;&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;&#x4E2D;&#x76F8;&#x4E58;&#x4F86;&#x6DF7;&#x5408;&#x4E8C;&#x8005;&#x7684;&#x984F;&#x8272;&#xFF1A;</p>
+<pre><code class="lang-c++">color = texture(ourTexture, TexCoord) * vec4(ourColor, <span class="hljs-number">1.0f</span>);
+</code></pre>
+<p>&#x6700;&#x7D42;&#x7684;&#x6548;&#x679C;&#x61C9;&#x8A72;&#x662F;&#x9802;&#x9EDE;&#x984F;&#x8272;&#x548C;&#x7D0B;&#x7406;&#x984F;&#x8272;&#x7684;&#x6DF7;&#x5408;&#x8272;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/getting-started/textures_funky.png" alt=""></p>
+<p>&#x9019;&#x500B;&#x7BB1;&#x5B50;&#x770B;&#x8D77;&#x4F86;&#x6709;&#x9EDE;70&#x5E74;&#x4EE3;&#x8FEA;&#x65AF;&#x79D1;&#x98A8;&#x683C;&#x3002;</p>
+<h3 id="%E7%B4%8B%E7%90%86%E5%96%AE%E5%85%83-texture-units">&#x7D0B;&#x7406;&#x55AE;&#x5143;(Texture Units)</h3>
+<p>&#x4F60;&#x53EF;&#x80FD;&#x611F;&#x5230;&#x5947;&#x602A;&#x70BA;&#x4EC0;&#x9EBC;<code>sampler2D</code>&#x662F;&#x500B;uniform&#x8B8A;&#x91CF;&#xFF0C;&#x4F60;&#x537B;&#x4E0D;&#x7528;<code>glUniform</code>&#x7D66;&#x5B83;&#x8CE6;&#x503C;&#xFF0C;&#x4F7F;&#x7528;<code>glUniform1i</code>&#x6211;&#x5011;&#x5C31;&#x53EF;&#x4EE5;&#x7D66;&#x7D0B;&#x7406;&#x63A1;&#x6A23;&#x5668;&#x78BA;&#x5B9A;&#x4E00;&#x500B;&#x4F4D;&#x7F6E;&#xFF0C;&#x9019;&#x6A23;&#x7684;&#x8A71;&#x6211;&#x5011;&#x80FD;&#x5920;&#x4E00;&#x6B21;&#x5728;&#x4E00;&#x500B;&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;&#x4E2D;&#x8A2D;&#x7F6E;&#x591A;&#x7D0B;&#x7406;&#x3002;&#x4E00;&#x500B;&#x7D0B;&#x7406;&#x7684;&#x4F4D;&#x7F6E;&#x901A;&#x5E38;&#x7A31;&#x70BA;&#x4E00;&#x500B;&#x7D0B;&#x7406;&#x55AE;&#x5143;&#x3002;&#x4E00;&#x500B;&#x7D0B;&#x7406;&#x7684;&#x9ED8;&#x8A8D;&#x7D0B;&#x7406;&#x55AE;&#x5143;&#x662F;0&#xFF0C;&#x5B83;&#x662F;&#x9ED8;&#x8A8D;&#x6FC0;&#x6D3B;&#x7684;&#x7D0B;&#x7406;&#x55AE;&#x5143;&#xFF0C;&#x6240;&#x4EE5;&#x6559;&#x7A0B;&#x524D;&#x9762;&#x90E8;&#x5206;&#x6211;&#x5011;&#x4E0D;&#x7528;&#x7D66;&#x5B83;&#x78BA;&#x5B9A;&#x4E00;&#x500B;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x7D0B;&#x7406;&#x55AE;&#x5143;&#x7684;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x662F;&#x8B93;&#x6211;&#x5011;&#x5728;&#x8457;&#x8272;&#x5668;&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x65BC;&#x4E00;&#x500B;&#x7684;&#x7D0B;&#x7406;&#x3002;&#x901A;&#x904E;&#x628A;&#x7D0B;&#x7406;&#x55AE;&#x5143;&#x8CE6;&#x503C;&#x7D66;&#x63A1;&#x6A23;&#x5668;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x7D81;&#x5B9A;&#x591A;&#x7D0B;&#x7406;&#xFF0C;&#x53EA;&#x8981;&#x6211;&#x5011;&#x9996;&#x5148;&#x6FC0;&#x6D3B;&#x76F8;&#x61C9;&#x7684;&#x7D0B;&#x7406;&#x55AE;&#x5143;&#x3002;&#x5C31;&#x50CF;<code>glBindTexture</code>&#x4E00;&#x6A23;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>glActiveTexture</code>&#x6FC0;&#x6D3B;&#x7D0B;&#x7406;&#x55AE;&#x5143;&#xFF0C;&#x50B3;&#x5165;&#x6211;&#x5011;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x7D0B;&#x7406;&#x55AE;&#x5143;&#xFF1A;</p>
+<pre><code class="lang-c++">glActiveTexture(GL_TEXTURE0); <span class="hljs-comment">//&#x5728;&#x7D81;&#x5B9A;&#x7D0B;&#x7406;&#x4E4B;&#x524D;&#xFF0C;&#x5148;&#x6FC0;&#x6D3B;&#x7D0B;&#x7406;&#x55AE;&#x5143;</span>
+glBindTexture(GL_TEXTURE_2D, texture);
+</code></pre>
+<p>&#x6FC0;&#x6D3B;&#x7D0B;&#x7406;&#x55AE;&#x5143;&#x4E4B;&#x5F8C;&#xFF0C;&#x63A5;&#x4E0B;&#x4F86;<code>glBindTexture</code>&#x8ABF;&#x7528;&#x51FD;&#x6578;&#xFF0C;&#x6703;&#x7D81;&#x5B9A;&#x9019;&#x500B;&#x7D0B;&#x7406;&#x5230;&#x7576;&#x524D;&#x6FC0;&#x6D3B;&#x7684;&#x7D0B;&#x7406;&#x55AE;&#x5143;&#xFF0C;&#x7D0B;&#x7406;&#x55AE;&#x5143;<code>GL_TEXTURE0</code>&#x7E3D;&#x662F;&#x9ED8;&#x8A8D;&#x88AB;&#x6FC0;&#x6D3B;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x5011;&#x5728;&#x524D;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x88E1;&#x7576;&#x6211;&#x5011;&#x4F7F;&#x7528;<code>glBindTexture</code>&#x7684;&#x6642;&#x5019;&#xFF0C;&#x7121;&#x9700;&#x6FC0;&#x6D3B;&#x4EFB;&#x4F55;&#x7D0B;&#x7406;&#x55AE;&#x5143;&#x3002;</p>
+<p>!!! Important</p>
+<pre><code>    OpenGL&#x81F3;&#x5C11;&#x63D0;&#x4F9B;16&#x500B;&#x7D0B;&#x7406;&#x55AE;&#x5143;&#x4F9B;&#x4F60;&#x4F7F;&#x7528;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8AAA;&#x4F60;&#x53EF;&#x4EE5;&#x6FC0;&#x6D3B;`GL_TEXTURE0`&#x5230;`GL_TEXTRUE15`&#x3002;&#x5B83;&#x5011;&#x90FD;&#x662F;&#x9806;&#x5E8F;&#x5B9A;&#x7FA9;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x5011;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x904E;`GL_TEXTURE0+8`&#x7684;&#x65B9;&#x5F0F;&#x7372;&#x5F97;`GL_TEXTURE8`&#xFF0C;&#x9019;&#x500B;&#x4F8B;&#x5B50;&#x5728;&#x7576;&#x6211;&#x5011;&#x4E0D;&#x5F97;&#x4E0D;&#x5FAA;&#x74B0;&#x5E7E;&#x500B;&#x7D0B;&#x7406;&#x7684;&#x6642;&#x5019;&#x8B8A;&#x5F97;&#x5F88;&#x6709;&#x7528;&#x3002;
+</code></pre><p>&#x6211;&#x5011;&#x4ECD;&#x7136;&#x8981;&#x7DE8;&#x8F2F;&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;&#x4F86;&#x63A5;&#x6536;&#x53E6;&#x4E00;&#x500B;&#x63A1;&#x6A23;&#x5668;&#x3002;&#x65B9;&#x6CD5;&#x73FE;&#x5728;&#x76F8;&#x5C0D;&#x7C21;&#x55AE;&#x4E86;&#xFF1A;</p>
+<pre><code class="lang-c++"><span class="hljs-preprocessor">#version <span class="hljs-number">330</span> core</span>
+...
+uniform sampler2D ourTexture1;
+uniform sampler2D ourTexture2;
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    color = mix(texture(ourTexture1, TexCoord), texture(ourTexture2, TexCoord), <span class="hljs-number">0.2</span>);
+}
+</code></pre>
+<p>&#x6700;&#x7D42;&#x8F38;&#x51FA;&#x984F;&#x8272;&#x73FE;&#x5728;&#x7D50;&#x5408;&#x4E86;&#x5169;&#x500B;&#x7D0B;&#x7406;&#x67E5;&#x627E;&#x3002;GLSL&#x7684;&#x5167;&#x5EFA;<code>mix</code>&#x51FD;&#x6578;&#x9700;&#x8981;&#x5169;&#x500B;&#x53C3;&#x6578;&#x5C07;&#x6839;&#x64DA;&#x7B2C;&#x4E09;&#x500B;&#x53C3;&#x6578;&#x70BA;&#x524D;&#x5169;&#x8005;&#x4F5C;&#x70BA;&#x8F38;&#x5165;&#xFF0C;&#x4E26;&#x5728;&#x4E4B;&#x9593;&#x9032;&#x884C;&#x7DDA;&#x6027;&#x63D2;&#x503C;&#x3002;&#x5982;&#x679C;&#x7B2C;&#x4E09;&#x500B;&#x503C;&#x662F;0.0&#xFF0C;&#x5B83;&#x8FD4;&#x56DE;&#x7B2C;&#x4E00;&#x500B;&#x8F38;&#x5165;&#xFF1B;&#x5982;&#x679C;&#x662F;1.0&#xFF0C;&#x5C31;&#x8FD4;&#x56DE;&#x7B2C;&#x4E8C;&#x500B;&#x8F38;&#x5165;&#x503C;&#x3002;0.2&#x8FD4;&#x56DE;80%&#x7684;&#x7B2C;&#x4E00;&#x500B;&#x8F38;&#x5165;&#x984F;&#x8272;&#x548C;20%&#x7684;&#x7B2C;&#x4E8C;&#x500B;&#x8F38;&#x5165;&#x984F;&#x8272;&#xFF0C;&#x8FD4;&#x56DE;&#x5169;&#x500B;&#x7D0B;&#x7406;&#x7684;&#x6DF7;&#x5408;&#x3002;</p>
+<p>&#x6211;&#x5011;&#x73FE;&#x5728;&#x9700;&#x8981;&#x8F09;&#x5165;&#x548C;&#x5275;&#x5EFA;&#x53E6;&#x4E00;&#x500B;&#x7D0B;&#x7406;&#xFF1B;&#x6211;&#x5011;&#x61C9;&#x8A72;&#x5C0D;&#x9019;&#x4E9B;&#x6B65;&#x9A5F;&#x611F;&#x5230;&#x719F;&#x6089;&#x4E86;&#x3002;&#x78BA;&#x4FDD;&#x5275;&#x5EFA;&#x53E6;&#x4E00;&#x500B;&#x7D0B;&#x7406;&#x5C0D;&#x8C61;&#xFF0C;&#x8F09;&#x5165;&#x5716;&#x7247;&#xFF0C;&#x4F7F;&#x7528;<code>glTexImage2D</code>&#x751F;&#x6210;&#x6700;&#x7D42;&#x7D0B;&#x7406;&#x3002;&#x5C0D;&#x65BC;&#x7B2C;&#x4E8C;&#x500B;&#x7D0B;&#x7406;&#x6211;&#x5011;&#x4F7F;&#x7528;&#x4E00;&#x5F35;&#x4F60;&#x5B78;&#x7FD2;OpenGL&#x6642;&#x7684;&#x8868;&#x60C5;&#x5716;&#x7247;&#x3002;</p>
+<p>&#x70BA;&#x4E86;&#x4F7F;&#x7528;&#x7B2C;&#x4E8C;&#x500B;&#x7D0B;&#x7406;(&#x4E5F;&#x5305;&#x62EC;&#x7B2C;&#x4E00;&#x500B;)&#xFF0C;&#x6211;&#x5011;&#x5FC5;&#x9808;&#x6539;&#x8B8A;&#x4E00;&#x9EDE;&#x6E32;&#x67D3;&#x6D41;&#x7A0B;&#xFF0C;&#x5148;&#x7D81;&#x5B9A;&#x5169;&#x500B;&#x7D0B;&#x7406;&#x5230;&#x76F8;&#x61C9;&#x7684;&#x7D0B;&#x7406;&#x55AE;&#x5143;&#xFF0C;&#x7136;&#x5F8C;&#x5B9A;&#x7FA9;&#x54EA;&#x500B;uniform&#x63A1;&#x6A23;&#x5668;&#x5C0D;&#x61C9;&#x54EA;&#x500B;&#x7D0B;&#x7406;&#x55AE;&#x5143;&#xFF1A;</p>
+<pre><code class="lang-c++">glActiveTexture(GL_TEXTURE0);
+glBindTexture(GL_TEXTURE_2D, texture1);
+glUniform1i(glGetUniformLocation(ourShader.Program, &#x201C;ourTexture1&#x201D;), <span class="hljs-number">0</span>);
+glActiveTexture(GL_TEXTURE1);
+glBindTexture(GL_TEXTURE_2D, texture2);
+glUniform1i(glGetUniformLocation(ourShader.Program, &#x201C;ourTexture2&#x201D;), <span class="hljs-number">1</span>);
+
+glBindVertexArray(VAO);
+glDrawElements(GL_TRIANGLES, <span class="hljs-number">6</span>, GL_UNSIGNED_IN, <span class="hljs-number">0</span>);
+glBindVertexArray(<span class="hljs-number">0</span>);
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x6211;&#x5011;&#x4F7F;&#x7528;&#x4E86;<code>glUniform1i</code>&#x8A2D;&#x7F6E;uniform&#x63A1;&#x6A23;&#x5668;&#x7684;&#x4F4D;&#x7F6E;&#x6216;&#x66F0;&#x7D0B;&#x7406;&#x55AE;&#x5143;&#x3002;&#x901A;&#x904E;<code>glUniform1i</code>&#x7684;&#x8A2D;&#x7F6E;&#xFF0C;&#x6211;&#x5011;&#x4FDD;&#x8B49;&#x4E86;&#x6BCF;&#x500B;uniform&#x63A1;&#x6A23;&#x5668;&#x5C0D;&#x61C9;&#x65BC;&#x5408;&#x9069;&#x7684;&#x7D0B;&#x7406;&#x55AE;&#x5143;&#x3002;&#x53EF;&#x4EE5;&#x7372;&#x5F97;&#x4E0B;&#x9762;&#x7684;&#x7D50;&#x679C;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/getting-started/textures_combined.png" alt=""></p>
+<p>&#x4F60;&#x53EF;&#x80FD;&#x6CE8;&#x610F;&#x5230;&#x7D0B;&#x7406;&#x4E0A;&#x4E0B;&#x985B;&#x5012;&#x4E86;&#xFF01;&#x9019;&#x662F;&#x56E0;&#x70BA;OpenGL&#x8981;&#x6C42;y&#x8EF8;0.0&#x5EA7;&#x6A19;&#x662F;&#x5728;&#x5716;&#x7247;&#x7684;&#x4E0B;&#x9762;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5716;&#x7247;&#x901A;&#x5E38;y&#x8EF8;0.0&#x5EA7;&#x6A19;&#x5728;&#x4E0A;&#x9762;&#x3002;&#x4E00;&#x4E9B;&#x5716;&#x7247;&#x52A0;&#x8F09;&#x5668;&#x6BD4;&#x5982;DevIL&#x5728;&#x52A0;&#x8F09;&#x7684;&#x6642;&#x5019;&#x6709;&#x9078;&#x9805;&#x91CD;&#x7F6E;y&#x539F;&#x9EDE;&#xFF0C;&#x4F46;&#x662F;SOIL&#x6C92;&#x6709;&#x3002;SOIL&#x6709;&#x4E00;&#x500B;&#x53EB;&#x505A;<code>SOIL_load_OGL_texture</code>&#x51FD;&#x6578;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x500B;&#x53EB;&#x505A;<code>SOIL_FLAG_INVERT_Y</code>&#x7684;&#x6A19;&#x8A18;&#x52A0;&#x8F09;&#x548C;&#x751F;&#x6210;&#x7D0B;&#x7406;&#xFF0C;&#x5B83;&#x7528;&#x4F86;&#x89E3;&#x6C7A;&#x6211;&#x5011;&#x7684;&#x554F;&#x984C;&#x3002;&#x4E0D;&#x904E;&#x9019;&#x500B;&#x51FD;&#x6578;&#x5728;&#x73FE;&#x4EE3;OpenGL&#x4E2D;&#x7684;&#x9019;&#x500B;&#x7279;&#x6027;&#x5931;&#x6548;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x73FE;&#x5728;&#x6211;&#x5011;&#x5FC5;&#x9808;&#x5805;&#x6301;&#x4F7F;&#x7528;<code>SOIL_load_image</code>&#xFF0C;&#x81EA;&#x5DF1;&#x505A;&#x7D0B;&#x7406;&#x751F;&#x6210;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x4FEE;&#x5FA9;&#x6211;&#x5011;&#x7684;&#x5C0F;&#x554F;&#x984C;&#xFF0C;&#x6709;&#x5169;&#x500B;&#x9078;&#x64C7;&#xFF1A;</p>
+<ol>
+<li>&#x6211;&#x5011;&#x5207;&#x63DB;&#x9802;&#x9EDE;&#x6578;&#x64DA;&#x7684;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#xFF0C;&#x7FFB;&#x8F49;<code>y</code>&#x503C;(&#x7528;1&#x6E1B;&#x53BB;y&#x5EA7;&#x6A19;)&#x3002;</li>
+<li>&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x7DE8;&#x8F2F;&#x9802;&#x9EDE;&#x8457;&#x8272;&#x5668;&#x4F86;&#x7FFB;&#x8F49;<code>y</code>&#x5EA7;&#x6A19;&#xFF0C;&#x81EA;&#x52D5;&#x66FF;&#x63DB;<code>TexCoord</code>&#x8CE6;&#x503C;&#xFF1A;<code>TexCoord = vec2(texCoord.x, 1 &#x2013; texCoord.y);</code></li>
+</ol>
+<p>!!! Attention</p>
+<pre><code>    &#x9019;&#x500B;&#x63D0;&#x4F9B;&#x7684;&#x89E3;&#x6C7A;&#x65B9;&#x6848;&#x5C0D;&#x5716;&#x7247;&#x7FFB;&#x8F49;&#x9032;&#x884C;&#x4E86;&#x4E00;&#x9EDE;hack&#x3002;&#x5927;&#x591A;&#x6578;&#x60C5;&#x6CC1;&#x90FD;&#x80FD;&#x5DE5;&#x4F5C;&#xFF0C;&#x4F46;&#x662F;&#x4ECD;&#x7136;&#x57F7;&#x884C;&#x8D77;&#x4F86;&#x4EE5;&#x4F86;&#x7D0B;&#x7406;&#xFF0C;&#x6240;&#x4EE5;&#x6700;&#x597D;&#x7684;&#x89E3;&#x6C7A;&#x65B9;&#x6848;&#x662F;&#x63DB;&#x4E00;&#x500B;&#x5716;&#x7247;&#x52A0;&#x8F09;&#x5668;&#xFF0C;&#x6216;&#x8005;&#x4EE5;&#x4E00;&#x7A2E;y&#x539F;&#x9EDE;&#x7B26;&#x5408;OpenGL&#x9700;&#x6C42;&#x7684;&#x65B9;&#x5F0F;&#x7DE8;&#x8F2F;&#x4F60;&#x7684;&#x7D0B;&#x7406;&#x5716;&#x50CF;&#x3002;
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x7DE8;&#x8F2F;&#x4E86;&#x9802;&#x9EDE;&#x6578;&#x64DA;&#xFF0C;&#x5728;&#x9802;&#x9EDE;&#x8457;&#x8272;&#x5668;&#x4E2D;&#x7FFB;&#x8F49;&#x4E86;&#x7E31;&#x5EA7;&#x6A19;&#xFF0C;&#x4F60;&#x6703;&#x5F97;&#x5230;&#x4E0B;&#x9762;&#x7684;&#x7D50;&#x679C;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/getting-started/textures_combined2.png" alt=""></p>
+<h3 id="%E7%B7%B4%E7%BF%92">&#x7DF4;&#x7FD2;</h3>
+<p>&#x70BA;&#x4E86;&#x66F4;&#x719F;&#x7DF4;&#x5730;&#x4F7F;&#x7528;&#x7D0B;&#x7406;&#xFF0C;&#x5EFA;&#x8B70;&#x5728;&#x7E7C;&#x7E8C;&#x4E4B;&#x5F8C;&#x7684;&#x5B78;&#x7FD2;&#x4E4B;&#x524D;&#x505A;&#x5B8C;&#x9019;&#x4E9B;&#x7DF4;&#x7FD2;&#xFF1A;</p>
+<ul>
+<li>&#x4F7F;&#x7528;&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;<strong>&#x50C5;</strong>&#x5C0D;&#x7B11;&#x81C9;&#x5716;&#x6848;&#x9032;&#x884C;&#x7FFB;&#x8F49;&#xFF0C;<a href="http://learnopengl.com/code_viewer.php?code=getting-started/textures-exercise1" target="_blank">&#x53C3;&#x8003;&#x89E3;&#x7B54;</a></li>
+<li>&#x5617;&#x8A66;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x7D0B;&#x7406;&#x74B0;&#x7E5E;&#x65B9;&#x5F0F;&#xFF0C;&#x4E26;&#x5C07;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x7684;&#x7BC4;&#x570D;&#x8A2D;&#x5B9A;&#x70BA;&#x5F9E;<code>0.0f</code>&#x5230;<code>2.0f</code>&#x800C;&#x4E0D;&#x662F;&#x539F;&#x4F86;&#x7684;<code>0.0f</code>&#x5230;<code>1.0f</code>&#xFF0C;&#x5728;&#x6728;&#x7BB1;&#x5B50;&#x7684;&#x89D2;&#x843D;&#x653E;&#x7F6E;4&#x500B;&#x7B11;&#x81C9;&#xFF1A;<a href="http://learnopengl.com/code_viewer.php?code=getting-started/textures-exercise2" target="_blank">&#x53C3;&#x8003;&#x89E3;&#x7B54;</a>&#xFF0C;<a href="http://learnopengl.com/img/getting-started/textures_exercise2.png" target="_blank">&#x7D50;&#x679C;</a>&#x3002;&#x8A18;&#x5F97;&#x4E00;&#x5B9A;&#x8981;&#x8A66;&#x8A66;&#x5176;&#x4ED6;&#x7684;&#x74B0;&#x7E5E;&#x65B9;&#x5F0F;&#x3002;</li>
+<li>&#x5617;&#x8A66;&#x5728;&#x77E9;&#x5F62;&#x7BC4;&#x570D;&#x5167;&#x53EA;&#x986F;&#x793A;&#x7D0B;&#x7406;&#x5716;&#x7684;&#x4E2D;&#x9593;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x4E26;&#x901A;&#x904E;&#x4FEE;&#x6539;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x4F86;&#x8A2D;&#x7F6E;&#x986F;&#x793A;&#x6548;&#x679C;&#x3002;&#x5617;&#x8A66;&#x4F7F;&#x7528;<code>GL_NEAREST</code>&#x7684;&#x7D0B;&#x7406;&#x904E;&#x6FFE;&#x65B9;&#x5F0F;&#x8B93;&#x5716;&#x50CF;&#x986F;&#x793A;&#x5F97;&#x66F4;&#x6E05;&#x6670;&#xFF1A;<a href="http://learnopengl.com/code_viewer.php?code=getting-started/textures-exercise3" target="_blank">&#x53C3;&#x8003;&#x89E3;&#x7B54;</a></li>
+<li>&#x4F7F;&#x7528;&#x4E00;&#x500B;uniform&#x8B8A;&#x91CF;&#x4F5C;&#x70BA;<code>mix</code>&#x51FD;&#x6578;&#x7684;&#x7B2C;&#x4E09;&#x500B;&#x53C3;&#x6578;&#x4F86;&#x6539;&#x8B8A;&#x5169;&#x500B;&#x7D0B;&#x7406;&#x53EF;&#x898B;&#x5EA6;&#xFF0C;&#x4F7F;&#x7528;&#x4E0A;&#x548C;&#x4E0B;&#x9375;&#x4F86;&#x6539;&#x8B8A;&#x5BB9;&#x5668;&#x7684;&#x5927;&#x5C0F;&#x548C;&#x7B11;&#x81C9;&#x662F;&#x5426;&#x53EF;&#x898B;&#xFF1A;<a href="http://learnopengl.com/code_viewer.php?code=getting-started/textures-exercise4" target="_blank">&#x53C3;&#x8003;&#x89E3;&#x7B54;</a>&#xFF0C;<a href="http://learnopengl.com/code_viewer.php?code=getting-started/textures-exercise4_fragment" target="_blank">&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;</a>&#x3002;</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../01_getting_started/05_shaders.html" class="navigation navigation-prev " aria-label="Previous page: 著色器"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../01_getting_started/07_transformations.html" class="navigation navigation-next " aria-label="Next page: 變換"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-google_code_prettify/google-code-prettify.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-google_code_prettify/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-collapsible-menu/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-maxiang/maxiang.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book LearnOpenGL-CN -->
+</html>

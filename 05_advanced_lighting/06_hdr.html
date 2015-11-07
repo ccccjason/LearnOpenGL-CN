@@ -1,0 +1,1014 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <!-- Start book LearnOpenGL-CN -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>HDR | LearnOpenGL-CN</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.4.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-google_code_prettify/google-code-prettify.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-maxiang/maxiang.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../05_advanced_lighting/07_bloom.html" />
+    
+    
+    <link rel="prev" href="../05_advanced_lighting/05_parallax_mapping.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book" data-level="5.5" data-basepath=".." data-revision="Sun Nov 08 2015 03:25:42 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search" role="search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        LearnOpenGL-CN
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01_getting_started/01_opengl.html">
+            
+                
+                    <a href="../01_getting_started/01_opengl.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        入門(Getting started)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01_getting_started/02_creating_a_window.html">
+            
+                
+                    <a href="../01_getting_started/02_creating_a_window.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        創建窗口
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="01_getting_started/03_hello_window.html">
+            
+                
+                    <a href="../01_getting_started/03_hello_window.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.1.</b>
+                        
+                        你好，窗口
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="01_getting_started/04_hello_triangle.html">
+            
+                
+                    <a href="../01_getting_started/04_hello_triangle.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.2.</b>
+                        
+                        你好，三角形
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="01_getting_started/05_shaders.html">
+            
+                
+                    <a href="../01_getting_started/05_shaders.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.3.</b>
+                        
+                        著色器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="01_getting_started/06_textures.html">
+            
+                
+                    <a href="../01_getting_started/06_textures.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.4.</b>
+                        
+                        紋理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="01_getting_started/07_transformations.html">
+            
+                
+                    <a href="../01_getting_started/07_transformations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.5.</b>
+                        
+                        變換
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="01_getting_started/08_coordinate_systems.html">
+            
+                
+                    <a href="../01_getting_started/08_coordinate_systems.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.6.</b>
+                        
+                        座標系統
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="01_getting_started/09_camera.html">
+            
+                
+                    <a href="../01_getting_started/09_camera.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.7.</b>
+                        
+                        攝像機
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="01_getting_started/10_review.html">
+            
+                
+                    <a href="../01_getting_started/10_review.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.8.</b>
+                        
+                        複習
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02_creating_a_window/01_colors.html">
+            
+            <span><b>2.</b> 光照(Lighting)</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02_lighting/01_colors.html">
+            
+                
+                    <a href="../02_lighting/01_colors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        顏色
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02_lighting/02_basic_lighting.html">
+            
+                
+                    <a href="../02_lighting/02_basic_lighting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        光照基礎
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02_lighting/03_materials.html">
+            
+                
+                    <a href="../02_lighting/03_materials.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        材質
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02_lighting/04_hello_triangle.html">
+            
+            <span><b>2.4.</b> 光照貼圖</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="02_lighting/05_light_casters.html">
+            
+                
+                    <a href="../02_lighting/05_light_casters.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        投光物
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="02_lighting/06_multiple_lights.html">
+            
+                
+                    <a href="../02_lighting/06_multiple_lights.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        多光源
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="02_lighting/07_review.html">
+            
+                
+                    <a href="../02_lighting/07_review.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        複習
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03_model_loading/01_assimp.html">
+            
+                
+                    <a href="../03_model_loading/01_assimp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        加載模型(Model Loading)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03_model_loading/02_mesh.html">
+            
+                
+                    <a href="../03_model_loading/02_mesh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        網格
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03_model_loading/03_model.html">
+            
+                
+                    <a href="../03_model_loading/03_model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        模型
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04_advanced_opengl/01_depth_testing.html">
+            
+                
+                    <a href="../04_advanced_opengl/01_depth_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        高級OpenGL(Advanced OpenGL)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04_advanced_opengl/02_stencil_testing.html">
+            
+                
+                    <a href="../04_advanced_opengl/02_stencil_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        模板測試
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04_advanced_opengl/03_blending.html">
+            
+                
+                    <a href="../04_advanced_opengl/03_blending.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        混合
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04_advanced_opengl/04_face_culling.html">
+            
+                
+                    <a href="../04_advanced_opengl/04_face_culling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        面剔除
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04_advanced_opengl/05_framebuffers.html">
+            
+                
+                    <a href="../04_advanced_opengl/05_framebuffers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        幀緩衝
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04_advanced_opengl/06_cubemaps.html">
+            
+                
+                    <a href="../04_advanced_opengl/06_cubemaps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        立方體貼圖
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="04_advanced_opengl/07_advanced_data.html">
+            
+                
+                    <a href="../04_advanced_opengl/07_advanced_data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        高級數據
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="04_advanced_opengl/08_advanced_glsl.html">
+            
+                
+                    <a href="../04_advanced_opengl/08_advanced_glsl.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        高級GLSL
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="04_advanced_opengl/09_geometry_shader.html">
+            
+                
+                    <a href="../04_advanced_opengl/09_geometry_shader.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        幾何著色器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="04_advanced_opengl/10_instancing.html">
+            
+                
+                    <a href="../04_advanced_opengl/10_instancing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        實例化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="04_advanced_opengl/11_anti_aliasing.html">
+            
+                
+                    <a href="../04_advanced_opengl/11_anti_aliasing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.10.</b>
+                        
+                        抗鋸齒
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05_advanced_lighting/01_advanced_lighting.html">
+            
+                
+                    <a href="../05_advanced_lighting/01_advanced_lighting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        高級光照(Advanced Lighting)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05_advanced_lighting/02_gamma_correction.html">
+            
+                
+                    <a href="../05_advanced_lighting/02_gamma_correction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Gamma校正
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05_advanced_lighting/03_shadows/01_shadow_mapping.html">
+            
+                
+                    <a href="../05_advanced_lighting/03_shadows/01_shadow_mapping.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        陰影
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="05_advanced_lighting/03_shadows/02_point_shadows.html">
+            
+                
+                    <a href="../05_advanced_lighting/03_shadows/02_point_shadows.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.1.</b>
+                        
+                        點陰影
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="05_advanced_lighting/03_shadows/03_csm.html">
+            
+                
+                    <a href="../05_advanced_lighting/03_shadows/03_csm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.2.</b>
+                        
+                        CSM
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05_advanced_lighting/04_normal_mapping.html">
+            
+                
+                    <a href="../05_advanced_lighting/04_normal_mapping.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        法線貼圖
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05_advanced_lighting/05_parallax_mapping.html">
+            
+                
+                    <a href="../05_advanced_lighting/05_parallax_mapping.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        視差貼圖
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.5" data-path="05_advanced_lighting/06_hdr.html">
+            
+                
+                    <a href="../05_advanced_lighting/06_hdr.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        HDR
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="05_advanced_lighting/07_bloom.html">
+            
+                
+                    <a href="../05_advanced_lighting/07_bloom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        泛光
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="05_advanced_lighting/08_deferred_shading.html">
+            
+                
+                    <a href="../05_advanced_lighting/08_deferred_shading.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        延遲著色法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="05_advanced_lighting/09_ssao.html">
+            
+                
+                    <a href="../05_advanced_lighting/09_ssao.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        SSAO
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >LearnOpenGL-CN</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <p>&#x672C;&#x6587;&#x4F5C;&#x8005;JoeyDeVries&#xFF0C;&#x7531;Meow J&#x7FFB;&#x8B6F;&#x81EA;<a href="http://learnopengl.com/#!Advanced-Lighting/HDR" target="_blank">http://learnopengl.com</a></p>
+<h2 id="hdr">HDR</h2>
+<p>&#x4E00;&#x822C;&#x4F86;&#x8AAA;&#xFF0C;&#x7576;&#x5B58;&#x5132;&#x5728;&#x5E40;&#x7DE9;&#x885D;(Framebuffer)&#x4E2D;&#x6642;&#xFF0C;&#x4EAE;&#x5EA6;&#x548C;&#x984F;&#x8272;&#x7684;&#x503C;&#x662F;&#x9ED8;&#x8A8D;&#x88AB;&#x9650;&#x5236;&#x5728;0.0&#x5230;1.0&#x4E4B;&#x9593;&#x7684;. &#x9019;&#x500B;&#x770B;&#x8D77;&#x4F86;&#x7121;&#x8F9C;&#x7684;&#x8A9E;&#x53E5;&#x4F7F;&#x6211;&#x5011;&#x4E00;&#x76F4;&#x5C07;&#x4EAE;&#x5EA6;&#x8207;&#x984F;&#x8272;&#x7684;&#x503C;&#x8A2D;&#x7F6E;&#x5728;&#x9019;&#x500B;&#x7BC4;&#x570D;&#x5167;&#xFF0C;&#x5617;&#x8A66;&#x8457;&#x8207;&#x5834;&#x666F;&#x5951;&#x5408;. &#x9019;&#x6A23;&#x662F;&#x80FD;&#x5920;&#x904B;&#x884C;&#x7684;&#xFF0C;&#x4E5F;&#x80FD;&#x7D66;&#x51FA;&#x9084;&#x4E0D;&#x932F;&#x7684;&#x6548;&#x679C;. &#x4F46;&#x662F;&#x5982;&#x679C;&#x6211;&#x5011;&#x9047;&#x4E0A;&#x4E86;&#x4E00;&#x500B;&#x7279;&#x5B9A;&#x7684;&#x5340;&#x57DF;&#xFF0C;&#x5176;&#x4E2D;&#x6709;&#x591A;&#x500B;&#x4EAE;&#x5149;&#x6E90;&#x4F7F;&#x9019;&#x4E9B;&#x6578;&#x503C;&#x7E3D;&#x548C;&#x8D85;&#x904E;&#x4E86;1.0&#xFF0C;&#x53C8;&#x6703;&#x767C;&#x751F;&#x4EC0;&#x9EBC;&#x5462;? &#x7B54;&#x6848;&#x662F;&#x9019;&#x4E9B;&#x7247;&#x6BB5;&#x4E2D;&#x8D85;&#x904E;1.0&#x7684;&#x4EAE;&#x5EA6;&#x6216;&#x8005;&#x984F;&#x8272;&#x503C;&#x6703;&#x88AB;&#x7D04;&#x675F;&#x5728;1.0, &#x5F9E;&#x800C;&#x5C0E;&#x81F4;&#x5834;&#x666F;&#x6DF7;&#x6210;&#x4E00;&#x7247;&#xFF0C;&#x96E3;&#x4EE5;&#x5206;&#x8FA8;:</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/hdr_clamped.png" alt=""></p>
+<p>&#x9019;&#x662F;&#x7531;&#x65BC;&#x5927;&#x91CF;&#x7247;&#x6BB5;&#x7684;&#x984F;&#x8272;&#x503C;&#x90FD;&#x975E;&#x5E38;&#x63A5;&#x8FD1;1.0&#xFF0C;&#x5728;&#x5F88;&#x5927;&#x4E00;&#x500B;&#x5340;&#x57DF;&#x5167;&#x6BCF;&#x4E00;&#x500B;&#x4EAE;&#x7684;&#x7247;&#x6BB5;&#x90FD;&#x6709;&#x76F8;&#x540C;&#x7684;&#x767D;&#x8272;. &#x9019;&#x640D;&#x5931;&#x4E86;&#x5F88;&#x591A;&#x7684;&#x7D30;&#x7BC0;&#xFF0C;&#x4F7F;&#x5834;&#x666F;&#x770B;&#x8D77;&#x4F86;&#x975E;&#x5E38;&#x5047;.</p>
+<p>&#x89E3;&#x6C7A;&#x9019;&#x500B;&#x554F;&#x984C;&#x7684;&#x4E00;&#x500B;&#x65B9;&#x6848;&#x662F;&#x6E1B;&#x5C0F;&#x5149;&#x6E90;&#x7684;&#x5F37;&#x5EA6;&#x5F9E;&#x800C;&#x4FDD;&#x8B49;&#x5834;&#x666F;&#x5167;&#x6C92;&#x6709;&#x4E00;&#x500B;&#x7247;&#x6BB5;&#x4EAE;&#x65BC;1.0. &#x7136;&#x800C;&#x9019;&#x4E26;&#x4E0D;&#x662F;&#x4E00;&#x500B;&#x597D;&#x7684;&#x65B9;&#x6848;&#xFF0C;&#x56E0;&#x70BA;&#x4F60;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x4E0D;&#x5207;&#x5BE6;&#x969B;&#x7684;&#x5149;&#x7167;&#x53C3;&#x6578;. &#x4E00;&#x500B;&#x66F4;&#x597D;&#x7684;&#x65B9;&#x6848;&#x662F;&#x8B93;&#x984F;&#x8272;&#x66AB;&#x6642;&#x8D85;&#x904E;1.0&#xFF0C;&#x7136;&#x5F8C;&#x5C07;&#x5176;&#x8F49;&#x63DB;&#x81F3;0.0&#x5230;1.0&#x7684;&#x5340;&#x9593;&#x5167;&#xFF0C;&#x5F9E;&#x800C;&#x9632;&#x6B62;&#x640D;&#x5931;&#x7D30;&#x7BC0;.</p>
+<p>&#x986F;&#x793A;&#x5668;&#x88AB;&#x9650;&#x5236;&#x70BA;&#x53EA;&#x80FD;&#x986F;&#x793A;&#x503C;&#x70BA;0.0&#x5230;1.0&#x9593;&#x7684;&#x984F;&#x8272;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x5149;&#x7167;&#x65B9;&#x7A0B;&#x4E2D;&#x537B;&#x6C92;&#x6709;&#x9019;&#x500B;&#x9650;&#x5236;. &#x901A;&#x904E;&#x4F7F;&#x7247;&#x6BB5;&#x7684;&#x984F;&#x8272;&#x8D85;&#x904E;1.0&#xFF0C;&#x6211;&#x5011;&#x6709;&#x4E86;&#x4E00;&#x500B;&#x66F4;&#x5927;&#x7684;&#x984F;&#x8272;&#x7BC4;&#x570D;&#xFF0C;&#x9019;&#x4E5F;&#x88AB;&#x7A31;&#x4F5C;HDR(High Dynamic Range, &#x9AD8;&#x52D5;&#x614B;&#x7BC4;&#x570D;). &#x6709;&#x4E86;HDR&#xFF0C;&#x4EAE;&#x7684;&#x6771;&#x897F;&#x53EF;&#x4EE5;&#x8B8A;&#x5F97;&#x975E;&#x5E38;&#x4EAE;&#xFF0C;&#x6697;&#x7684;&#x6771;&#x897F;&#x53EF;&#x4EE5;&#x8B8A;&#x5F97;&#x975E;&#x5E38;&#x6697;&#xFF0C;&#x800C;&#x4E14;&#x5145;&#x6EFF;&#x7D30;&#x7BC0;.</p>
+<p>HDR&#x539F;&#x672C;&#x53EA;&#x662F;&#x88AB;&#x904B;&#x7528;&#x5728;&#x651D;&#x5F71;&#x4E0A;&#xFF0C;&#x651D;&#x5F71;&#x5E2B;&#x5C0D;&#x540C;&#x4E00;&#x500B;&#x5834;&#x666F;&#x63A1;&#x53D6;&#x4E0D;&#x540C;&#x66DD;&#x5149;&#x62CD;&#x591A;&#x5F35;&#x7167;&#x7247;&#xFF0C;&#x6355;&#x6349;&#x5927;&#x7BC4;&#x570D;&#x7684;&#x8272;&#x5F69;&#x503C;. &#x9019;&#x4E9B;&#x5716;&#x7247;&#x88AB;&#x5408;&#x6210;&#x70BA;HDR&#x5716;&#x7247;&#xFF0C;&#x5F9E;&#x800C;&#x7D9C;&#x5408;&#x4E0D;&#x540C;&#x7684;&#x66DD;&#x5149;&#x7B49;&#x7D1A;&#x4F7F;&#x5F97;&#x5927;&#x7BC4;&#x570D;&#x7684;&#x7D30;&#x7BC0;&#x53EF;&#x898B;. &#x770B;&#x4E0B;&#x9762;&#x9019;&#x500B;&#x4F8B;&#x5B50;&#xFF0C;&#x5DE6;&#x908A;&#x9019;&#x5F35;&#x5716;&#x7247;&#x5728;&#x88AB;&#x5149;&#x7167;&#x4EAE;&#x7684;&#x5340;&#x57DF;&#x5145;&#x6EFF;&#x7D30;&#x7BC0;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x9ED1;&#x6697;&#x7684;&#x5340;&#x57DF;&#x5C31;&#x4EC0;&#x9EBC;&#x90FD;&#x770B;&#x4E0D;&#x898B;&#x4E86;&#xFF1B;&#x4F46;&#x662F;&#x53F3;&#x908A;&#x9019;&#x5F35;&#x5716;&#x7684;&#x9AD8;&#x66DD;&#x5149;&#x537B;&#x53EF;&#x4EE5;&#x8B93;&#x4E4B;&#x524D;&#x770B;&#x4E0D;&#x51FA;&#x4F86;&#x7684;&#x9ED1;&#x6697;&#x5340;&#x57DF;&#x986F;&#x73FE;&#x51FA;&#x4F86;.</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/hdr_image.png" alt=""></p>
+<p>&#x9019;&#x8207;&#x6211;&#x5011;&#x773C;&#x775B;&#x5DE5;&#x4F5C;&#x7684;&#x539F;&#x7406;&#x975E;&#x5E38;&#x76F8;&#x4F3C;&#xFF0C;&#x4E5F;&#x662F;HDR&#x6E32;&#x67D3;&#x7684;&#x57FA;&#x790E;. &#x7576;&#x5149;&#x7DDA;&#x5F88;&#x5F31;&#x7684;&#x5565;&#x6642;&#x5019;&#xFF0C;&#x4EBA;&#x773C;&#x6703;&#x81EA;&#x52D5;&#x8ABF;&#x6574;&#x5F9E;&#x800C;&#x4F7F;&#x904E;&#x6697;&#x548C;&#x904E;&#x4EAE;&#x7684;&#x90E8;&#x5206;&#x8B8A;&#x5F97;&#x66F4;&#x6E05;&#x6670;&#xFF0C;&#x5C31;&#x50CF;&#x4EBA;&#x773C;&#x6709;&#x4E00;&#x500B;&#x80FD;&#x81EA;&#x52D5;&#x6839;&#x64DA;&#x5834;&#x666F;&#x4EAE;&#x5EA6;&#x8ABF;&#x6574;&#x7684;&#x81EA;&#x52D5;&#x66DD;&#x5149;&#x6ED1;&#x584A;.</p>
+<p>HDR&#x6E32;&#x67D3;&#x548C;&#x5176;&#x5F88;&#x76F8;&#x4F3C;&#xFF0C;&#x6211;&#x5011;&#x5141;&#x8A31;&#x7528;&#x66F4;&#x5927;&#x7BC4;&#x570D;&#x7684;&#x984F;&#x8272;&#x503C;&#x6E32;&#x67D3;&#x5F9E;&#x800C;&#x7372;&#x53D6;&#x5927;&#x7BC4;&#x570D;&#x7684;&#x9ED1;&#x6697;&#x8207;&#x660E;&#x4EAE;&#x7684;&#x5834;&#x666F;&#x7D30;&#x7BC0;&#xFF0C;&#x6700;&#x5F8C;&#x5C07;&#x6240;&#x6709;HDR&#x503C;&#x8F49;&#x63DB;&#x6210;&#x5728;[0.0, 1.0]&#x7BC4;&#x570D;&#x7684;LDR(Low Dynamic Range,&#x4F4E;&#x52D5;&#x614B;&#x7BC4;&#x570D;). &#x8F49;&#x63DB;HDR&#x503C;&#x5230;LDR&#x503C;&#x5F97;&#x904E;&#x7A0B;&#x53EB;&#x505A;&#x8272;&#x8ABF;&#x6620;&#x5C04;(Tone Mapping)&#xFF0C;&#x73FE;&#x5728;&#x73FE;&#x5B58;&#x6709;&#x5F88;&#x591A;&#x7684;&#x8272;&#x8ABF;&#x6620;&#x5C04;&#x7B97;&#x6CD5;&#xFF0C;&#x9019;&#x4E9B;&#x7B97;&#x6CD5;&#x81F4;&#x529B;&#x65BC;&#x5728;&#x8F49;&#x63DB;&#x904E;&#x7A0B;&#x4E2D;&#x4FDD;&#x7559;&#x5118;&#x53EF;&#x80FD;&#x591A;&#x7684;HDR&#x7D30;&#x7BC0;. &#x9019;&#x4E9B;&#x8272;&#x8ABF;&#x6620;&#x5C04;&#x7B97;&#x6CD5;&#x7D93;&#x5E38;&#x6703;&#x5305;&#x542B;&#x4E00;&#x500B;&#x9078;&#x64C7;&#x6027;&#x50BE;&#x5411;&#x9ED1;&#x6697;&#x6216;&#x8005;&#x660E;&#x4EAE;&#x5340;&#x57DF;&#x7684;&#x53C3;&#x6578;.</p>
+<p>&#x5728;&#x5BE6;&#x6642;&#x6E32;&#x67D3;&#x4E2D;&#xFF0C;HDR&#x4E0D;&#x50C5;&#x5141;&#x8A31;&#x6211;&#x5011;&#x8D85;&#x904E;LDR&#x7684;&#x7BC4;&#x570D;[0.0, 1.0]&#x8207;&#x4FDD;&#x7559;&#x66F4;&#x591A;&#x7684;&#x7D30;&#x7BC0;&#xFF0C;&#x540C;&#x6642;&#x9084;&#x8B93;&#x6211;&#x5011;&#x80FD;&#x5920;&#x6839;&#x64DA;&#x5149;&#x6E90;&#x7684;<strong>&#x771F;&#x5BE6;</strong>&#x5F37;&#x5EA6;&#x6307;&#x5B9A;&#x5B83;&#x7684;&#x5F37;&#x5EA6;. &#x6BD4;&#x5982;&#x592A;&#x967D;&#x6709;&#x6BD4;&#x9583;&#x5149;&#x71C8;&#x4E4B;&#x985E;&#x7684;&#x6771;&#x897F;&#x66F4;&#x9AD8;&#x7684;&#x5F37;&#x5EA6;&#xFF0C;&#x90A3;&#x9EBC;&#x6211;&#x5011;&#x70BA;&#x4EC0;&#x9EBC;&#x4E0D;&#x9019;&#x6A23;&#x5B50;&#x8A2D;&#x7F6E;&#x5462;?(&#x6BD4;&#x5982;&#x8AAA;&#x8A2D;&#x7F6E;&#x4E00;&#x500B;10.0&#x7684;&#x6F2B;&#x4EAE;&#x5EA6;) &#x9019;&#x5141;&#x8A31;&#x6211;&#x5011;&#x7528;&#x66F4;&#x73FE;&#x5BE6;&#x7684;&#x5149;&#x7167;&#x53C3;&#x6578;&#x6070;&#x7576;&#x5730;&#x914D;&#x7F6E;&#x4E00;&#x500B;&#x5834;&#x666F;&#x7684;&#x5149;&#x7167;&#xFF0C;&#x800C;&#x9019;&#x5728;LDR&#x6E32;&#x67D3;&#x4E2D;&#x662F;&#x4E0D;&#x80FD;&#x5BE6;&#x73FE;&#x7684;&#xFF0C;&#x56E0;&#x70BA;&#x4ED6;&#x5011;&#x6703;&#x88AB;&#x4E0A;&#x9650;&#x7D04;&#x675F;&#x5728;1.0.</p>
+<p>&#x56E0;&#x70BA;&#x986F;&#x793A;&#x5668;&#x53EA;&#x80FD;&#x986F;&#x793A;&#x5728;0.0&#x5230;1.0&#x7BC4;&#x570D;&#x4E4B;&#x5167;&#x7684;&#x984F;&#x8272;&#xFF0C;&#x6211;&#x5011;&#x80AF;&#x5B9A;&#x8981;&#x505A;&#x4E00;&#x4E9B;&#x8F49;&#x63DB;&#x5F9E;&#x800C;&#x4F7F;&#x5F97;&#x7576;&#x524D;&#x7684;HDR&#x984F;&#x8272;&#x503C;&#x7B26;&#x5408;&#x986F;&#x793A;&#x5668;&#x7684;&#x7BC4;&#x570D;. &#x7C21;&#x55AE;&#x5730;&#x53D6;&#x5E73;&#x5747;&#x503C;&#x91CD;&#x65B0;&#x8F49;&#x63DB;&#x9019;&#x4E9B;&#x984F;&#x8272;&#x503C;&#x4E26;&#x4E0D;&#x80FD;&#x5F88;&#x597D;&#x7684;&#x89E3;&#x6C7A;&#x9019;&#x500B;&#x554F;&#x984C;&#xFF0C;&#x56E0;&#x70BA;&#x660E;&#x4EAE;&#x7684;&#x5730;&#x65B9;&#x6703;&#x986F;&#x5F97;&#x66F4;&#x52A0;&#x986F;&#x8457;. &#x6211;&#x5011;&#x80FD;&#x505A;&#x7684;&#x662F;&#x7528;&#x4E00;&#x500B;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x7A0B;&#x8207;/&#x6216;&#x66F2;&#x7DDA;&#x4F86;&#x8F49;&#x63DB;&#x9019;&#x4E9B;HDR&#x503C;&#x5230;LDR&#x503C;&#xFF0C;&#x5F9E;&#x800C;&#x7D66;&#x6211;&#x5011;&#x5C0D;&#x65BC;&#x5834;&#x666F;&#x7684;&#x4EAE;&#x5EA6;&#x5B8C;&#x5168;&#x638C;&#x63A7;&#xFF0C;&#x9019;&#x5C31;&#x662F;&#x4E4B;&#x524D;&#x8AAA;&#x7684;&#x8272;&#x8ABF;&#x8B8A;&#x63DB;&#xFF0C;&#x4E5F;&#x662F;HDR&#x6E32;&#x67D3;&#x7684;&#x6700;&#x7D42;&#x6B65;&#x9A5F;.</p>
+<h3 id="%E6%B5%AE%E9%BB%9E%E5%B9%80%E7%B7%A9%E8%A1%9D-floating-point-framebuffers">&#x6D6E;&#x9EDE;&#x5E40;&#x7DE9;&#x885D;(Floating Point Framebuffers)</h3>
+<p>&#x5728;&#x5BE6;&#x73FE;HDR&#x6E32;&#x67D3;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x5011;&#x9996;&#x5148;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x9632;&#x6B62;&#x984F;&#x8272;&#x503C;&#x5728;&#x6BCF;&#x4E00;&#x500B;&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;&#x904B;&#x884C;&#x5F8C;&#x88AB;&#x9650;&#x5236;&#x7D04;&#x675F;&#x7684;&#x65B9;&#x6CD5;. &#x7576;&#x5E40;&#x7DE9;&#x885D;&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x500B;&#x6A19;&#x6E96;&#x5316;&#x7684;&#x5B9A;&#x9EDE;&#x683C;&#x5F0F;(&#x50CF;<code>GL_RGB</code>)&#x70BA;&#x5176;&#x984F;&#x8272;&#x7DE9;&#x885D;&#x7684;&#x5167;&#x90E8;&#x683C;&#x5F0F;&#xFF0C;OpenGL&#x6703;&#x5728;&#x5C07;&#x9019;&#x4E9B;&#x503C;&#x5B58;&#x5165;&#x5E40;&#x7DE9;&#x885D;&#x524D;&#x81EA;&#x52D5;&#x5C07;&#x5176;&#x7D04;&#x675F;&#x5230;0.0&#x5230;1.0&#x4E4B;&#x9593;. &#x9019;&#x4E00;&#x64CD;&#x4F5C;&#x5C0D;&#x5927;&#x90E8;&#x5206;&#x5E40;&#x7DE9;&#x885D;&#x683C;&#x5F0F;&#x90FD;&#x662F;&#x6210;&#x7ACB;&#x7684;&#xFF0C;&#x9664;&#x4E86;&#x5C08;&#x9580;&#x7528;&#x4F86;&#x5B58;&#x653E;&#x88AB;&#x62D3;&#x5C55;&#x7BC4;&#x570D;&#x503C;&#x7684;&#x6D6E;&#x9EDE;&#x683C;&#x5F0F;.</p>
+<p>&#x7576;&#x4E00;&#x500B;&#x5E40;&#x7DE9;&#x885D;&#x7684;&#x984F;&#x8272;&#x7DE9;&#x885D;&#x7684;&#x5167;&#x90E8;&#x683C;&#x5F0F;&#x88AB;&#x8A2D;&#x5B9A;&#x6210;&#x4E86;<code>GL_RGB16F</code>, <code>GL_RGBA16F</code>, <code>GL_RGB32F</code> &#x6216;&#x8005;<code>GL_RGBA32F</code>&#x6642;&#xFF0C;&#x9019;&#x4E9B;&#x5E40;&#x7DE9;&#x885D;&#x88AB;&#x53EB;&#x505A;&#x6D6E;&#x9EDE;&#x5E40;&#x7DE9;&#x885D;(Floating Point Framebuffer)&#xFF0C;&#x6D6E;&#x9EDE;&#x5E40;&#x7DE9;&#x885D;&#x53EF;&#x4EE5;&#x5B58;&#x5132;&#x8D85;&#x904E;0.0&#x5230;1.0&#x7BC4;&#x570D;&#x7684;&#x6D6E;&#x9EDE;&#x503C;&#xFF0C;&#x6240;&#x4EE5;&#x975E;&#x5E38;&#x9069;&#x5408;HDR&#x6E32;&#x67D3;.</p>
+<p>&#x60F3;&#x8981;&#x5275;&#x5EFA;&#x4E00;&#x500B;&#x6D6E;&#x9EDE;&#x5E40;&#x7DE9;&#x885D;&#xFF0C;&#x6211;&#x5011;&#x53EA;&#x9700;&#x8981;&#x6539;&#x8B8A;&#x984F;&#x8272;&#x7DE9;&#x885D;&#x7684;&#x5167;&#x90E8;&#x683C;&#x5F0F;&#x53C3;&#x6578;&#x5C31;&#x884C;&#x4E86;&#xFF08;&#x6CE8;&#x610F;<code>GL_FLOAT</code>&#x53C3;&#x6578;):</p>
+<pre><code class="lang-c++">glBindTexture(GL_TEXTURE_2D, colorBuffer);
+glTexImage2D(GL_TEXTURE_2D, <span class="hljs-number">0</span>, GL_RGB16F, SCR_WIDTH, SCR_HEIGHT, <span class="hljs-number">0</span>, GL_RGB, GL_FLOAT, <span class="hljs-literal">NULL</span>);
+</code></pre>
+<p>&#x9ED8;&#x8A8D;&#x7684;&#x5E40;&#x7DE9;&#x885D;&#x9ED8;&#x8A8D;&#x4E00;&#x500B;&#x984F;&#x8272;&#x5206;&#x91CF;&#x53EA;&#x4F54;&#x7528;8&#x4F4D;(bits). &#x7576;&#x4F7F;&#x7528;&#x4E00;&#x500B;&#x4F7F;&#x7528;32&#x4F4D;&#x6BCF;&#x984F;&#x8272;&#x5206;&#x91CF;&#x7684;&#x6D6E;&#x9EDE;&#x5E40;&#x7DE9;&#x885D;&#x6642;(&#x4F7F;&#x7528;<code>GL_RGB32F</code> &#x6216;&#x8005;<code>GL_RGBA32F</code>)&#xFF0C;&#x6211;&#x5011;&#x9700;&#x8981;&#x56DB;&#x500D;&#x7684;&#x5167;&#x5B58;&#x4F86;&#x5B58;&#x5132;&#x9019;&#x4E9B;&#x984F;&#x8272;. &#x6240;&#x4EE5;&#x9664;&#x975E;&#x4F60;&#x9700;&#x8981;&#x4E00;&#x500B;&#x975E;&#x5E38;&#x9AD8;&#x7684;&#x7CBE;&#x78BA;&#x5EA6;&#xFF0C;32&#x4F4D;&#x4E0D;&#x662F;&#x5FC5;&#x9808;&#x7684;&#xFF0C;&#x4F7F;&#x7528;<code>GLRGB16F</code>&#x5C31;&#x8DB3;&#x5920;&#x4E86;.</p>
+<p>&#x6709;&#x4E86;&#x4E00;&#x500B;&#x5E36;&#x6709;&#x6D6E;&#x9EDE;&#x984F;&#x8272;&#x7DE9;&#x885D;&#x7684;&#x5E40;&#x7DE9;&#x885D;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x653E;&#x5FC3;&#x6E32;&#x67D3;&#x5834;&#x666F;&#x5230;&#x9019;&#x500B;&#x5E40;&#x7DE9;&#x885D;&#x4E2D;. &#x5728;&#x9019;&#x500B;&#x6559;&#x7A0B;&#x7684;&#x4F8B;&#x5B50;&#x7576;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x5148;&#x6E32;&#x67D3;&#x4E00;&#x500B;&#x5149;&#x7167;&#x7684;&#x5834;&#x666F;&#x5230;&#x6D6E;&#x9EDE;&#x5E40;&#x7DE9;&#x885D;&#x4E2D;&#xFF0C;&#x4E4B;&#x5F8C;&#x518D;&#x5728;&#x4E00;&#x500B;&#x586B;&#x5145;&#x5C4F;&#x5E55;&#x7684;&#x56DB;&#x65B9;&#x5F62;&#x4E0A;&#x61C9;&#x7528;&#x9019;&#x500B;&#x5E40;&#x7DE9;&#x885D;&#x7684;&#x984F;&#x8272;&#x7DE9;&#x885D;&#xFF0C;&#x4EE3;&#x78BC;&#x6703;&#x662F;&#x9019;&#x6A23;&#x5B50;:</p>
+<pre><code class="lang-c++">glBindFramebuffer(GL_FRAMEBUFFER, hdrFBO);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);  
+    <span class="hljs-comment">// [...] &#x6E32;&#x67D3;(&#x5149;&#x7167;&#x7684;)&#x5834;&#x666F;</span>
+glBindFramebuffer(GL_FRAMEBUFFER, <span class="hljs-number">0</span>);
+
+<span class="hljs-comment">// &#x73FE;&#x5728;&#x4F7F;&#x7528;&#x4E00;&#x500B;&#x4E0D;&#x540C;&#x7684;&#x8457;&#x8272;&#x5668;&#x5C07;HDR&#x984F;&#x8272;&#x7DE9;&#x885D;&#x6E32;&#x67D3;&#x81F3;2D&#x586B;&#x5145;&#x5C4F;&#x5E55;&#x7684;&#x56DB;&#x65B9;&#x5F62;&#x4E0A;</span>
+hdrShader.Use();
+glActiveTexture(GL_TEXTURE0);
+glBindTexture(GL_TEXTURE_2D, hdrColorBufferTexture);
+RenderQuad();
+</code></pre>
+<p>&#x9019;&#x88E1;&#x5834;&#x666F;&#x7684;&#x984F;&#x8272;&#x503C;&#x5B58;&#x5728;&#x4E00;&#x500B;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x4EFB;&#x610F;&#x984F;&#x8272;&#x503C;&#x7684;&#x6D6E;&#x9EDE;&#x984F;&#x8272;&#x7DE9;&#x885D;&#x4E2D;&#xFF0C;&#x503C;&#x53EF;&#x80FD;&#x662F;&#x8D85;&#x904E;1.0&#x7684;. &#x9019;&#x500B;&#x7C21;&#x55AE;&#x7684;&#x6F14;&#x793A;&#x4E2D;&#xFF0C;&#x5834;&#x666F;&#x88AB;&#x5275;&#x5EFA;&#x70BA;&#x4E00;&#x500B;&#x88AB;&#x62C9;&#x4F38;&#x7684;&#x7ACB;&#x65B9;&#x9AD4;&#x901A;&#x9053;&#x548C;&#x56DB;&#x500B;&#x9EDE;&#x5149;&#x6E90;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x500B;&#x975E;&#x5E38;&#x4EAE;&#x7684;&#x5728;&#x96A7;&#x9053;&#x7684;&#x76E1;&#x982D;:</p>
+<pre><code class="lang-c++"><span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;glm::vec3&gt; lightColors;
+lightColors.push_back(glm::vec3(<span class="hljs-number">200.0f</span>, <span class="hljs-number">200.0f</span>, <span class="hljs-number">200.0f</span>));
+lightColors.push_back(glm::vec3(<span class="hljs-number">0.1f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">0.0f</span>));
+lightColors.push_back(glm::vec3(<span class="hljs-number">0.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">0.2f</span>));
+lightColors.push_back(glm::vec3(<span class="hljs-number">0.0f</span>, <span class="hljs-number">0.1f</span>, <span class="hljs-number">0.0f</span>));
+</code></pre>
+<p>&#x6E32;&#x67D3;&#x81F3;&#x6D6E;&#x9EDE;&#x5E40;&#x7DE9;&#x885D;&#x548C;&#x6E32;&#x67D3;&#x81F3;&#x4E00;&#x500B;&#x666E;&#x901A;&#x7684;&#x5E40;&#x7DE9;&#x885D;&#x662F;&#x4E00;&#x6A23;&#x7684;. &#x65B0;&#x7684;&#x6771;&#x897F;&#x5C31;&#x662F;&#x9019;&#x500B;&#x7684;<code>hdrShader</code>&#x7684;&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;&#xFF0C;&#x7528;&#x4F86;&#x6E32;&#x67D3;&#x6700;&#x7D42;&#x64C1;&#x6709;&#x6D6E;&#x9EDE;&#x984F;&#x8272;&#x7DE9;&#x885D;&#x7D0B;&#x7406;&#x7684;2D&#x56DB;&#x65B9;&#x5F62;. &#x6211;&#x5011;&#x4F86;&#x5B9A;&#x7FA9;&#x4E00;&#x500B;&#x7C21;&#x55AE;&#x7684;&#x76F4;&#x901A;&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;(Pass-through Fragment Shader):</p>
+<pre><code class="lang-c++"><span class="hljs-preprocessor">#version <span class="hljs-number">330</span> core</span>
+out vec4 color;
+in vec2 TexCoords;
+
+uniform sampler2D hdrBuffer;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{             
+    vec3 hdrColor = texture(hdrBuffer, TexCoords).rgb;
+    color = vec4(hdrColor, <span class="hljs-number">1.0</span>);
+}
+</code></pre>
+<p>&#x9019;&#x88E1;&#x6211;&#x5011;&#x76F4;&#x63A5;&#x63A1;&#x6A23;&#x4E86;&#x6D6E;&#x9EDE;&#x984F;&#x8272;&#x7DE9;&#x885D;&#x4E26;&#x5C07;&#x5176;&#x4F5C;&#x70BA;&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;&#x7684;&#x8F38;&#x51FA;. &#x7136;&#x800C;&#xFF0C;&#x9019;&#x500B;2D&#x56DB;&#x65B9;&#x5F62;&#x7684;&#x8F38;&#x51FA;&#x662F;&#x88AB;&#x76F4;&#x63A5;&#x6E32;&#x67D3;&#x5230;&#x9ED8;&#x8A8D;&#x7684;&#x5E40;&#x7DE9;&#x885D;&#x4E2D;&#xFF0C;&#x5C0E;&#x81F4;&#x6240;&#x6709;&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;&#x7684;&#x8F38;&#x51FA;&#x503C;&#x88AB;&#x7D04;&#x675F;&#x5728;0.0&#x5230;1.0&#x9593;&#xFF0C;&#x5118;&#x7BA1;&#x6211;&#x5011;&#x5DF2;&#x7D93;&#x6709;&#x4E86;&#x4E00;&#x4E9B;&#x5B58;&#x5728;&#x6D6E;&#x9EDE;&#x984F;&#x8272;&#x7D0B;&#x7406;&#x7684;&#x503C;&#x8D85;&#x904E;&#x4E86;1.0.</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/hdr_direct.png" alt=""></p>
+<p>&#x5F88;&#x660E;&#x986F;&#xFF0C;&#x5728;&#x96A7;&#x9053;&#x76E1;&#x982D;&#x7684;&#x5F37;&#x5149;&#x7684;&#x503C;&#x88AB;&#x7D04;&#x675F;&#x5728;1.0&#xFF0C;&#x56E0;&#x70BA;&#x4E00;&#x5927;&#x584A;&#x5340;&#x57DF;&#x90FD;&#x662F;&#x767D;&#x8272;&#x7684;&#xFF0C;&#x904E;&#x7A0B;&#x4E2D;&#x8D85;&#x904E;1.0&#x7684;&#x5730;&#x65B9;&#x640D;&#x5931;&#x4E86;&#x6240;&#x6709;&#x7D30;&#x7BC0;. &#x56E0;&#x70BA;&#x6211;&#x5011;&#x76F4;&#x63A5;&#x8F49;&#x63DB;HDR&#x503C;&#x5230;LDR&#x503C;&#xFF0C;&#x9019;&#x5C31;&#x50CF;&#x6211;&#x5011;&#x6839;&#x672C;&#x5C31;&#x6C92;&#x6709;&#x61C9;&#x7528;HDR&#x4E00;&#x6A23;. &#x70BA;&#x4E86;&#x4FEE;&#x5FA9;&#x9019;&#x500B;&#x554F;&#x984C;&#x6211;&#x5011;&#x9700;&#x8981;&#x505A;&#x7684;&#x662F;&#x7121;&#x640D;&#x8F49;&#x5316;&#x6240;&#x6709;&#x6D6E;&#x9EDE;&#x984F;&#x8272;&#x503C;&#x56DE;0.0-1.0&#x7BC4;&#x570D;&#x4E2D;. &#x6211;&#x5011;&#x9700;&#x8981;&#x61C9;&#x7528;&#x5230;&#x8272;&#x8ABF;&#x6620;&#x5C04;.</p>
+<h3 id="%E8%89%B2%E8%AA%BF%E6%98%A0%E5%B0%84-tone-mapping">&#x8272;&#x8ABF;&#x6620;&#x5C04;(Tone Mapping)</h3>
+<p>&#x8272;&#x8ABF;&#x6620;&#x5C04;&#x662F;&#x4E00;&#x500B;&#x640D;&#x5931;&#x5F88;&#x5C0F;&#x7684;&#x8F49;&#x63DB;&#x6D6E;&#x9EDE;&#x984F;&#x8272;&#x503C;&#x81F3;&#x6211;&#x5011;&#x6240;&#x9700;&#x7684;LDR[0.0, 1.0]&#x7BC4;&#x570D;&#x5167;&#x7684;&#x904E;&#x7A0B;&#xFF0C;&#x901A;&#x5E38;&#x6703;&#x4F34;&#x6709;&#x7279;&#x5B9A;&#x7684;&#x98A8;&#x683C;&#x7684;&#x8272;&#x5E73;&#x8861;(Stylistic Color Balance).</p>
+<p>&#x6700;&#x7C21;&#x55AE;&#x7684;&#x8272;&#x8ABF;&#x6620;&#x5C04;&#x7B97;&#x6CD5;&#x662F;Reinhard&#x8272;&#x8ABF;&#x6620;&#x5C04;&#xFF0C;&#x5B83;&#x6D89;&#x53CA;&#x5230;&#x5206;&#x6563;&#x6574;&#x500B;HDR&#x984F;&#x8272;&#x503C;&#x5230;LDR&#x984F;&#x8272;&#x503C;&#x4E0A;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x503C;&#x90FD;&#x6709;&#x5C0D;&#x61C9;. Reinhard&#x8272;&#x8ABF;&#x6620;&#x5C04;&#x7B97;&#x6CD5;&#x5E73;&#x5747;&#x5F97;&#x5C07;&#x6240;&#x6709;&#x4EAE;&#x5EA6;&#x503C;&#x5206;&#x6563;&#x5230;LDR&#x4E0A;. &#x6211;&#x5011;&#x5C07;Reinhard&#x8272;&#x8ABF;&#x6620;&#x5C04;&#x61C9;&#x7528;&#x5230;&#x4E4B;&#x524D;&#x7684;&#x7247;&#x6BB5;&#x8457;&#x8272;&#x5668;&#x4E0A;&#xFF0C;&#x4E26;&#x4E14;&#x70BA;&#x4E86;&#x66F4;&#x597D;&#x7684;&#x6E2C;&#x91CF;&#x52A0;&#x4E0A;&#x4E00;&#x500B;Gamma&#x6821;&#x6B63;&#x904E;&#x6FFE;(&#x5305;&#x62EC;SRGB&#x7D0B;&#x7406;&#x7684;&#x4F7F;&#x7528;):</p>
+<pre><code class="lang-c++"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{             
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">float</span> gamma = <span class="hljs-number">2.2</span>;
+    vec3 hdrColor = texture(hdrBuffer, TexCoords).rgb;
+
+    <span class="hljs-comment">// Reinhard&#x8272;&#x8ABF;&#x6620;&#x5C04;</span>
+    vec3 mapped = hdrColor / (hdrColor + vec3(<span class="hljs-number">1.0</span>));
+    <span class="hljs-comment">// Gamma&#x6821;&#x6B63;</span>
+    mapped = <span class="hljs-built_in">pow</span>(mapped, vec3(<span class="hljs-number">1.0</span> / gamma));
+
+    color = vec4(mapped, <span class="hljs-number">1.0</span>);
+}
+</code></pre>
+<p>&#x6709;&#x4E86;Reinhard&#x8272;&#x8ABF;&#x6620;&#x5C04;&#x7684;&#x61C9;&#x7528;&#xFF0C;&#x6211;&#x5011;&#x4E0D;&#x518D;&#x6703;&#x5728;&#x5834;&#x666F;&#x660E;&#x4EAE;&#x7684;&#x5730;&#x65B9;&#x640D;&#x5931;&#x7D30;&#x7BC0;. &#x7576;&#x7136;&#xFF0C;&#x9019;&#x500B;&#x7B97;&#x6CD5;&#x662F;&#x50BE;&#x5411;&#x660E;&#x4EAE;&#x7684;&#x5340;&#x57DF;&#x7684;&#xFF0C;&#x6697;&#x7684;&#x5340;&#x57DF;&#x6703;&#x4E0D;&#x90A3;&#x9EBC;&#x7CBE;&#x7D30;&#x4E5F;&#x4E0D;&#x90A3;&#x9EBC;&#x6709;&#x5340;&#x5206;&#x5EA6;.</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/hdr_reinhard.png" alt=""></p>
+<p>&#x73FE;&#x5728;&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5728;&#x96A7;&#x9053;&#x7684;&#x76E1;&#x982D;&#x6728;&#x982D;&#x7D0B;&#x7406;&#x8B8A;&#x5F97;&#x53EF;&#x898B;&#x4E86;. &#x7528;&#x4E86;&#x9019;&#x500B;&#x975E;&#x5E38;&#x7C21;&#x55AE;&#x5730;&#x8272;&#x8ABF;&#x6620;&#x5C04;&#x7B97;&#x6CD5;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5408;&#x9069;&#x7684;&#x770B;&#x5230;&#x5B58;&#x5728;&#x6D6E;&#x9EDE;&#x5E40;&#x7DE9;&#x885D;&#x4E2D;&#x6574;&#x500B;&#x7BC4;&#x570D;&#x7684;HDR&#x503C;&#xFF0C;&#x7D66;&#x6211;&#x5011;&#x5C0D;&#x65BC;&#x7121;&#x640D;&#x5834;&#x666F;&#x5149;&#x7167;&#x7CBE;&#x78BA;&#x7684;&#x63A7;&#x5236;.</p>
+<p>&#x53E6;&#x4E00;&#x500B;&#x6709;&#x8DA3;&#x7684;&#x8272;&#x8ABF;&#x6620;&#x5C04;&#x61C9;&#x7528;&#x662F;&#x66DD;&#x5149;(Exposure)&#x53C3;&#x6578;&#x7684;&#x4F7F;&#x7528;. &#x4F60;&#x53EF;&#x80FD;&#x9084;&#x8A18;&#x5F97;&#x4E4B;&#x524D;&#x6211;&#x5011;&#x5728;&#x4ECB;&#x7D39;&#x88E1;&#x8B1B;&#x5230;&#x7684;&#xFF0C;HDR&#x5716;&#x7247;&#x5305;&#x542B;&#x5728;&#x4E0D;&#x540C;&#x66DD;&#x5149;&#x7B49;&#x7D1A;&#x7684;&#x7D30;&#x7BC0;. &#x5982;&#x679C;&#x6211;&#x5011;&#x6709;&#x4E00;&#x500B;&#x5834;&#x666F;&#x8981;&#x5C55;&#x73FE;&#x65E5;&#x591C;&#x4EA4;&#x66FF;&#xFF0C;&#x6211;&#x5011;&#x7576;&#x7136;&#x6703;&#x5728;&#x767D;&#x5929;&#x4F7F;&#x7528;&#x4F4E;&#x66DD;&#x5149;&#xFF0C;&#x5728;&#x591C;&#x9593;&#x4F7F;&#x7528;&#x9AD8;&#x66DD;&#x5149;&#xFF0C;&#x5C31;&#x50CF;&#x4EBA;&#x773C;&#x8ABF;&#x7BC0;&#x65B9;&#x5F0F;&#x4E00;&#x6A23;. &#x6709;&#x4E86;&#x9019;&#x500B;&#x66DD;&#x5149;&#x53C3;&#x6578;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x53BB;&#x8A2D;&#x7F6E;&#x53EF;&#x4EE5;&#x540C;&#x6642;&#x5728;&#x767D;&#x5929;&#x548C;&#x591C;&#x665A;&#x4E0D;&#x540C;&#x5149;&#x7167;&#x689D;&#x4EF6;&#x5DE5;&#x4F5C;&#x7684;&#x5149;&#x7167;&#x53C3;&#x6578;&#xFF0C;&#x6211;&#x5011;&#x53EA;&#x9700;&#x8981;&#x8ABF;&#x6574;&#x66DD;&#x5149;&#x53C3;&#x6578;&#x5C31;&#x884C;&#x4E86;.</p>
+<p>&#x4E00;&#x500B;&#x7C21;&#x55AE;&#x7684;&#x66DD;&#x5149;&#x8272;&#x8ABF;&#x6620;&#x5C04;&#x7B97;&#x6CD5;&#x6703;&#x50CF;&#x9019;&#x6A23;:</p>
+<pre><code class="lang-c++">uniform <span class="hljs-keyword">float</span> exposure;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{             
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">float</span> gamma = <span class="hljs-number">2.2</span>;
+    vec3 hdrColor = texture(hdrBuffer, TexCoords).rgb;
+
+    <span class="hljs-comment">// &#x66DD;&#x5149;&#x8272;&#x8ABF;&#x6620;&#x5C04;</span>
+    vec3 mapped = vec3(<span class="hljs-number">1.0</span>) - <span class="hljs-built_in">exp</span>(-hdrColor * exposure);
+    <span class="hljs-comment">// Gamma&#x6821;&#x6B63; </span>
+    mapped = <span class="hljs-built_in">pow</span>(mapped, vec3(<span class="hljs-number">1.0</span> / gamma));
+
+    color = vec4(mapped, <span class="hljs-number">1.0</span>);
+}
+</code></pre>
+<p>&#x5728;&#x9019;&#x88E1;&#x6211;&#x5011;&#x5C07;<code>exposure</code>&#x5B9A;&#x7FA9;&#x70BA;&#x9ED8;&#x8A8D;&#x70BA;1.0&#x7684;<code>uniform</code>&#xFF0C;&#x5F9E;&#x800C;&#x5141;&#x8A31;&#x6211;&#x5011;&#x66F4;&#x52A0;&#x7CBE;&#x78BA;&#x8A2D;&#x5B9A;&#x6211;&#x5011;&#x662F;&#x8981;&#x6CE8;&#x91CD;&#x9ED1;&#x6697;&#x9084;&#x662F;&#x660E;&#x4EAE;&#x7684;&#x5340;&#x57DF;&#x7684;HDR&#x984F;&#x8272;&#x503C;. &#x8209;&#x4F8B;&#x4F86;&#x8AAA;&#xFF0C;&#x9AD8;&#x66DD;&#x5149;&#x503C;&#x6703;&#x4F7F;&#x96A7;&#x9053;&#x7684;&#x9ED1;&#x6697;&#x90E8;&#x5206;&#x986F;&#x793A;&#x66F4;&#x591A;&#x7684;&#x7D30;&#x7BC0;&#xFF0C;&#x7136;&#x800C;&#x4F4E;&#x66DD;&#x5149;&#x503C;&#x6703;&#x986F;&#x8457;&#x6E1B;&#x5C11;&#x9ED1;&#x6697;&#x5340;&#x57DF;&#x7684;&#x7D30;&#x7BC0;&#xFF0C;&#x4F46;&#x5141;&#x8A31;&#x6211;&#x5011;&#x770B;&#x5230;&#x66F4;&#x591A;&#x660E;&#x4EAE;&#x5340;&#x57DF;&#x7684;&#x7D30;&#x7BC0;. &#x4E0B;&#x9762;&#x9019;&#x7D44;&#x5716;&#x7247;&#x5C55;&#x793A;&#x4E86;&#x5728;&#x4E0D;&#x540C;&#x66DD;&#x5149;&#x503C;&#x4E0B;&#x7684;&#x901A;&#x9053;:</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/hdr_exposure.png" alt=""></p>
+<p>&#x9019;&#x500B;&#x5716;&#x7247;&#x6E05;&#x6670;&#x5730;&#x5C55;&#x793A;&#x4E86;HDR&#x6E32;&#x67D3;&#x7684;&#x512A;&#x9EDE;. &#x901A;&#x904E;&#x6539;&#x8B8A;&#x66DD;&#x5149;&#x7B49;&#x7D1A;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x770B;&#x898B;&#x5834;&#x666F;&#x7684;&#x5F88;&#x591A;&#x7D30;&#x7BC0;&#xFF0C;&#x800C;&#x9019;&#x4E9B;&#x7D30;&#x7BC0;&#x53EF;&#x80FD;&#x5728;LDR&#x6E32;&#x67D3;&#x4E2D;&#x90FD;&#x88AB;&#x4E1F;&#x5931;&#x4E86;. &#x6BD4;&#x5982;&#x8AAA;&#x96A7;&#x9053;&#x76E1;&#x982D;&#xFF0C;&#x5728;&#x6B63;&#x5E38;&#x66DD;&#x5149;&#x4E0B;&#x6728;&#x982D;&#x7D50;&#x69CB;&#x96B1;&#x7D04;&#x53EF;&#x898B;&#xFF0C;&#x4F46;&#x7528;&#x4F4E;&#x66DD;&#x5149;&#x6728;&#x982D;&#x7684;&#x82B1;&#x7D0B;&#x5C31;&#x53EF;&#x4EE5;&#x6E05;&#x6670;&#x770B;&#x898B;&#x4E86;. &#x5C0D;&#x65BC;&#x8FD1;&#x8655;&#x7684;&#x6728;&#x982D;&#x82B1;&#x7D0B;&#x4F86;&#x8AAA;&#xFF0C;&#x5728;&#x9AD8;&#x66DD;&#x5149;&#x4E0B;&#x6703;&#x80FD;&#x66F4;&#x597D;&#x7684;&#x770B;&#x898B;.</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5728;<a href="http://learnopengl.com/code_viewer.php?code=advanced-lighting/hdr" title="&#x9019;&#x88E1;" target="_blank">&#x9019;&#x88E1;</a>&#x627E;&#x5230;&#x9019;&#x500B;&#x6F14;&#x793A;&#x7684;&#x6E90;&#x78BC;&#x548C;HDR&#x7684;<a href="http://learnopengl.com/code_viewer.php?code=advanced-lighting/hdr&amp;type=vertex" title="&#x9802;&#x9EDE;" target="_blank">&#x9802;&#x9EDE;</a>&#x548C;<a href="http://learnopengl.com/code_viewer.php?code=advanced-lighting/hdr&amp;type=fragment" title="&#x7247;&#x6BB5;" target="_blank">&#x7247;&#x6BB5;</a>&#x8457;&#x8272;&#x5668;.</p>
+<h3 id="hdr%E6%8B%93%E5%B1%95">HDR&#x62D3;&#x5C55;</h3>
+<p>&#x5728;&#x9019;&#x88E1;&#x5C55;&#x793A;&#x7684;&#x5169;&#x500B;&#x8272;&#x8ABF;&#x6620;&#x5C04;&#x7B97;&#x6CD5;&#x50C5;&#x50C5;&#x662F;&#x5927;&#x91CF;(&#x66F4;&#x5148;&#x9032;)&#x7684;&#x8272;&#x8ABF;&#x6620;&#x5C04;&#x7B97;&#x6CD5;&#x4E2D;&#x7684;&#x4E00;&#x5C0F;&#x90E8;&#x5206;&#xFF0C;&#x9019;&#x4E9B;&#x7B97;&#x6CD5;&#x5404;&#x6709;&#x9577;&#x77ED;.&#x4E00;&#x4E9B;&#x8272;&#x8ABF;&#x6620;&#x5C04;&#x7B97;&#x6CD5;&#x50BE;&#x5411;&#x65BC;&#x7279;&#x5B9A;&#x7684;&#x67D0;&#x7A2E;&#x984F;&#x8272;/&#x5F37;&#x5EA6;&#xFF0C;&#x4E5F;&#x6709;&#x4E00;&#x4E9B;&#x7B97;&#x6CD5;&#x540C;&#x6642;&#x986F;&#x793A;&#x4F4E;&#x65BC;&#x9AD8;&#x66DD;&#x5149;&#x984F;&#x8272;&#x5F9E;&#x800C;&#x80FD;&#x5920;&#x986F;&#x793A;&#x66F4;&#x52A0;&#x591A;&#x5F69;&#x548C;&#x7CBE;&#x7D30;&#x7684;&#x5716;&#x50CF;. &#x4E5F;&#x6709;&#x4E00;&#x4E9B;&#x6280;&#x5DE7;&#x88AB;&#x7A31;&#x4F5C;&#x81EA;&#x52D5;&#x66DD;&#x5149;&#x8ABF;&#x6574;(Automatic Exposure Adjustment)&#x6216;&#x8005;&#x53EB;&#x4EBA;&#x773C;&#x9069;&#x61C9;(Eye Adaptation)&#x6280;&#x8853;&#xFF0C;&#x5B83;&#x80FD;&#x5920;&#x6AA2;&#x6E2C;&#x524D;&#x4E00;&#x5E40;&#x5834;&#x666F;&#x7684;&#x4EAE;&#x5EA6;&#x4E26;&#x4E14;&#x7DE9;&#x6162;&#x8ABF;&#x6574;&#x66DD;&#x5149;&#x53C3;&#x6578;&#x6A21;&#x4EFF;&#x4EBA;&#x773C;&#x4F7F;&#x5F97;&#x5834;&#x666F;&#x5728;&#x9ED1;&#x6697;&#x5340;&#x57DF;&#x9010;&#x6F38;&#x8B8A;&#x4EAE;&#x6216;&#x8005;&#x5728;&#x660E;&#x4EAE;&#x5340;&#x57DF;&#x9010;&#x6F38;&#x8B8A;&#x6697;.</p>
+<p>HDR&#x6E32;&#x67D3;&#x7684;&#x771F;&#x6B63;&#x512A;&#x9EDE;&#x5728;&#x9F90;&#x5927;&#x548C;&#x8907;&#x96DC;&#x7684;&#x5834;&#x666F;&#x4E2D;&#x61C9;&#x7528;&#x8907;&#x96DC;&#x5149;&#x7167;&#x7B97;&#x6CD5;&#x6703;&#x88AB;&#x986F;&#x793A;&#x51FA;&#x4F86;&#xFF0C;&#x4F46;&#x662F;&#x51FA;&#x65BC;&#x6559;&#x5B78;&#x76EE;&#x7684;&#x5275;&#x5EFA;&#x9019;&#x6A23;&#x8907;&#x96DC;&#x7684;&#x6F14;&#x793A;&#x5834;&#x666F;&#x662F;&#x5F88;&#x56F0;&#x96E3;&#x7684;&#xFF0C;&#x9019;&#x500B;&#x6559;&#x7A0B;&#x7528;&#x7684;&#x5834;&#x666F;&#x662F;&#x5F88;&#x5C0F;&#x7684;&#xFF0C;&#x800C;&#x4E14;&#x7F3A;&#x4E4F;&#x7D30;&#x7BC0;. &#x4F46;&#x662F;&#x5982;&#x6B64;&#x7C21;&#x55AE;&#x7684;&#x6F14;&#x793A;&#x4E5F;&#x662F;&#x80FD;&#x5920;&#x986F;&#x793A;&#x51FA;HDR&#x6E32;&#x67D3;&#x7684;&#x4E00;&#x4E9B;&#x512A;&#x9EDE;: &#x5728;&#x660E;&#x4EAE;&#x548C;&#x9ED1;&#x6697;&#x5340;&#x57DF;&#x7121;&#x7D30;&#x7BC0;&#x640D;&#x5931;&#xFF0C;&#x56E0;&#x70BA;&#x5B83;&#x5011;&#x53EF;&#x4EE5;&#x7531;&#x8272;&#x8ABF;&#x6620;&#x5C04;&#x91CD;&#x65B0;&#x7372;&#x53D6;&#xFF1B;&#x591A;&#x500B;&#x5149;&#x7167;&#x7684;&#x758A;&#x52A0;&#x4E0D;&#x6703;&#x5C0E;&#x81F4;&#x4EAE;&#x5EA6;&#x88AB;&#x7D04;&#x675F;&#x7684;&#x5340;&#x57DF;&#xFF1B;&#x5149;&#x7167;&#x53EF;&#x4EE5;&#x88AB;&#x8A2D;&#x5B9A;&#x70BA;&#x4ED6;&#x5011;&#x539F;&#x4F86;&#x7684;&#x4EAE;&#x5EA6;&#x800C;&#x4E0D;&#x662F;&#x88AB;LDR&#x503C;&#x9650;&#x5B9A;. &#x800C;&#x4E14;&#xFF0C;HDR&#x6E32;&#x67D3;&#x4E5F;&#x4F7F;&#x4E00;&#x4E9B;&#x6709;&#x8DA3;&#x7684;&#x6548;&#x679C;&#x66F4;&#x52A0;&#x53EF;&#x884C;&#x548C;&#x771F;&#x5BE6;; &#x5176;&#x4E2D;&#x4E00;&#x500B;&#x6548;&#x679C;&#x53EB;&#x505A;&#x6CDB;&#x5149;(Bloom)&#xFF0C;&#x6211;&#x5011;&#x5C07;&#x5728;&#x4E0B;&#x4E00;&#x7BC0;&#x8A0E;&#x8AD6;&#x4ED6;.</p>
+<h3 id="%E9%99%84%E5%8A%A0%E8%B3%87%E6%BA%90">&#x9644;&#x52A0;&#x8CC7;&#x6E90;</h3>
+<ul>
+<li><a href="http://gamedev.stackexchange.com/questions/62836/does-hdr-rendering-have-any-benefits-if-bloom-wont-be-applied" target="_blank">&#x5982;&#x679C;&#x6CDB;&#x5149;&#x6548;&#x679C;&#x4E0D;&#x88AB;&#x61C9;&#x7528;HDR&#x6E32;&#x67D3;&#x9084;&#x6709;&#x597D;&#x8655;&#x55CE;?</a>: &#x4E00;&#x500B;StackExchange&#x554F;&#x984C;&#xFF0C;&#x5176;&#x4E2D;&#x6709;&#x4E00;&#x500B;&#x7B54;&#x6848;&#x975E;&#x5E38;&#x8A73;&#x7D30;&#x5730;&#x89E3;&#x91CB;HDR&#x6E32;&#x67D3;&#x7684;&#x597D;&#x8655;.</li>
+<li><a href="http://photo.stackexchange.com/questions/7630/what-is-tone-mapping-how-does-it-relate-to-hdr" target="_blank">&#x4EC0;&#x9EBC;&#x662F;&#x8272;&#x8ABF;&#x6620;&#x5C04;? &#x5B83;&#x8207;HDR&#x6709;&#x4EC0;&#x9EBC;&#x806F;&#x7E6B;?</a>: &#x53E6;&#x4E00;&#x500B;&#x975E;&#x5E38;&#x6709;&#x8DA3;&#x7684;&#x7B54;&#x6848;&#xFF0C;&#x7528;&#x4E86;&#x5927;&#x91CF;&#x5716;&#x7247;&#x89E3;&#x91CB;&#x8272;&#x8ABF;&#x6620;&#x5C04;.</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../05_advanced_lighting/05_parallax_mapping.html" class="navigation navigation-prev " aria-label="Previous page: 視差貼圖"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../05_advanced_lighting/07_bloom.html" class="navigation navigation-next " aria-label="Next page: 泛光"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-google_code_prettify/google-code-prettify.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-google_code_prettify/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-collapsible-menu/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-maxiang/maxiang.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book LearnOpenGL-CN -->
+</html>

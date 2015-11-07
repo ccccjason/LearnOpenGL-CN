@@ -1,0 +1,1693 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <!-- Start book LearnOpenGL-CN -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>法線貼圖 | LearnOpenGL-CN</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.4.1">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-google_code_prettify/google-code-prettify.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-maxiang/maxiang.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../05_advanced_lighting/05_parallax_mapping.html" />
+    
+    
+    <link rel="prev" href="../05_advanced_lighting/03_shadows/03_csm.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book" data-level="5.3" data-basepath=".." data-revision="Sun Nov 08 2015 03:25:42 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search" role="search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        LearnOpenGL-CN
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01_getting_started/01_opengl.html">
+            
+                
+                    <a href="../01_getting_started/01_opengl.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        入門(Getting started)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01_getting_started/02_creating_a_window.html">
+            
+                
+                    <a href="../01_getting_started/02_creating_a_window.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        創建窗口
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="01_getting_started/03_hello_window.html">
+            
+                
+                    <a href="../01_getting_started/03_hello_window.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.1.</b>
+                        
+                        你好，窗口
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="01_getting_started/04_hello_triangle.html">
+            
+                
+                    <a href="../01_getting_started/04_hello_triangle.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.2.</b>
+                        
+                        你好，三角形
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="01_getting_started/05_shaders.html">
+            
+                
+                    <a href="../01_getting_started/05_shaders.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.3.</b>
+                        
+                        著色器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="01_getting_started/06_textures.html">
+            
+                
+                    <a href="../01_getting_started/06_textures.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.4.</b>
+                        
+                        紋理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="01_getting_started/07_transformations.html">
+            
+                
+                    <a href="../01_getting_started/07_transformations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.5.</b>
+                        
+                        變換
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="01_getting_started/08_coordinate_systems.html">
+            
+                
+                    <a href="../01_getting_started/08_coordinate_systems.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.6.</b>
+                        
+                        座標系統
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="01_getting_started/09_camera.html">
+            
+                
+                    <a href="../01_getting_started/09_camera.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.7.</b>
+                        
+                        攝像機
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="01_getting_started/10_review.html">
+            
+                
+                    <a href="../01_getting_started/10_review.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.8.</b>
+                        
+                        複習
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02_creating_a_window/01_colors.html">
+            
+            <span><b>2.</b> 光照(Lighting)</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02_lighting/01_colors.html">
+            
+                
+                    <a href="../02_lighting/01_colors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        顏色
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02_lighting/02_basic_lighting.html">
+            
+                
+                    <a href="../02_lighting/02_basic_lighting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        光照基礎
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02_lighting/03_materials.html">
+            
+                
+                    <a href="../02_lighting/03_materials.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        材質
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02_lighting/04_hello_triangle.html">
+            
+            <span><b>2.4.</b> 光照貼圖</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="02_lighting/05_light_casters.html">
+            
+                
+                    <a href="../02_lighting/05_light_casters.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        投光物
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="02_lighting/06_multiple_lights.html">
+            
+                
+                    <a href="../02_lighting/06_multiple_lights.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        多光源
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="02_lighting/07_review.html">
+            
+                
+                    <a href="../02_lighting/07_review.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        複習
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03_model_loading/01_assimp.html">
+            
+                
+                    <a href="../03_model_loading/01_assimp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        加載模型(Model Loading)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03_model_loading/02_mesh.html">
+            
+                
+                    <a href="../03_model_loading/02_mesh.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        網格
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03_model_loading/03_model.html">
+            
+                
+                    <a href="../03_model_loading/03_model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        模型
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04_advanced_opengl/01_depth_testing.html">
+            
+                
+                    <a href="../04_advanced_opengl/01_depth_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        高級OpenGL(Advanced OpenGL)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04_advanced_opengl/02_stencil_testing.html">
+            
+                
+                    <a href="../04_advanced_opengl/02_stencil_testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        模板測試
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04_advanced_opengl/03_blending.html">
+            
+                
+                    <a href="../04_advanced_opengl/03_blending.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        混合
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04_advanced_opengl/04_face_culling.html">
+            
+                
+                    <a href="../04_advanced_opengl/04_face_culling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        面剔除
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04_advanced_opengl/05_framebuffers.html">
+            
+                
+                    <a href="../04_advanced_opengl/05_framebuffers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        幀緩衝
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04_advanced_opengl/06_cubemaps.html">
+            
+                
+                    <a href="../04_advanced_opengl/06_cubemaps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        立方體貼圖
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="04_advanced_opengl/07_advanced_data.html">
+            
+                
+                    <a href="../04_advanced_opengl/07_advanced_data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        高級數據
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="04_advanced_opengl/08_advanced_glsl.html">
+            
+                
+                    <a href="../04_advanced_opengl/08_advanced_glsl.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        高級GLSL
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="04_advanced_opengl/09_geometry_shader.html">
+            
+                
+                    <a href="../04_advanced_opengl/09_geometry_shader.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        幾何著色器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="04_advanced_opengl/10_instancing.html">
+            
+                
+                    <a href="../04_advanced_opengl/10_instancing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        實例化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="04_advanced_opengl/11_anti_aliasing.html">
+            
+                
+                    <a href="../04_advanced_opengl/11_anti_aliasing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.10.</b>
+                        
+                        抗鋸齒
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05_advanced_lighting/01_advanced_lighting.html">
+            
+                
+                    <a href="../05_advanced_lighting/01_advanced_lighting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        高級光照(Advanced Lighting)
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05_advanced_lighting/02_gamma_correction.html">
+            
+                
+                    <a href="../05_advanced_lighting/02_gamma_correction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Gamma校正
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05_advanced_lighting/03_shadows/01_shadow_mapping.html">
+            
+                
+                    <a href="../05_advanced_lighting/03_shadows/01_shadow_mapping.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        陰影
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="05_advanced_lighting/03_shadows/02_point_shadows.html">
+            
+                
+                    <a href="../05_advanced_lighting/03_shadows/02_point_shadows.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.1.</b>
+                        
+                        點陰影
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="05_advanced_lighting/03_shadows/03_csm.html">
+            
+                
+                    <a href="../05_advanced_lighting/03_shadows/03_csm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.2.</b>
+                        
+                        CSM
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.3" data-path="05_advanced_lighting/04_normal_mapping.html">
+            
+                
+                    <a href="../05_advanced_lighting/04_normal_mapping.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        法線貼圖
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05_advanced_lighting/05_parallax_mapping.html">
+            
+                
+                    <a href="../05_advanced_lighting/05_parallax_mapping.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        視差貼圖
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="05_advanced_lighting/06_hdr.html">
+            
+                
+                    <a href="../05_advanced_lighting/06_hdr.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        HDR
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="05_advanced_lighting/07_bloom.html">
+            
+                
+                    <a href="../05_advanced_lighting/07_bloom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        泛光
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="05_advanced_lighting/08_deferred_shading.html">
+            
+                
+                    <a href="../05_advanced_lighting/08_deferred_shading.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        延遲著色法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="05_advanced_lighting/09_ssao.html">
+            
+                
+                    <a href="../05_advanced_lighting/09_ssao.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        SSAO
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >LearnOpenGL-CN</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <p>&#x672C;&#x6587;&#x4F5C;&#x8005;JoeyDeVries&#xFF0C;&#x7531;Django&#x7FFB;&#x8B6F;&#x81EA;<a href="http://learnopengl.com" target="_blank">http://learnopengl.com</a></p>
+<h2 id="%E6%B3%95%E7%B7%9A%E8%B2%BC%E5%9C%96-%EF%BC%88normal-mapping%EF%BC%89">&#x6CD5;&#x7DDA;&#x8CBC;&#x5716; &#xFF08;Normal Mapping&#xFF09;</h2>
+<p>&#x6211;&#x5011;&#x7684;&#x5834;&#x666F;&#x4E2D;&#x5DF2;&#x7D93;&#x5145;&#x6EFF;&#x4E86;&#x591A;&#x908A;&#x5F62;&#x7269;&#x9AD4;&#xFF0C;&#x5176;&#x4E2D;&#x6BCF;&#x500B;&#x90FD;&#x53EF;&#x80FD;&#x7531;&#x6210;&#x767E;&#x4E0A;&#x5343;&#x5E73;&#x5766;&#x7684;&#x4E09;&#x89D2;&#x5F62;&#x7D44;&#x6210;&#x3002;&#x6211;&#x5011;&#x4EE5;&#x5411;&#x4E09;&#x89D2;&#x5F62;&#x4E0A;&#x9644;&#x52A0;&#x7D0B;&#x7406;&#x7684;&#x65B9;&#x5F0F;&#x4F86;&#x589E;&#x52A0;&#x984D;&#x5916;&#x7D30;&#x7BC0;&#xFF0C;&#x63D0;&#x5347;&#x771F;&#x5BE6;&#x611F;&#xFF0C;&#x96B1;&#x85CF;&#x591A;&#x908A;&#x5F62;&#x5E7E;&#x4F55;&#x9AD4;&#x662F;&#x7531;&#x7121;&#x6578;&#x4E09;&#x89D2;&#x5F62;&#x7D44;&#x6210;&#x7684;&#x4E8B;&#x5BE6;&#x3002;&#x7D0B;&#x7406;&#x78BA;&#x6709;&#x52A9;&#x76CA;&#xFF0C;&#x7136;&#x800C;&#x7576;&#x4F60;&#x8FD1;&#x770B;&#x5B83;&#x5011;&#x6642;&#xFF0C;&#x9019;&#x500B;&#x4E8B;&#x5BE6;&#x4FBF;&#x96B1;&#x85CF;&#x4E0D;&#x4F4F;&#x4E86;&#x3002;&#x73FE;&#x5BE6;&#x4E2D;&#x7684;&#x7269;&#x9AD4;&#x8868;&#x9762;&#x4E26;&#x975E;&#x662F;&#x5E73;&#x5766;&#x7684;&#xFF0C;&#x800C;&#x662F;&#x8868;&#x73FE;&#x51FA;&#x7121;&#x6578;&#xFF08;&#x51F9;&#x51F8;&#x4E0D;&#x5E73;&#x7684;&#xFF09;&#x7D30;&#x7BC0;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x78DA;&#x584A;&#x7684;&#x8868;&#x9762;&#x3002;&#x78DA;&#x584A;&#x7684;&#x8868;&#x9762;&#x975E;&#x5E38;&#x7C97;&#x7CD9;&#xFF0C;&#x986F;&#x7136;&#x4E0D;&#x662F;&#x5B8C;&#x5168;&#x5E73;&#x5766;&#x7684;&#xFF1A;&#x5B83;&#x5305;&#x542B;&#x8457;&#x63A5;&#x7E2B;&#x8655;&#x6C34;&#x6CE5;&#x51F9;&#x75D5;&#xFF0C;&#x4EE5;&#x53CA;&#x975E;&#x5E38;&#x591A;&#x7684;&#x7D30;&#x5C0F;&#x7684;&#x7A7A;&#x6D1E;&#x3002;&#x5982;&#x679C;&#x6211;&#x5011;&#x5728;&#x4E00;&#x500B;&#x6709;&#x5149;&#x7684;&#x5834;&#x666F;&#x4E2D;&#x770B;&#x9019;&#x6A23;&#x4E00;&#x500B;&#x78DA;&#x584A;&#x7684;&#x8868;&#x9762;&#xFF0C;&#x554F;&#x984C;&#x5C31;&#x51FA;&#x4F86;&#x4E86;&#x3002;&#x4E0B;&#x5716;&#x4E2D;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x78DA;&#x584A;&#x7D0B;&#x7406;&#x61C9;&#x7528;&#x5230;&#x4E86;&#x5E73;&#x5766;&#x7684;&#x8868;&#x9762;&#xFF0C;&#x4E26;&#x88AB;&#x4E00;&#x500B;&#x9EDE;&#x5149;&#x6E90;&#x7167;&#x4EAE;&#x3002;</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/normal_mapping_flat.png" alt=""></p>
+<p>&#x5149;&#x7167;&#x4E26;&#x6C92;&#x6709;&#x5448;&#x73FE;&#x51FA;&#x4EFB;&#x4F55;&#x88C2;&#x75D5;&#x548C;&#x5B54;&#x6D1E;&#xFF0C;&#x5B8C;&#x5168;&#x5FFD;&#x7565;&#x4E86;&#x78DA;&#x584A;&#x4E4B;&#x9593;&#x51F9;&#x9032;&#x53BB;&#x7684;&#x7DDA;&#x689D;&#xFF1B;&#x8868;&#x9762;&#x770B;&#x8D77;&#x4F86;&#x5B8C;&#x5168;&#x5C31;&#x662F;&#x5E73;&#x7684;&#x3002;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;specular&#x8CBC;&#x5716;&#x6839;&#x64DA;&#x6DF1;&#x5EA6;&#x6216;&#x5176;&#x4ED6;&#x7D30;&#x7BC0;&#x963B;&#x6B62;&#x90E8;&#x5206;&#x8868;&#x9762;&#x88AB;&#x7167;&#x7684;&#x66F4;&#x4EAE;&#xFF0C;&#x4EE5;&#x6B64;&#x90E8;&#x5206;&#x5730;&#x89E3;&#x6C7A;&#x554F;&#x984C;&#xFF0C;&#x4F46;&#x9019;&#x4E26;&#x4E0D;&#x662F;&#x4E00;&#x500B;&#x597D;&#x65B9;&#x6848;&#x3002;&#x6211;&#x5011;&#x9700;&#x8981;&#x7684;&#x662F;&#x67D0;&#x7A2E;&#x53EF;&#x4EE5;&#x544A;&#x77E5;&#x5149;&#x7167;&#x7CFB;&#x7D71;&#x7D66;&#x6240;&#x6709;&#x6709;&#x95DC;&#x7269;&#x9AD4;&#x8868;&#x9762;&#x985E;&#x4F3C;&#x6DF1;&#x5EA6;&#x9019;&#x6A23;&#x7684;&#x7D30;&#x7BC0;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6211;&#x5011;&#x4E00;&#x5149;&#x7684;&#x8996;&#x89D2;&#x4F86;&#x770B;&#x9019;&#x500B;&#x554F;&#x984C;&#xFF1A;&#x662F;&#x4EC0;&#x9EBC;&#x4F7F;&#x8868;&#x9762;&#x88AB;&#x8996;&#x70BA;&#x5B8C;&#x5168;&#x5E73;&#x5766;&#x7684;&#x8868;&#x9762;&#x4F86;&#x7167;&#x4EAE;&#xFF1F;&#x7B54;&#x6848;&#x6703;&#x662F;&#x8868;&#x9762;&#x7684;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x3002;&#x4EE5;&#x5149;&#x7167;&#x7B97;&#x6CD5;&#x7684;&#x8996;&#x89D2;&#x8003;&#x616E;&#x7684;&#x8A71;&#xFF0C;&#x53EA;&#x6709;&#x4E00;&#x4EF6;&#x4E8B;&#x6C7A;&#x5B9A;&#x7269;&#x9AD4;&#x7684;&#x5F62;&#x72C0;&#xFF0C;&#x9019;&#x5C31;&#x662F;&#x5782;&#x76F4;&#x65BC;&#x5B83;&#x7684;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x3002;&#x78DA;&#x584A;&#x8868;&#x9762;&#x53EA;&#x6709;&#x4E00;&#x500B;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#xFF0C;&#x8868;&#x9762;&#x5B8C;&#x5168;&#x6839;&#x64DA;&#x9019;&#x500B;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x88AB;&#x4EE5;&#x4E00;&#x81F4;&#x7684;&#x65B9;&#x5F0F;&#x7167;&#x4EAE;&#x3002;&#x5982;&#x679C;&#x6BCF;&#x500B;fragment&#x90FD;&#x662F;&#x7528;&#x81EA;&#x5DF1;&#x7684;&#x4E0D;&#x540C;&#x7684;&#x6CD5;&#x7DDA;&#x6703;&#x600E;&#x6A23;&#xFF1F;&#x9019;&#x6A23;&#x6211;&#x5011;&#x5C31;&#x53EF;&#x4EE5;&#x6839;&#x64DA;&#x8868;&#x9762;&#x7D30;&#x5FAE;&#x7684;&#x7D30;&#x7BC0;&#x5C0D;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x9032;&#x884C;&#x6539;&#x8B8A;&#xFF1B;&#x9019;&#x6A23;&#x5C31;&#x6703;&#x7372;&#x5F97;&#x4E00;&#x7A2E;&#x8868;&#x9762;&#x770B;&#x8D77;&#x4F86;&#x8981;&#x8907;&#x96DC;&#x5F97;&#x591A;&#x7684;&#x5E7B;&#x89BA;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/normal_mapping_surfaces.png" alt=""></p>
+<p>&#x6BCF;&#x500B;fragment&#x4F7F;&#x7528;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x6CD5;&#x7DDA;&#xFF0C;&#x6211;&#x5011;&#x5C31;&#x53EF;&#x4EE5;&#x8B93;&#x5149;&#x7167;&#x76F8;&#x4FE1;&#x4E00;&#x500B;&#x8868;&#x9762;&#x7531;&#x5F88;&#x591A;&#x5FAE;&#x5C0F;&#x7684;&#xFF08;&#x5782;&#x76F4;&#x65BC;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x7684;&#xFF09;&#x5E73;&#x9762;&#x6240;&#x7D44;&#x6210;&#xFF0C;&#x7269;&#x9AD4;&#x8868;&#x9762;&#x7684;&#x7D30;&#x7BC0;&#x5C07;&#x6703;&#x5F97;&#x5230;&#x6975;&#x5927;&#x63D0;&#x5347;&#x3002;&#x9019;&#x7A2E;&#x6BCF;&#x500B;fragment&#x4F7F;&#x7528;&#x5404;&#x81EA;&#x7684;&#x6CD5;&#x7DDA;&#xFF0C;&#x66FF;&#x4EE3;&#x4E00;&#x500B;&#x9762;&#x4E0A;&#x6240;&#x6709;fragment&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x500B;&#x6CD5;&#x7DDA;&#x7684;&#x6280;&#x8853;&#x53EB;&#x505A;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#xFF08;normal mapping&#xFF09;&#x6216;&#x51F9;&#x51F8;&#x8CBC;&#x5716;&#xFF08;bump mapping&#xFF09;&#x3002;&#x61C9;&#x7528;&#x5230;&#x78DA;&#x7246;&#x4E0A;&#xFF0C;&#x6548;&#x679C;&#x50CF;&#x9019;&#x6A23;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/normal_mapping_compare.png" alt=""></p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x7D30;&#x7BC0;&#x7372;&#x5F97;&#x4E86;&#x6975;&#x5927;&#x63D0;&#x5347;&#xFF0C;&#x958B;&#x92B7;&#x537B;&#x4E0D;&#x5927;&#x3002;&#x56E0;&#x70BA;&#x6211;&#x5011;&#x53EA;&#x9700;&#x8981;&#x6539;&#x8B8A;&#x6BCF;&#x500B;fragment&#x7684;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#xFF0C;&#x4E26;&#x4E0D;&#x9700;&#x8981;&#x6539;&#x8B8A;&#x6240;&#x6709;&#x5149;&#x7167;&#x516C;&#x5F0F;&#x3002;&#x73FE;&#x5728;&#x6211;&#x5011;&#x662F;&#x70BA;&#x6BCF;&#x500B;fragment&#x50B3;&#x905E;&#x4E00;&#x500B;&#x6CD5;&#x7DDA;&#xFF0C;&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#x63D2;&#x503C;&#x8868;&#x9762;&#x6CD5;&#x7DDA;&#x3002;&#x9019;&#x6A23;&#x5149;&#x7167;&#x4F7F;&#x8868;&#x9762;&#x64C1;&#x6709;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x7D30;&#x7BC0;&#x3002;</p>
+<h3 id="%E6%B3%95%E7%B7%9A%E8%B2%BC%E5%9C%96">&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;</h3>
+<p>&#x70BA;&#x4F7F;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x5DE5;&#x4F5C;&#xFF0C;&#x6211;&#x5011;&#x9700;&#x8981;&#x70BA;&#x6BCF;&#x500B;fragment&#x63D0;&#x4F9B;&#x4E00;&#x500B;&#x6CD5;&#x7DDA;&#x3002;&#x50CF;diffuse&#x8CBC;&#x5716;&#x548C;specular&#x8CBC;&#x5716;&#x4E00;&#x6A23;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x500B;2D&#x7D0B;&#x7406;&#x4F86;&#x5132;&#x5B58;&#x6CD5;&#x7DDA;&#x6578;&#x64DA;&#x3002;2D&#x7D0B;&#x7406;&#x4E0D;&#x50C5;&#x53EF;&#x4EE5;&#x5132;&#x5B58;&#x984F;&#x8272;&#x548C;&#x5149;&#x7167;&#x6578;&#x64DA;&#xFF0C;&#x9084;&#x53EF;&#x4EE5;&#x5132;&#x5B58;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x3002;&#x9019;&#x6A23;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5F9E;2D&#x7D0B;&#x7406;&#x4E2D;&#x63A1;&#x6A23;&#x5F97;&#x5230;&#x7279;&#x5B9A;&#x7D0B;&#x7406;&#x7684;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x3002;</p>
+<p>&#x7531;&#x65BC;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x662F;&#x500B;&#x5E7E;&#x4F55;&#x5DE5;&#x5177;&#xFF0C;&#x800C;&#x7D0B;&#x7406;&#x901A;&#x5E38;&#x53EA;&#x7528;&#x65BC;&#x5132;&#x5B58;&#x984F;&#x8272;&#x4FE1;&#x606F;&#xFF0C;&#x7528;&#x7D0B;&#x7406;&#x5132;&#x5B58;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x4E0D;&#x662F;&#x975E;&#x5E38;&#x76F4;&#x63A5;&#x3002;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4E00;&#x60F3;&#xFF0C;&#x5C31;&#x6703;&#x77E5;&#x9053;&#x7D0B;&#x7406;&#x4E2D;&#x7684;&#x984F;&#x8272;&#x5411;&#x91CF;&#x7528;r&#x3001;g&#x3001;b&#x5143;&#x7D20;&#x4EE3;&#x8868;&#x4E00;&#x500B;3D&#x5411;&#x91CF;&#x3002;&#x985E;&#x4F3C;&#x7684;&#x6211;&#x5011;&#x4E5F;&#x53EF;&#x4EE5;&#x5C07;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x7684;x&#x3001;y&#x3001;z&#x5143;&#x7D20;&#x5132;&#x5B58;&#x5230;&#x7D0B;&#x7406;&#x4E2D;&#xFF0C;&#x4EE3;&#x66FF;&#x984F;&#x8272;&#x7684;r&#x3001;g&#x3001;b&#x5143;&#x7D20;&#x3002;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x7684;&#x7BC4;&#x570D;&#x5728;-1&#x5230;1&#x4E4B;&#x9593;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x5011;&#x5148;&#x8981;&#x5C07;&#x5176;&#x6620;&#x5C04;&#x5230;0&#x5230;1&#x7684;&#x7BC4;&#x570D;&#xFF1A;</p>
+<p>1
+vec3 rgb_normal = normal * 0.5 - 0.5; // transforms from [-1,1] to [0,1]
+&#x5C07;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x8B8A;&#x63DB;&#x70BA;&#x50CF;&#x9019;&#x6A23;&#x7684;RGB&#x984F;&#x8272;&#x5143;&#x7D20;&#xFF0C;&#x6211;&#x5011;&#x5C31;&#x80FD;&#x628A;&#x6839;&#x64DA;&#x8868;&#x9762;&#x7684;&#x5F62;&#x72C0;&#x7684;fragment&#x7684;&#x6CD5;&#x7DDA;&#x4FDD;&#x5B58;&#x5728;2D&#x7D0B;&#x7406;&#x4E2D;&#x3002;&#x6559;&#x7A0B;&#x958B;&#x982D;&#x5C55;&#x793A;&#x7684;&#x90A3;&#x500B;&#x78DA;&#x584A;&#x7684;&#x4F8B;&#x5B50;&#x7684;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/normal_mapping_normal_map.png" alt=""></p>
+<p>&#x9019;&#x6703;&#x662F;&#x4E00;&#x7A2E;&#x504F;&#x85CD;&#x8272;&#x8ABF;&#x7684;&#x7D0B;&#x7406;&#xFF08;&#x4F60;&#x5728;&#x7DB2;&#x4E0A;&#x627E;&#x5230;&#x7684;&#x5E7E;&#x4E4E;&#x6240;&#x6709;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x90FD;&#x662F;&#x9019;&#x6A23;&#x7684;&#xFF09;&#x3002;&#x9019;&#x662F;&#x56E0;&#x70BA;&#x6240;&#x6709;&#x6CD5;&#x7DDA;&#x7684;&#x6307;&#x5411;&#x90FD;&#x504F;&#x5411;z&#x8EF8;&#xFF08;0, 0, 1&#xFF09;&#x9019;&#x662F;&#x4E00;&#x7A2E;&#x504F;&#x85CD;&#x7684;&#x984F;&#x8272;&#x3002;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x5F9E;z&#x8EF8;&#x65B9;&#x5411;&#x4E5F;&#x5411;&#x5176;&#x4ED6;&#x65B9;&#x5411;&#x8F15;&#x5FAE;&#x504F;&#x79FB;&#xFF0C;&#x984F;&#x8272;&#x4E5F;&#x5C31;&#x767C;&#x751F;&#x4E86;&#x8F15;&#x5FAE;&#x8B8A;&#x5316;&#xFF0C;&#x9019;&#x6A23;&#x770B;&#x8D77;&#x4F86;&#x4FBF;&#x6709;&#x4E86;&#x4E00;&#x7A2E;&#x6DF1;&#x5EA6;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5728;&#x6BCF;&#x500B;&#x78DA;&#x584A;&#x7684;&#x9802;&#x90E8;&#xFF0C;&#x984F;&#x8272;&#x50BE;&#x5411;&#x65BC;&#x504F;&#x7DA0;&#xFF0C;&#x9019;&#x662F;&#x56E0;&#x70BA;&#x78DA;&#x584A;&#x7684;&#x9802;&#x90E8;&#x7684;&#x6CD5;&#x7DDA;&#x504F;&#x5411;&#x65BC;&#x6307;&#x5411;&#x6B63;y&#x8EF8;&#x65B9;&#x5411;&#xFF08;0, 1, 0&#xFF09;&#xFF0C;&#x9019;&#x6A23;&#x5B83;&#x5C31;&#x662F;&#x7DA0;&#x8272;&#x7684;&#x4E86;&#x3002;</p>
+<p>&#x5728;&#x4E00;&#x500B;&#x7C21;&#x55AE;&#x7684;&#x671D;&#x5411;&#x6B63;z&#x8EF8;&#x7684;&#x5E73;&#x9762;&#x4E0A;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x7528;&#x9019;&#x500B;diffuse&#x7D0B;&#x7406;&#x548C;&#x9019;&#x500B;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x4F86;&#x6E32;&#x67D3;&#x524D;&#x9762;&#x90E8;&#x5206;&#x7684;&#x5716;&#x7247;&#x3002;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x9019;&#x500B;&#x93C8;&#x63A5;&#x88E1;&#x7684;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x548C;&#x4E0A;&#x9762;&#x5C55;&#x793A;&#x7684;&#x90A3;&#x500B;&#x4E0D;&#x4E00;&#x6A23;&#x3002;&#x539F;&#x56E0;&#x662F;OpenGL&#x8B80;&#x53D6;&#x7684;&#x7D0B;&#x7406;&#x7684;y&#xFF08;&#x6216;V&#xFF09;&#x5EA7;&#x6A19;&#x548C;&#x7D0B;&#x7406;&#x901A;&#x5E38;&#x88AB;&#x5275;&#x5EFA;&#x7684;&#x65B9;&#x5F0F;&#x76F8;&#x53CD;&#x3002;&#x93C8;&#x63A5;&#x88E1;&#x7684;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x7684;y&#xFF08;&#x6216;&#x7DA0;&#x8272;&#xFF09;&#x5143;&#x7D20;&#x662F;&#x76F8;&#x53CD;&#x7684;&#xFF08;&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x7DA0;&#x8272;&#x73FE;&#x5728;&#x5728;&#x4E0B;&#x908A;&#xFF09;&#xFF1B;&#x5982;&#x679C;&#x4F60;&#x6C92;&#x8003;&#x616E;&#x9019;&#x500B;&#xFF0C;&#x5149;&#x7167;&#x5C31;&#x4E0D;&#x6B63;&#x78BA;&#x4E86;&#xFF08;&#x8B6F;&#x8A3B;&#xFF1A;&#x5982;&#x679C;&#x4F60;&#x73FE;&#x5728;&#x4E0D;&#x518D;&#x4F7F;&#x7528;SOIL&#x4E86;&#xFF0C;&#x90A3;&#x5C31;&#x4E0D;&#x8981;&#x7528;&#x93C8;&#x63A5;&#x88E1;&#x7684;&#x90A3;&#x500B;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#xFF0C;&#x9019;&#x500B;&#x554F;&#x984C;&#x662F;SOIL&#x8F09;&#x5165;&#x7D0B;&#x7406;&#x4E0A;&#x4E0B;&#x985B;&#x5012;&#x6240;&#x81F4;&#xFF0C;&#x5B83;&#x4E5F;&#x6703;&#x628A;&#x6CD5;&#x7DDA;&#x5728;y&#x65B9;&#x5411;&#x4E0A;&#x985B;&#x5012;&#xFF09;&#x3002;&#x52A0;&#x8F09;&#x7D0B;&#x7406;&#xFF0C;&#x628A;&#x5B83;&#x5011;&#x7D81;&#x5B9A;&#x5230;&#x5408;&#x9069;&#x7684;&#x7D0B;&#x7406;&#x55AE;&#x5143;&#xFF0C;&#x7136;&#x5F8C;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x6539;&#x8B8A;&#x4E86;&#x7684;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#x4F86;&#x6E32;&#x67D3;&#x4E00;&#x500B;&#x5E73;&#x9762;&#xFF1A;</p>
+<pre><code class="lang-c++">uniform sampler2D normalMap;  
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{           
+    <span class="hljs-comment">// &#x5F9E;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x7BC4;&#x570D;[0,1]&#x7372;&#x53D6;&#x6CD5;&#x7DDA;</span>
+    normal = texture(normalMap, fs_in.TexCoords).rgb;
+    <span class="hljs-comment">// &#x5C07;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x8F49;&#x63DB;&#x70BA;&#x7BC4;&#x570D;[-1,1]</span>
+    normal = normalize(normal * <span class="hljs-number">2.0</span> - <span class="hljs-number">1.0</span>);   
+
+    [...]
+    <span class="hljs-comment">// &#x50CF;&#x5F80;&#x5E38;&#x90A3;&#x6A23;&#x8655;&#x7406;&#x5149;&#x7167;</span>
+}
+</code></pre>
+<p>&#x9019;&#x88E1;&#x6211;&#x5011;&#x5C07;&#x88AB;&#x63A1;&#x6A23;&#x7684;&#x6CD5;&#x7DDA;&#x984F;&#x8272;&#x5F9E;0&#x5230;1&#x91CD;&#x65B0;&#x6620;&#x5C04;&#x56DE;-1&#x5230;1&#xFF0C;&#x4FBF;&#x80FD;&#x5C07;RGB&#x984F;&#x8272;&#x91CD;&#x65B0;&#x8655;&#x7406;&#x6210;&#x6CD5;&#x7DDA;&#xFF0C;&#x7136;&#x5F8C;&#x4F7F;&#x7528;&#x63A1;&#x6A23;&#x51FA;&#x7684;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x61C9;&#x7528;&#x65BC;&#x5149;&#x7167;&#x7684;&#x8A08;&#x7B97;&#x3002;&#x5728;&#x4F8B;&#x5B50;&#x4E2D;&#x6211;&#x5011;&#x4F7F;&#x7528;&#x7684;&#x662F;Blinn-Phong&#x8457;&#x8272;&#x5668;&#x3002;</p>
+<p>&#x901A;&#x904E;&#x6162;&#x6162;&#x96A8;&#x8457;&#x6642;&#x9593;&#x6162;&#x6162;&#x79FB;&#x52D5;&#x5149;&#x6E90;&#xFF0C;&#x4F60;&#x5C31;&#x80FD;&#x660E;&#x767D;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x662F;&#x4EC0;&#x9EBC;&#x610F;&#x601D;&#x4E86;&#x3002;&#x904B;&#x884C;&#x9019;&#x500B;&#x4F8B;&#x5B50;&#x4F60;&#x5C31;&#x80FD;&#x5F97;&#x5230;&#x672C;&#x6559;&#x7A0B;&#x958B;&#x59CB;&#x7684;&#x90A3;&#x500B;&#x6548;&#x679C;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/normal_mapping_correct.png" alt=""></p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x9019;&#x88E1;&#x627E;&#x5230;&#x9019;&#x500B;&#x7C21;&#x55AE;demo&#x7684;&#x6E90;&#x4EE3;&#x78BC;&#x53CA;&#x5176;&#x9802;&#x9EDE;&#x548C;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#x3002;</p>
+<p>&#x7136;&#x800C;&#x6709;&#x500B;&#x554F;&#x984C;&#x9650;&#x5236;&#x4E86;&#x525B;&#x624D;&#x8B1B;&#x7684;&#x90A3;&#x7A2E;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x7684;&#x4F7F;&#x7528;&#x3002;&#x6211;&#x5011;&#x4F7F;&#x7528;&#x7684;&#x90A3;&#x500B;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x88E1;&#x9762;&#x7684;&#x6240;&#x6709;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x90FD;&#x662F;&#x6307;&#x5411;&#x6B63;z&#x65B9;&#x5411;&#x7684;&#x3002;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x80FD;&#x7528;&#xFF0C;&#x662F;&#x56E0;&#x70BA;&#x90A3;&#x500B;&#x5E73;&#x9762;&#x7684;&#x8868;&#x9762;&#x6CD5;&#x7DDA;&#x4E5F;&#x662F;&#x6307;&#x5411;&#x6B63;z&#x65B9;&#x5411;&#x7684;&#x3002;&#x53EF;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x5011;&#x5728;&#x8868;&#x9762;&#x6CD5;&#x7DDA;&#x6307;&#x5411;&#x6B63;y&#x65B9;&#x5411;&#x7684;&#x5E73;&#x9762;&#x4E0A;&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x500B;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x6703;&#x767C;&#x751F;&#x4EC0;&#x9EBC;&#xFF1F;</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/normal_mapping_ground.png" alt=""></p>
+<p>&#x5149;&#x7167;&#x770B;&#x8D77;&#x4F86;&#x5B8C;&#x5168;&#x4E0D;&#x5C0D;&#xFF01;&#x767C;&#x751F;&#x9019;&#x7A2E;&#x60C5;&#x6CC1;&#x662F;&#x5E73;&#x9762;&#x7684;&#x8868;&#x9762;&#x6CD5;&#x7DDA;&#x73FE;&#x5728;&#x6307;&#x5411;&#x4E86;y&#xFF0C;&#x800C;&#x63A1;&#x6A23;&#x5F97;&#x5230;&#x7684;&#x6CD5;&#x7DDA;&#x4ECD;&#x7136;&#x6307;&#x5411;&#x7684;&#x662F;z&#x3002;&#x7D50;&#x679C;&#x5C31;&#x662F;&#x5149;&#x7167;&#x4ECD;&#x7136;&#x8A8D;&#x70BA;&#x8868;&#x9762;&#x6CD5;&#x7DDA;&#x548C;&#x4E4B;&#x524D;&#x671D;&#x5411;&#x6B63;z&#x65B9;&#x5411;&#x6642;&#x4E00;&#x6A23;&#xFF1B;&#x9019;&#x6A23;&#x5149;&#x7167;&#x5C31;&#x4E0D;&#x5C0D;&#x4E86;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x5716;&#x7247;&#x5C55;&#x793A;&#x4E86;&#x9019;&#x500B;&#x8868;&#x9762;&#x4E0A;&#x63A1;&#x6A23;&#x7684;&#x6CD5;&#x7DDA;&#x7684;&#x8FD1;&#x4F3C;&#x60C5;&#x6CC1;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/normal_mapping_ground_normals.png" alt=""></p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6240;&#x6709;&#x6CD5;&#x7DDA;&#x90FD;&#x6307;&#x5411;z&#x65B9;&#x5411;&#xFF0C;&#x5B83;&#x5011;&#x672C;&#x8A72;&#x671D;&#x8457;&#x8868;&#x9762;&#x6CD5;&#x7DDA;&#x6307;&#x5411;y&#x65B9;&#x5411;&#x7684;&#x3002;&#x4E00;&#x500B;&#x53EF;&#x884C;&#x65B9;&#x6848;&#x662F;&#x70BA;&#x6BCF;&#x500B;&#x8868;&#x9762;&#x88FD;&#x4F5C;&#x4E00;&#x500B;&#x55AE;&#x7368;&#x7684;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x3002;&#x5982;&#x679C;&#x662F;&#x4E00;&#x500B;&#x7ACB;&#x65B9;&#x9AD4;&#x7684;&#x8A71;&#x6211;&#x5011;&#x5C31;&#x9700;&#x8981;6&#x500B;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x6A21;&#x578B;&#x4E0A;&#x6709;&#x7121;&#x6578;&#x7684;&#x671D;&#x5411;&#x4E0D;&#x540C;&#x65B9;&#x5411;&#x7684;&#x8868;&#x9762;&#xFF0C;&#x9019;&#x5C31;&#x4E0D;&#x53EF;&#x884C;&#x4E86;&#xFF08;&#x8B6F;&#x8A3B;&#xFF1A;&#x5BE6;&#x969B;&#x4E0A;&#x5C0D;&#x65BC;&#x8907;&#x96DC;&#x6A21;&#x578B;&#x53EF;&#x4EE5;&#x628A;&#x671D;&#x5411;&#x5404;&#x500B;&#x65B9;&#x5411;&#x7684;&#x6CD5;&#x7DDA;&#x5132;&#x5B58;&#x5728;&#x540C;&#x4E00;&#x5F35;&#x8CBC;&#x5716;&#x4E0A;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x770B;&#x5230;&#x904E;&#x4E0D;&#x53EA;&#x662F;&#x85CD;&#x8272;&#x7684;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#xFF0C;&#x4E0D;&#x904E;&#x7528;&#x90A3;&#x6A23;&#x7684;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x6709;&#x500B;&#x554F;&#x984C;&#x662F;&#x4F60;&#x5FC5;&#x9808;&#x8A18;&#x4F4F;&#x6A21;&#x578B;&#x7684;&#x8D77;&#x59CB;&#x671D;&#x5411;&#xFF0C;&#x5982;&#x679C;&#x6A21;&#x578B;&#x904B;&#x52D5;&#x4E86;&#x9084;&#x8981;&#x8A18;&#x9304;&#x6A21;&#x578B;&#x7684;&#x8B8A;&#x63DB;&#xFF0C;&#x9019;&#x662F;&#x975E;&#x5E38;&#x4E0D;&#x65B9;&#x4FBF;&#x7684;&#xFF1B;&#x6B64;&#x5916;&#x5C31;&#x50CF;&#x4F5C;&#x8005;&#x6240;&#x8AAA;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x628A;&#x4E00;&#x500B;diffuse&#x7D0B;&#x7406;&#x61C9;&#x7528;&#x5728;&#x540C;&#x4E00;&#x500B;&#x7269;&#x9AD4;&#x7684;&#x4E0D;&#x540C;&#x8868;&#x9762;&#x4E0A;&#xFF0C;&#x5C31;&#x50CF;&#x7ACB;&#x65B9;&#x9AD4;&#x90A3;&#x6A23;&#x7684;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x505A;6&#x500B;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#xFF0C;&#x9019;&#x4E5F;&#x4E0D;&#x53EF;&#x53D6;&#xFF09;&#x3002;</p>
+<p>&#x53E6;&#x4E00;&#x500B;&#x7A0D;&#x5FAE;&#x6709;&#x9EDE;&#x96E3;&#x7684;&#x89E3;&#x6C7A;&#x65B9;&#x6848;&#x662F;&#xFF0C;&#x5728;&#x4E00;&#x500B;&#x4E0D;&#x540C;&#x7684;&#x5EA7;&#x6A19;&#x7A7A;&#x9593;&#x4E2D;&#x9032;&#x884C;&#x5149;&#x7167;&#xFF0C;&#x9019;&#x500B;&#x5EA7;&#x6A19;&#x7A7A;&#x9593;&#x88E1;&#xFF0C;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x5411;&#x91CF;&#x7E3D;&#x662F;&#x6307;&#x5411;&#x9019;&#x500B;&#x5EA7;&#x6A19;&#x7A7A;&#x9593;&#x7684;&#x6B63;z&#x65B9;&#x5411;&#xFF1B;&#x6240;&#x6709;&#x7684;&#x5149;&#x7167;&#x5411;&#x91CF;&#x90FD;&#x76F8;&#x5C0D;&#x8207;&#x9019;&#x500B;&#x6B63;z&#x65B9;&#x5411;&#x9032;&#x884C;&#x8B8A;&#x63DB;&#x3002;&#x9019;&#x6A23;&#x6211;&#x5011;&#x5C31;&#x80FD;&#x59CB;&#x7D42;&#x4F7F;&#x7528;&#x540C;&#x6A23;&#x7684;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#xFF0C;&#x4E0D;&#x7BA1;&#x671D;&#x5411;&#x554F;&#x984C;&#x3002;&#x9019;&#x500B;&#x5EA7;&#x6A19;&#x7A7A;&#x9593;&#x53EB;&#x505A;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#xFF08;tangent space&#xFF09;&#x3002;</p>
+<h3 id="%E5%88%87%E7%B7%9A%E7%A9%BA%E9%96%93">&#x5207;&#x7DDA;&#x7A7A;&#x9593;</h3>
+<p>&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x4E2D;&#x7684;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x5728;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x4E2D;&#xFF0C;&#x6CD5;&#x7DDA;&#x6C38;&#x9060;&#x6307;&#x8457;&#x6B63;z&#x65B9;&#x5411;&#x3002;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x662F;&#x4F4D;&#x65BC;&#x4E09;&#x89D2;&#x5F62;&#x8868;&#x9762;&#x4E4B;&#x4E0A;&#x7684;&#x7A7A;&#x9593;&#xFF1A;&#x6CD5;&#x7DDA;&#x76F8;&#x5C0D;&#x65BC;&#x55AE;&#x500B;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x672C;&#x5730;&#x53C3;&#x8003;&#x6846;&#x67B6;&#x3002;&#x5B83;&#x5C31;&#x50CF;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x5411;&#x91CF;&#x7684;&#x672C;&#x5730;&#x7A7A;&#x9593;&#xFF1B;&#x5B83;&#x5011;&#x90FD;&#x88AB;&#x5B9A;&#x7FA9;&#x70BA;&#x6307;&#x5411;&#x6B63;z&#x65B9;&#x5411;&#xFF0C;&#x7121;&#x8AD6;&#x6700;&#x7D42;&#x8B8A;&#x63DB;&#x5230;&#x4EC0;&#x9EBC;&#x65B9;&#x5411;&#x3002;&#x4F7F;&#x7528;&#x4E00;&#x500B;&#x7279;&#x5B9A;&#x7684;&#x77E9;&#x9663;&#x6211;&#x5011;&#x5C31;&#x80FD;&#x5C07;&#x672C;&#x5730;/&#x5207;&#x7DDA;&#x7A7A;&#x5BC2;&#x4E2D;&#x7684;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x8F49;&#x6210;&#x4E16;&#x754C;&#x6216;&#x8996;&#x5716;&#x5EA7;&#x6A19;&#xFF0C;&#x4F7F;&#x5B83;&#x5011;&#x8F49;&#x5411;&#x5230;&#x6700;&#x7D42;&#x7684;&#x8CBC;&#x5716;&#x8868;&#x9762;&#x7684;&#x65B9;&#x5411;&#x3002;</p>
+<p>&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x8AAA;&#xFF0C;&#x4E0A;&#x500B;&#x90E8;&#x5206;&#x90A3;&#x500B;&#x671D;&#x5411;&#x6B63;y&#x7684;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x932F;&#x8AA4;&#x7684;&#x8CBC;&#x5230;&#x4E86;&#x8868;&#x9762;&#x4E0A;&#x3002;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x88AB;&#x5B9A;&#x7FA9;&#x5728;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x4E2D;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x7A2E;&#x89E3;&#x6C7A;&#x554F;&#x984C;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x8A08;&#x7B97;&#x51FA;&#x4E00;&#x7A2E;&#x77E9;&#x9663;&#xFF0C;&#x628A;&#x6CD5;&#x7DDA;&#x5F9E;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x8B8A;&#x63DB;&#x5230;&#x4E00;&#x500B;&#x4E0D;&#x540C;&#x7684;&#x7A7A;&#x9593;&#xFF0C;&#x9019;&#x6A23;&#x5B83;&#x5011;&#x5C31;&#x80FD;&#x548C;&#x8868;&#x9762;&#x6CD5;&#x7DDA;&#x65B9;&#x5411;&#x5C0D;&#x9F4A;&#x4E86;&#xFF1A;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x90FD;&#x6703;&#x6307;&#x5411;&#x6B63;y&#x65B9;&#x5411;&#x3002;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x7684;&#x4E00;&#x5927;&#x597D;&#x8655;&#x662F;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x70BA;&#x4EFB;&#x4F55;&#x985E;&#x578B;&#x7684;&#x8868;&#x9762;&#x8A08;&#x7B97;&#x51FA;&#x4E00;&#x500B;&#x9019;&#x6A23;&#x7684;&#x77E9;&#x9663;&#xFF0C;&#x7531;&#x6B64;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x628A;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x7684;z&#x65B9;&#x5411;&#x548C;&#x8868;&#x9762;&#x7684;&#x6CD5;&#x7DDA;&#x65B9;&#x5411;&#x5C0D;&#x9F4A;&#x3002;</p>
+<p>&#x9019;&#x7A2E;&#x77E9;&#x9663;&#x53EB;&#x505A;TBN&#x77E9;&#x9663;&#x9019;&#x4E09;&#x500B;&#x5B57;&#x6BCD;&#x5206;&#x5225;&#x4EE3;&#x8868;tangent&#x3001;bitangent&#x548C;normal&#x5411;&#x91CF;&#x3002;&#x9019;&#x662F;&#x5EFA;&#x69CB;&#x9019;&#x500B;&#x77E9;&#x9663;&#x6240;&#x9700;&#x7684;&#x5411;&#x91CF;&#x3002;&#x8981;&#x5EFA;&#x69CB;&#x9019;&#x6A23;&#x4E00;&#x500B;&#x628A;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x8F49;&#x8B8A;&#x70BA;&#x4E0D;&#x540C;&#x7A7A;&#x9593;&#x7684;&#x8B8A;&#x7570;&#x77E9;&#x9663;&#xFF0C;&#x6211;&#x5011;&#x9700;&#x8981;&#x4E09;&#x500B;&#x76F8;&#x4E92;&#x5782;&#x76F4;&#x7684;&#x5411;&#x91CF;&#xFF0C;&#x5B83;&#x5011;&#x6CBF;&#x4E00;&#x500B;&#x8868;&#x9762;&#x7684;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x5C0D;&#x9F4A;&#x65BC;&#xFF1A;&#x4E0A;&#x3001;&#x53F3;&#x3001;&#x524D;&#xFF1B;&#x9019;&#x548C;&#x6211;&#x5011;&#x5728;<a href="http://learnopengl-cn.readthedocs.org/zh/latest/01%20Getting%20started/09%20Camera/" target="_blank">&#x651D;&#x50CF;&#x6A5F;&#x6559;&#x7A0B;</a>&#x4E2D;&#x505A;&#x7684;&#x985E;&#x4F3C;&#x3002;</p>
+<p>&#x5DF2;&#x77E5;&#x4E0A;&#x5411;&#x91CF;&#x662F;&#x8868;&#x9762;&#x7684;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x3002;&#x53F3;&#x548C;&#x524D;&#x5411;&#x91CF;&#x662F;&#x5207;&#x7DDA;&#x548C;&#x526F;&#x5207;&#x7DDA;&#x5411;&#x91CF;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x5716;&#x7247;&#x5C55;&#x793A;&#x4E86;&#x4E00;&#x500B;&#x8868;&#x9762;&#x7684;&#x4E09;&#x500B;&#x5411;&#x91CF;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/normal_mapping_tbn_vectors.png" alt=""></p>
+<p>&#x8A08;&#x7B97;&#x51FA;&#x5207;&#x7DDA;&#x548C;&#x526F;&#x5207;&#x7DDA;&#x4E26;&#x4E0D;&#x50CF;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x90A3;&#x9EBC;&#x5BB9;&#x6613;&#x3002;&#x5F9E;&#x5716;&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x7684;&#x5207;&#x7DDA;&#x548C;&#x526F;&#x5207;&#x7DDA;&#x8207;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x7684;&#x5169;&#x500B;&#x65B9;&#x5411;&#x5C0D;&#x9F4A;&#x3002;&#x6211;&#x5011;&#x5C31;&#x662F;&#x7528;&#x5230;&#x9019;&#x500B;&#x7279;&#x6027;&#x8A08;&#x7B97;&#x6BCF;&#x500B;&#x8868;&#x9762;&#x7684;&#x5207;&#x7DDA;&#x548C;&#x526F;&#x5207;&#x7DDA;&#x7684;&#x3002;&#x9700;&#x8981;&#x7528;&#x5230;&#x4E00;&#x4E9B;&#x6578;&#x5B78;&#x624D;&#x80FD;&#x5F97;&#x5230;&#x5B83;&#x5011;&#xFF1B;&#x8ACB;&#x770B;&#x4E0B;&#x5716;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/normal_mapping_surface_edges.png" alt=""></p>
+<p>&#x4E0A;&#x5716;&#x4E2D;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x908A;<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>E</mi>
+    <mn>2</mn>
+  </msub>
+</math>&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x7684;&#x4E0D;&#x540C;&#xFF0C;<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>E</mi>
+    <mn>2</mn>
+  </msub>
+</math>&#x662F;&#x4E00;&#x500B;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x908A;&#xFF0C;&#x9019;&#x500B;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x53E6;&#x5916;&#x5169;&#x689D;&#x908A;&#x662F;<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+  <msub>
+    <mi>U</mi>
+    <mn>2</mn>
+  </msub>
+</math>&#x548C;<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+  <msub>
+    <mi>V</mi>
+    <mn>2</mn>
+  </msub>
+</math>&#xFF0C;&#x5B83;&#x5011;&#x8207;&#x5207;&#x7DDA;&#x5411;&#x91CF;*T*&#x548C;&#x526F;&#x5207;&#x7DDA;&#x5411;&#x91CF;*B*&#x65B9;&#x5411;&#x76F8;&#x540C;&#x3002;&#x9019;&#x6A23;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x628A;&#x908A;&#x548C;<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>E</mi>
+    <mn>1</mn>
+  </msub>
+</math>&#x548C;<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>E</mi>
+    <mn>2</mn>
+  </msub>
+</math>&#x7528;&#x5207;&#x7DDA;&#x5411;&#x91CF; <em>T</em> &#x548C;&#x526F;&#x5207;&#x7DDA;&#x5411;&#x91CF; <em>B</em> &#x7684;&#x7DDA;&#x6027;&#x7D44;&#x5408;&#x8868;&#x793A;&#x51FA;&#x4F86;&#xFF08;&#x8B6F;&#x8A3B;&#xFF1A;&#x6CE8;&#x610F;<em>T</em>&#x548C;<em>B</em>&#x90FD;&#x662F;&#x55AE;&#x4F4D;&#x9577;&#x5EA6;&#xFF0C;&#x5728;<em>TB</em>&#x5E73;&#x9762;&#x4E2D;&#x6240;&#x6709;&#x9EDE;&#x7684;<em>T</em>&#x3001;<em>B</em>&#x5EA7;&#x6A19;&#x90FD;&#x5728;0&#x5230;1&#x4E4B;&#x9593;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x9032;&#x884C;&#x9019;&#x6A23;&#x7684;&#x7D44;&#x5408;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-math">E_1 = \Delta U_1T + \Delta V_1B
+
+E_2 = \Delta U_2T + \Delta V_2B
+</code></pre>
+<p>&#x6211;&#x5011;&#x4E5F;&#x53EF;&#x4EE5;&#x5BEB;&#x6210;&#x9019;&#x6A23;&#xFF1A;</p>
+<pre><code class="lang-math">(E_{1x}, E_{1y}, E_{1z}) = \Delta U_1(T_x, T_y, T_z) + \Delta V_1(B_x, B_y, B_z)
+</code></pre>
+<p><em>E</em>&#x662F;&#x5169;&#x500B;&#x5411;&#x91CF;&#x4F4D;&#x7F6E;&#x7684;&#x5DEE;&#xFF0C;<em>U</em>&#x548C;<em>V</em>&#x662F;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x7684;&#x5DEE;&#x3002;&#x7136;&#x5F8C;&#x6211;&#x5011;&#x5F97;&#x5230;&#x5169;&#x500B;&#x672A;&#x77E5;&#x6578;&#xFF08;&#x5207;&#x7DDA;<em>T</em>&#x548C;&#x526F;&#x5207;&#x7DDA;<em>B</em>&#xFF09;&#x548C;&#x5169;&#x500B;&#x7B49;&#x5F0F;&#x3002;&#x4F60;&#x53EF;&#x80FD;&#x60F3;&#x8D77;&#x4F60;&#x7684;&#x4EE3;&#x6578;&#x8AB2;&#x4E86;&#xFF0C;&#x9019;&#x662F;&#x8B93;&#x6211;&#x5011;&#x53BB;&#x63A5;<em>T</em>&#x548C;<em>B</em>&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x7684;&#x65B9;&#x7A0B;&#x5141;&#x8A31;&#x6211;&#x5011;&#x628A;&#x5B83;&#x5011;&#x5BEB;&#x6210;&#x53E6;&#x4E00;&#x7A2E;&#x683C;&#x5F0F;&#xFF1A;&#x77E9;&#x9663;&#x4E58;&#x6CD5;</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mo>[</mo>
+    <mtable rowspacing="4pt" columnspacing="1em">
+      <mtr>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>1</mn>
+              <mi>x</mi>
+            </mrow>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>1</mn>
+              <mi>y</mi>
+            </mrow>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>1</mn>
+              <mi>z</mi>
+            </mrow>
+          </msub>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+              <mi>x</mi>
+            </mrow>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+              <mi>y</mi>
+            </mrow>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+              <mi>z</mi>
+            </mrow>
+          </msub>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo>]</mo>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mo>[</mo>
+    <mtable rowspacing="4pt" columnspacing="1em">
+      <mtr>
+        <mtd>
+          <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+          <msub>
+            <mi>U</mi>
+            <mn>1</mn>
+          </msub>
+        </mtd>
+        <mtd>
+          <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+          <msub>
+            <mi>V</mi>
+            <mn>1</mn>
+          </msub>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+          <msub>
+            <mi>U</mi>
+            <mn>2</mn>
+          </msub>
+        </mtd>
+        <mtd>
+          <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+          <msub>
+            <mi>V</mi>
+            <mn>2</mn>
+          </msub>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo>]</mo>
+  </mrow>
+  <mrow>
+    <mo>[</mo>
+    <mtable rowspacing="4pt" columnspacing="1em">
+      <mtr>
+        <mtd>
+          <msub>
+            <mi>T</mi>
+            <mi>x</mi>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>T</mi>
+            <mi>y</mi>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>T</mi>
+            <mi>z</mi>
+          </msub>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <msub>
+            <mi>B</mi>
+            <mi>x</mi>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>B</mi>
+            <mi>y</mi>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>B</mi>
+            <mi>z</mi>
+          </msub>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo>]</mo>
+  </mrow>
+</math>
+
+<p>&#x5617;&#x8A66;&#x6703;&#x4EE5;&#x4E00;&#x4E0B;&#x77E9;&#x9663;&#x4E58;&#x6CD5;&#xFF0C;&#x5B83;&#x5011;&#x78BA;&#x5BE6;&#x662F;&#x540C;&#x4E00;&#x7A2E;&#x7B49;&#x5F0F;&#x3002;&#x628A;&#x7B49;&#x5F0F;&#x5BEB;&#x6210;&#x77E9;&#x9663;&#x5F62;&#x5F0F;&#x7684;&#x597D;&#x8655;&#x662F;&#xFF0C;&#x89E3;<em>T</em>&#x548C;<em>B</em>&#x6703;&#x56E0;&#x6B64;&#x8B8A;&#x5F97;&#x5F88;&#x5BB9;&#x6613;&#x3002;&#x5169;&#x908A;&#x90FD;&#x4E58;&#x4EE5;<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+  <mi>U</mi>
+  <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+  <mi>V</mi>
+</math>&#x7684;&#x53CD;&#x6578;&#x7B49;&#x65BC;&#xFF1A;</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msup>
+    <mrow>
+      <mo>[</mo>
+      <mtable rowspacing="4pt" columnspacing="1em">
+        <mtr>
+          <mtd>
+            <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+            <msub>
+              <mi>U</mi>
+              <mn>1</mn>
+            </msub>
+          </mtd>
+          <mtd>
+            <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+            <msub>
+              <mi>V</mi>
+              <mn>1</mn>
+            </msub>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+            <msub>
+              <mi>U</mi>
+              <mn>2</mn>
+            </msub>
+          </mtd>
+          <mtd>
+            <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+            <msub>
+              <mi>V</mi>
+              <mn>2</mn>
+            </msub>
+          </mtd>
+        </mtr>
+      </mtable>
+      <mo>]</mo>
+    </mrow>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mo>&#x2212;<!-- − --></mo>
+      <mn>1</mn>
+    </mrow>
+  </msup>
+  <mrow>
+    <mo>[</mo>
+    <mtable rowspacing="4pt" columnspacing="1em">
+      <mtr>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>1</mn>
+              <mi>x</mi>
+            </mrow>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>1</mn>
+              <mi>y</mi>
+            </mrow>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>1</mn>
+              <mi>z</mi>
+            </mrow>
+          </msub>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+              <mi>x</mi>
+            </mrow>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+              <mi>y</mi>
+            </mrow>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+              <mi>z</mi>
+            </mrow>
+          </msub>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo>]</mo>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mo>[</mo>
+    <mtable rowspacing="4pt" columnspacing="1em">
+      <mtr>
+        <mtd>
+          <msub>
+            <mi>T</mi>
+            <mi>x</mi>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>T</mi>
+            <mi>y</mi>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>T</mi>
+            <mi>z</mi>
+          </msub>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <msub>
+            <mi>B</mi>
+            <mi>x</mi>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>B</mi>
+            <mi>y</mi>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>B</mi>
+            <mi>z</mi>
+          </msub>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo>]</mo>
+  </mrow>
+</math>
+
+<p>&#x9019;&#x6A23;&#x6211;&#x5011;&#x5C31;&#x53EF;&#x4EE5;&#x89E3;&#x51FA;<em>T</em>&#x548C;<em>B</em>&#x4E86;&#x3002;&#x9019;&#x9700;&#x8981;&#x6211;&#x5011;&#x8A08;&#x7B97;&#x51FA;delta&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x77E9;&#x9663;&#x7684;&#x64EC;&#x9663;&#x3002;&#x6211;&#x4E0D;&#x6253;&#x7B97;&#x8B1B;&#x89E3;&#x8A08;&#x7B97;&#x9006;&#x77E9;&#x9663;&#x7684;&#x7D30;&#x7BC0;&#xFF0C;&#x4F46;&#x5927;&#x81F4;&#x662F;&#x628A;&#x5B83;&#x8B8A;&#x5316;&#x70BA;&#xFF0C;1&#x9664;&#x4EE5;&#x77E9;&#x9663;&#x7684;&#x884C;&#x5217;&#x5F0F;&#xFF0C;&#x518D;&#x4E58;&#x4EE5;&#x5B83;&#x7684;&#x5171;&#x8EDB;&#x77E9;&#x9663;&#x3002;</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mo>[</mo>
+    <mtable rowspacing="4pt" columnspacing="1em">
+      <mtr>
+        <mtd>
+          <msub>
+            <mi>T</mi>
+            <mi>x</mi>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>T</mi>
+            <mi>y</mi>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>T</mi>
+            <mi>z</mi>
+          </msub>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <msub>
+            <mi>B</mi>
+            <mi>x</mi>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>B</mi>
+            <mi>y</mi>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>B</mi>
+            <mi>z</mi>
+          </msub>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo>]</mo>
+  </mrow>
+  <mo>=</mo>
+  <mfrac>
+    <mn>1</mn>
+    <mrow>
+      <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+      <msub>
+        <mi>U</mi>
+        <mn>1</mn>
+      </msub>
+      <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+      <msub>
+        <mi>V</mi>
+        <mn>2</mn>
+      </msub>
+      <mo>&#x2013;</mo>
+      <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+      <msub>
+        <mi>U</mi>
+        <mn>2</mn>
+      </msub>
+      <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+      <msub>
+        <mi>V</mi>
+        <mn>1</mn>
+      </msub>
+    </mrow>
+  </mfrac>
+  <mrow>
+    <mo>[</mo>
+    <mtable rowspacing="4pt" columnspacing="1em">
+      <mtr>
+        <mtd>
+          <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+          <msub>
+            <mi>V</mi>
+            <mn>2</mn>
+          </msub>
+        </mtd>
+        <mtd>
+          <mo>&#x2212;<!-- − --></mo>
+          <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+          <msub>
+            <mi>V</mi>
+            <mn>1</mn>
+          </msub>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mo>&#x2212;<!-- − --></mo>
+          <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+          <msub>
+            <mi>U</mi>
+            <mn>2</mn>
+          </msub>
+        </mtd>
+        <mtd>
+          <mi mathvariant="normal">&#x394;<!-- Δ --></mi>
+          <msub>
+            <mi>U</mi>
+            <mn>1</mn>
+          </msub>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo>]</mo>
+  </mrow>
+  <mrow>
+    <mo>[</mo>
+    <mtable rowspacing="4pt" columnspacing="1em">
+      <mtr>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>1</mn>
+              <mi>x</mi>
+            </mrow>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>1</mn>
+              <mi>y</mi>
+            </mrow>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>1</mn>
+              <mi>z</mi>
+            </mrow>
+          </msub>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+              <mi>x</mi>
+            </mrow>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+              <mi>y</mi>
+            </mrow>
+          </msub>
+        </mtd>
+        <mtd>
+          <msub>
+            <mi>E</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+              <mi>z</mi>
+            </mrow>
+          </msub>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo>]</mo>
+  </mrow>
+</math>
+
+<p>&#x6709;&#x4E86;&#x6700;&#x5F8C;&#x9019;&#x500B;&#x7B49;&#x5F0F;&#xFF0C;&#x6211;&#x5011;&#x5C31;&#x53EF;&#x4EE5;&#x7528;&#x516C;&#x5F0F;&#x3001;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x5169;&#x689D;&#x908A;&#x4EE5;&#x53CA;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x8A08;&#x7B97;&#x51FA;&#x5207;&#x7DDA;&#x5411;&#x91CF;<em>T</em>&#x548C;&#x526F;&#x5207;&#x7DDA;<em>B</em>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x5C0D;&#x9019;&#x4E9B;&#x6578;&#x5B78;&#x5167;&#x5BB9;&#x4E0D;&#x7406;&#x89E3;&#x4E5F;&#x4E0D;&#x7528;&#x64D4;&#x5FC3;&#x3002;&#x7576;&#x4F60;&#x77E5;&#x9053;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x500B;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x9802;&#x9EDE;&#x548C;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#xFF08;&#x56E0;&#x70BA;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x548C;&#x5207;&#x7DDA;&#x5411;&#x91CF;&#x5728;&#x540C;&#x4E00;&#x7A7A;&#x9593;&#x4E2D;&#xFF09;&#x8A08;&#x7B97;&#x51FA;&#x5207;&#x7DDA;&#x548C;&#x526F;&#x5207;&#x7DDA;&#x4F60;&#x5C31;&#x5DF2;&#x7D93;&#x90E8;&#x5206;&#x5730;&#x9054;&#x5230;&#x76EE;&#x7684;&#x4E86;&#xFF08;&#x8B6F;&#x8A3B;&#xFF1A;&#x4E0A;&#x9762;&#x7684;&#x63A8;&#x5C0E;&#x5DF2;&#x7D93;&#x5F88;&#x6E05;&#x695A;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x660E;&#x767D;&#x53EF;&#x4EE5;&#x53C3;&#x8003;&#x4EFB;&#x610F;&#x7DDA;&#x6027;&#x4EE3;&#x6578;&#x6559;&#x6750;&#xFF0C;&#x5C31;&#x50CF;&#x4F5C;&#x8005;&#x6240;&#x8AAA;&#x7684;&#x8A18;&#x4F4F;&#x6C42;&#x5F97;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x7684;&#x516C;&#x5F0F;&#x4E5F;&#x884C;&#xFF0C;&#x4E0D;&#x904E;&#x4E0D;&#x7BA1;&#x600E;&#x6A23;&#x90FD;&#x5F97;&#x7406;&#x89E3;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x7684;&#x542B;&#x7FA9;&#xFF09;&#x3002;</p>
+<h3 id="%E6%89%8B%E5%B7%A5%E8%A8%88%E7%AE%97%E5%88%87%E7%B7%9A%E5%92%8C%E5%89%AF%E5%88%87%E7%B7%9A">&#x624B;&#x5DE5;&#x8A08;&#x7B97;&#x5207;&#x7DDA;&#x548C;&#x526F;&#x5207;&#x7DDA;</h3>
+<p>&#x9019;&#x500B;&#x6559;&#x7A0B;&#x7684;demo&#x5834;&#x666F;&#x4E2D;&#x6709;&#x4E00;&#x500B;&#x7C21;&#x55AE;&#x7684;2D&#x5E73;&#x9762;&#xFF0C;&#x5B83;&#x671D;&#x5411;&#x6B63;z&#x65B9;&#x5411;&#x3002;&#x9019;&#x6B21;&#x6211;&#x5011;&#x6703;&#x4F7F;&#x7528;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x4F86;&#x5BE6;&#x73FE;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x4F7F;&#x5E73;&#x9762;&#x671D;&#x5411;&#x4EFB;&#x610F;&#x65B9;&#x5411;&#xFF0C;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x4ECD;&#x7136;&#x80FD;&#x5920;&#x5DE5;&#x4F5C;&#x3002;&#x4F7F;&#x7528;&#x524D;&#x9762;&#x8A0E;&#x8AD6;&#x7684;&#x6578;&#x5B78;&#x65B9;&#x6CD5;&#xFF0C;&#x6211;&#x5011;&#x4F86;&#x624B;&#x5DE5;&#x8A08;&#x7B97;&#x51FA;&#x8868;&#x9762;&#x7684;&#x5207;&#x7DDA;&#x548C;&#x526F;&#x5207;&#x7DDA;&#x5411;&#x91CF;&#x3002;</p>
+<p>&#x5047;&#x8A2D;&#x5E73;&#x9762;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x5411;&#x91CF;&#x5EFA;&#x7ACB;&#x8D77;&#x4F86;&#xFF08;1&#x3001;2&#x3001;3&#x548C;1&#x3001;3&#x3001;4&#xFF0C;&#x5B83;&#x5011;&#x662F;&#x5169;&#x500B;&#x4E09;&#x89D2;&#x5F62;&#xFF09;&#xFF1A;
+// positions
+glm::vec3 pos1(-1.0,  1.0, 0.0);
+glm::vec3 pos2(-1.0, -1.0, 0.0);
+glm::vec3 pos3(1.0, -1.0, 0.0);
+glm::vec3 pos4(1.0, 1.0, 0.0);
+// texture coordinates
+glm::vec2 uv1(0.0, 1.0);
+glm::vec2 uv2(0.0, 0.0);
+glm::vec2 uv3(1.0, 0.0);
+glm::vec2 uv4(1.0, 1.0);
+// normal vector
+glm::vec3 nm(0.0, 0.0, 1.0);</p>
+<p>&#x6211;&#x5011;&#x5148;&#x8A08;&#x7B97;&#x7B2C;&#x4E00;&#x500B;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x908A;&#x548C;deltaUV&#x5EA7;&#x6A19;&#xFF1A;</p>
+<p>1
+2
+3
+4
+glm::vec3 edge1 = pos2 - pos1;
+glm::vec3 edge2 = pos3 - pos1;
+glm::vec2 deltaUV1 = uv2 - uv1;
+glm::vec2 deltaUV2 = uv3 - uv1;</p>
+<p>&#x6709;&#x4E86;&#x8A08;&#x7B97;&#x5207;&#x7DDA;&#x548C;&#x526F;&#x5207;&#x7DDA;&#x7684;&#x5FC5;&#x5099;&#x6578;&#x64DA;&#xFF0C;&#x6211;&#x5011;&#x5C31;&#x53EF;&#x4EE5;&#x958B;&#x59CB;&#x5BEB;&#x51FA;&#x4F86;&#x81EA;&#x65BC;&#x524D;&#x9762;&#x90E8;&#x5206;&#x4E2D;&#x7684;&#x4E0B;&#x5217;&#x7B49;&#x5F0F;&#xFF1A;</p>
+<pre><code class="lang-c++">GLfloat f = <span class="hljs-number">1.0f</span> / (deltaUV1.x * deltaUV2.y - deltaUV2.x * deltaUV1.y);
+
+tangent1.x = f * (deltaUV2.y * edge1.x - deltaUV1.y * edge2.x);
+tangent1.y = f * (deltaUV2.y * edge1.y - deltaUV1.y * edge2.y);
+tangent1.z = f * (deltaUV2.y * edge1.z - deltaUV1.y * edge2.z);
+tangent1 = glm::normalize(tangent1);
+
+bitangent1.x = f * (-deltaUV2.x * edge1.x + deltaUV1.x * edge2.x);
+bitangent1.y = f * (-deltaUV2.x * edge1.y + deltaUV1.x * edge2.y);
+bitangent1.z = f * (-deltaUV2.x * edge1.z + deltaUV1.x * edge2.z);
+bitangent1 = glm::normalize(bitangent1);  
+
+[...] <span class="hljs-comment">// similar procedure for calculating tangent/bitangent for plane&apos;s second triangle</span>
+</code></pre>
+<p>&#x6211;&#x5011;&#x9810;&#x5148;&#x8A08;&#x7B97;&#x51FA;&#x7B49;&#x5F0F;&#x7684;&#x5206;&#x6578;&#x90E8;&#x5206;f&#xFF0C;&#x7136;&#x5F8C;&#x628A;&#x5B83;&#x548C;&#x6BCF;&#x500B;&#x5411;&#x91CF;&#x7684;&#x5143;&#x7D20;&#x9032;&#x884C;&#x76F8;&#x61C9;&#x77E9;&#x9663;&#x4E58;&#x6CD5;&#x3002;&#x5982;&#x679C;&#x4F60;&#x628A;&#x4EE3;&#x78BC;&#x548C;&#x6700;&#x7D42;&#x7684;&#x7B49;&#x5F0F;&#x5C0D;&#x6BD4;&#x4F60;&#x6703;&#x767C;&#x73FE;&#xFF0C;&#x9019;&#x5C31;&#x662F;&#x76F4;&#x63A5;&#x5957;&#x7528;&#x3002;&#x6700;&#x5F8C;&#x6211;&#x5011;&#x9084;&#x8981;&#x9032;&#x884C;&#x6A19;&#x6E96;&#x5316;&#xFF0C;&#x4F86;&#x78BA;&#x4FDD;&#x5207;&#x7DDA;/&#x526F;&#x5207;&#x7DDA;&#x5411;&#x91CF;&#x6700;&#x5F8C;&#x662F;&#x55AE;&#x4F4D;&#x5411;&#x91CF;&#x3002;</p>
+<p>&#x56E0;&#x70BA;&#x4E00;&#x500B;&#x4E09;&#x89D2;&#x5F62;&#x6C38;&#x9060;&#x662F;&#x5E73;&#x5766;&#x7684;&#x5F62;&#x72C0;&#xFF0C;&#x6211;&#x5011;&#x53EA;&#x9700;&#x70BA;&#x6BCF;&#x500B;&#x4E09;&#x89D2;&#x5F62;&#x8A08;&#x7B97;&#x4E00;&#x500B;&#x5207;&#x7DDA;/&#x526F;&#x5207;&#x7DDA;&#xFF0C;&#x5B83;&#x5011;&#x5C0D;&#x65BC;&#x6BCF;&#x500B;&#x4E09;&#x89D2;&#x5F62;&#x4E0A;&#x7684;&#x9802;&#x9EDE;&#x90FD;&#x662F;&#x4E00;&#x6A23;&#x7684;&#x3002;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x5927;&#x591A;&#x6578;&#x5BE6;&#x73FE;&#x901A;&#x5E38;&#x4E09;&#x89D2;&#x5F62;&#x548C;&#x4E09;&#x89D2;&#x5F62;&#x4E4B;&#x9593;&#x90FD;&#x6703;&#x5171;&#x4EAB;&#x9802;&#x9EDE;&#x3002;&#x9019;&#x7A2E;&#x60C5;&#x6CC1;&#x4E0B;&#x958B;&#x767C;&#x8005;&#x901A;&#x5E38;&#x5C07;&#x6BCF;&#x500B;&#x9802;&#x9EDE;&#x7684;&#x6CD5;&#x7DDA;&#x548C;&#x5207;&#x7DDA;/&#x526F;&#x5207;&#x7DDA;&#x7B49;&#x9802;&#x9EDE;&#x5C6C;&#x6027;&#x5E73;&#x5747;&#x5316;&#xFF0C;&#x4EE5;&#x7372;&#x5F97;&#x66F4;&#x52A0;&#x67D4;&#x548C;&#x7684;&#x6548;&#x679C;&#x3002;&#x6211;&#x5011;&#x7684;&#x5E73;&#x9762;&#x7684;&#x4E09;&#x89D2;&#x5F62;&#x4E4B;&#x9593;&#x5206;&#x4EAB;&#x4E86;&#x4E00;&#x4E9B;&#x9802;&#x9EDE;&#xFF0C;&#x4F46;&#x662F;&#x56E0;&#x70BA;&#x5169;&#x500B;&#x4E09;&#x89D2;&#x5F62;&#x76F8;&#x4E92;&#x4E26;&#x884C;&#xFF0C;&#x56E0;&#x6B64;&#x4E26;&#x4E0D;&#x9700;&#x8981;&#x5C07;&#x7D50;&#x679C;&#x5E73;&#x5747;&#x5316;&#xFF0C;&#x4F46;&#x7121;&#x8AD6;&#x4F55;&#x6642;&#x53EA;&#x8981;&#x4F60;&#x9047;&#x5230;&#x9019;&#x7A2E;&#x60C5;&#x6CC1;&#x8A18;&#x4F4F;&#x5B83;&#x5C31;&#x662F;&#x4EF6;&#x597D;&#x4E8B;&#x3002;</p>
+<p>&#x6700;&#x5F8C;&#x7684;&#x5207;&#x7DDA;&#x548C;&#x526F;&#x5207;&#x7DDA;&#x5411;&#x91CF;&#x7684;&#x503C;&#x61C9;&#x8A72;&#x662F;(1, 0, 0)&#x548C;(0, 1, 0)&#xFF0C;&#x5B83;&#x5011;&#x548C;&#x6CD5;&#x7DDA;(0, 0, 1)&#x7D44;&#x6210;&#x76F8;&#x4E92;&#x5782;&#x76F4;&#x7684;TBN&#x77E9;&#x9663;&#x3002;&#x5728;&#x5E73;&#x9762;&#x4E0A;&#x986F;&#x793A;&#x51FA;&#x4F86;TBN&#x61C9;&#x8A72;&#x662F;&#x9019;&#x6A23;&#x7684;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/normal_mapping_tbn_shown.png" alt=""></p>
+<p>&#x6BCF;&#x500B;&#x9802;&#x9EDE;&#x5B9A;&#x7FA9;&#x4E86;&#x5207;&#x7DDA;&#x548C;&#x526F;&#x5207;&#x7DDA;&#x5411;&#x91CF;&#xFF0C;&#x6211;&#x5011;&#x5C31;&#x53EF;&#x4EE5;&#x958B;&#x59CB;&#x5BE6;&#x73FE;&#x6B63;&#x78BA;&#x7684;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x4E86;&#x3002;</p>
+<h3 id="%E5%88%87%E7%B7%9A%E7%A9%BA%E9%96%93%E6%B3%95%E7%B7%9A%E8%B2%BC%E5%9C%96">&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;</h3>
+<p>&#x70BA;&#x8B93;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x5DE5;&#x4F5C;&#xFF0C;&#x6211;&#x5011;&#x5148;&#x5F97;&#x5728;&#x8457;&#x8272;&#x5668;&#x4E2D;&#x5275;&#x5EFA;&#x4E00;&#x500B;TBN&#x77E9;&#x9663;&#x3002;&#x6211;&#x5011;&#x5148;&#x5C07;&#x524D;&#x9762;&#x8A08;&#x7B97;&#x51FA;&#x4F86;&#x7684;&#x5207;&#x7DDA;&#x548C;&#x526F;&#x5207;&#x7DDA;&#x5411;&#x91CF;&#x50B3;&#x7D66;&#x9802;&#x9EDE;&#x8457;&#x8272;&#x5668;&#xFF0C;&#x4F5C;&#x70BA;&#x5B83;&#x7684;&#x5C6C;&#x6027;&#xFF1A;</p>
+<pre><code class="lang-c++"><span class="hljs-preprocessor">#version <span class="hljs-number">330</span> core</span>
+layout (location = <span class="hljs-number">0</span>) in vec3 position;
+layout (location = <span class="hljs-number">1</span>) in vec3 normal;
+layout (location = <span class="hljs-number">2</span>) in vec2 texCoords;
+layout (location = <span class="hljs-number">3</span>) in vec3 tangent;
+layout (location = <span class="hljs-number">4</span>) in vec3 bitangent;
+</code></pre>
+<p>&#x5728;&#x9802;&#x9EDE;&#x8457;&#x8272;&#x5668;&#x7684;main&#x51FD;&#x6578;&#x4E2D;&#x6211;&#x5011;&#x5275;&#x5EFA;TBN&#x77E9;&#x9663;&#xFF1A;</p>
+<pre><code class="lang-c++">void main()
+{
+   [...]
+   vec3 T = normalize(vec3(model * vec4(tangent,   0.0)));
+   vec3 B = normalize(vec3(model * vec4(bitangent, 0.0)));
+   vec3 N = normalize(vec3(model * vec4(normal,    0.0)));
+   mat3 TBN = mat3(T, B, N)
+}
+</code></pre>
+<p>&#x6211;&#x5011;&#x5148;&#x5C07;&#x6240;&#x6709;TBN&#x5411;&#x91CF;&#x8B8A;&#x63DB;&#x5230;&#x6211;&#x5011;&#x6240;&#x64CD;&#x4F5C;&#x7684;&#x5EA7;&#x6A19;&#x7CFB;&#x4E2D;&#xFF0C;&#x73FE;&#x5728;&#x662F;&#x4E16;&#x754C;&#x7A7A;&#x9593;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x4E58;&#x4EE5;model&#x77E9;&#x9663;&#x3002;&#x7136;&#x5F8C;&#x6211;&#x5011;&#x5275;&#x5EFA;&#x5BE6;&#x969B;&#x7684;TBN&#x77E9;&#x9663;&#xFF0C;&#x76F4;&#x63A5;&#x628A;&#x76F8;&#x61C9;&#x7684;&#x5411;&#x91CF;&#x61C9;&#x7528;&#x5230;mat3&#x69CB;&#x9020;&#x5668;&#x5C31;&#x884C;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x5011;&#x5E0C;&#x671B;&#x66F4;&#x7CBE;&#x78BA;&#x7684;&#x8A71;&#x5C31;&#x4E0D;&#x8981;&#x8B1B;TBN&#x5411;&#x91CF;&#x4E58;&#x4EE5;model&#x77E9;&#x9663;&#xFF0C;&#x800C;&#x662F;&#x4F7F;&#x7528;&#x6CD5;&#x7DDA;&#x77E9;&#x9663;&#xFF0C;&#x4F46;&#x6211;&#x5011;&#x53EA;&#x95DC;&#x5FC3;&#x5411;&#x91CF;&#x7684;&#x65B9;&#x5411;&#xFF0C;&#x4E0D;&#x6703;&#x5E73;&#x79FB;&#x4E5F;&#x548C;&#x7E2E;&#x653E;&#x9019;&#x500B;&#x8B8A;&#x63DB;&#x3002;</p>
+<p>&#x5F9E;&#x6280;&#x8853;&#x4E0A;&#x8B1B;&#xFF0C;&#x9802;&#x9EDE;&#x8457;&#x8272;&#x5668;&#x4E2D;&#x7121;&#x9700;&#x526F;&#x5207;&#x7DDA;&#x3002;&#x6240;&#x6709;&#x7684;&#x9019;&#x4E09;&#x500B;TBN&#x5411;&#x91CF;&#x90FD;&#x662F;&#x76F8;&#x4E92;&#x5782;&#x76F4;&#x7684;&#x6240;&#x4EE5;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5728;&#x9802;&#x9EDE;&#x8457;&#x8272;&#x5668;&#x4E2D;&#x5EB8;T&#x548C;N&#x5411;&#x91CF;&#x7684;&#x53C9;&#x4E58;&#xFF0C;&#x81EA;&#x5DF1;&#x8A08;&#x7B97;&#x51FA;&#x526F;&#x5207;&#x7DDA;&#xFF1A;vec3 B = cross(T, N);
+&#x73FE;&#x5728;&#x6211;&#x5011;&#x6709;&#x4E86;TBN&#x77E9;&#x9663;&#xFF0C;&#x5982;&#x679C;&#x4F86;&#x4F7F;&#x7528;&#x5B83;&#x5462;&#xFF1F;&#x57FA;&#x672C;&#x6709;&#x5169;&#x7A2E;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x6211;&#x5011;&#x6703;&#x628A;&#x9019;&#x5169;&#x7A2E;&#x65B9;&#x5F0F;&#x90FD;&#x8AAA;&#x660E;&#x4E00;&#x4E0B;&#xFF1A;</p>
+<p>&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x7528;TBN&#x77E9;&#x9663;&#x628A;&#x6240;&#x6709;&#x5411;&#x91CF;&#x5F9E;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x8F49;&#x5230;&#x4E16;&#x754C;&#x7A7A;&#x9593;&#xFF0C;&#x50B3;&#x7D66;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#xFF0C;&#x7136;&#x5F8C;&#x628A;&#x63A1;&#x6A23;&#x5F97;&#x5230;&#x7684;&#x6CD5;&#x7DDA;&#x7528;TBN&#x77E9;&#x9663;&#x5F9E;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x8B8A;&#x63DB;&#x5230;&#x4E16;&#x754C;&#x7A7A;&#x9593;&#xFF1B;&#x6CD5;&#x7DDA;&#x5C31;&#x8655;&#x65BC;&#x548C;&#x5176;&#x4ED6;&#x5149;&#x7167;&#x8B8A;&#x91CF;&#x4E00;&#x6A23;&#x7684;&#x7A7A;&#x9593;&#x4E2D;&#x4E86;&#x3002;
+&#x6211;&#x5011;&#x7528;TBN&#x7684;&#x9006;&#x77E9;&#x9663;&#x628A;&#x6240;&#x6709;&#x4E16;&#x754C;&#x7A7A;&#x9593;&#x7684;&#x5411;&#x91CF;&#x8F49;&#x63DB;&#x5230;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#xFF0C;&#x4F7F;&#x7528;&#x9019;&#x500B;&#x77E9;&#x9663;&#x5C07;&#x9664;&#x6CD5;&#x7DDA;&#x4EE5;&#x5916;&#x7684;&#x6240;&#x6709;&#x76F8;&#x95DC;&#x5149;&#x7167;&#x8B8A;&#x91CF;&#x8F49;&#x63DB;&#x5230;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x4E2D;&#xFF1B;&#x9019;&#x6A23;&#x6CD5;&#x7DDA;&#x4E5F;&#x80FD;&#x548C;&#x5176;&#x4ED6;&#x5149;&#x7167;&#x8B8A;&#x91CF;&#x8655;&#x65BC;&#x540C;&#x4E00;&#x7A7A;&#x9593;&#x4E4B;&#x4E2D;&#x3002;
+&#x6211;&#x5011;&#x4F86;&#x770B;&#x770B;&#x7B2C;&#x4E00;&#x7A2E;&#x60C5;&#x6CC1;&#x3002;&#x6211;&#x5011;&#x5F9E;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x91CD;&#x63A1;&#x6A23;&#x5F97;&#x4F86;&#x7684;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#xFF0C;&#x662F;&#x4EE5;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x8868;&#x9054;&#x7684;&#xFF0C;&#x5118;&#x7BA1;&#x5176;&#x4ED6;&#x5149;&#x7167;&#x5411;&#x91CF;&#x662F;&#x4EE5;&#x4E16;&#x754C;&#x7A7A;&#x9593;&#x8868;&#x9054;&#x7684;&#x3002;&#x628A;TBN&#x50B3;&#x7D66;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#xFF0C;&#x6211;&#x5011;&#x5C31;&#x80FD;&#x5C07;&#x63A1;&#x6A23;&#x5F97;&#x4F86;&#x7684;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x7684;&#x6CD5;&#x7DDA;&#x4E58;&#x4EE5;&#x9019;&#x500B;TBN&#x77E9;&#x9663;&#xFF0C;&#x5C07;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x8B8A;&#x63DB;&#x5230;&#x548C;&#x5176;&#x4ED6;&#x5149;&#x7167;&#x5411;&#x91CF;&#x4E00;&#x6A23;&#x7684;&#x53C3;&#x8003;&#x7A7A;&#x9593;&#x4E2D;&#x3002;&#x9019;&#x7A2E;&#x65B9;&#x5F0F;&#x96A8;&#x5F8C;&#x6240;&#x6709;&#x5149;&#x7167;&#x8A08;&#x7B97;&#x90FD;&#x53EF;&#x4EE5;&#x7C21;&#x55AE;&#x7684;&#x7406;&#x89E3;&#x3002;</p>
+<p>&#x628A;TBN&#x77E9;&#x9663;&#x767C;&#x7D66;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#x5F88;&#x7C21;&#x55AE;&#xFF1A;</p>
+<pre><code class="lang-c++">out VS_OUT {
+    vec3 FragPos;
+    vec2 TexCoords;
+    mat3 TBN;
+} vs_out;  
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    [...]
+    vs_out.TBN = mat3(T, B, N);
+}
+</code></pre>
+<p>&#x5728;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#x4E2D;&#x6211;&#x5011;&#x7528;mat3&#x4F5C;&#x70BA;&#x8F38;&#x5165;&#x8B8A;&#x91CF;&#xFF1A;</p>
+<pre><code class="lang-c++">in VS_OUT {
+    vec3 FragPos;
+    vec2 TexCoords;
+    mat3 TBN;
+} fs_in;
+</code></pre>
+<p>&#x6709;&#x4E86;TBN&#x77E9;&#x9663;&#x6211;&#x5011;&#x73FE;&#x5728;&#x5C31;&#x53EF;&#x4EE5;&#x66F4;&#x65B0;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x4EE3;&#x78BC;&#xFF0C;&#x5F15;&#x5165;&#x5207;&#x7DDA;&#x5230;&#x4E16;&#x754C;&#x7A7A;&#x9593;&#x8B8A;&#x63DB;&#xFF1A;</p>
+<pre><code class="lang-c++">normal = texture(normalMap, fs_in.TexCoords).rgb;
+normal = normalize(normal * <span class="hljs-number">2.0</span> - <span class="hljs-number">1.0</span>);   
+normal = normalize(fs_in.TBN * normal);
+</code></pre>
+<p>&#x56E0;&#x70BA;&#x6700;&#x5F8C;&#x7684;normal&#x73FE;&#x5728;&#x5728;&#x4E16;&#x754C;&#x7A7A;&#x9593;&#x4E2D;&#x4E86;&#xFF0C;&#x5C31;&#x4E0D;&#x7528;&#x6539;&#x8B8A;&#x5176;&#x4ED6;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#x7684;&#x4EE3;&#x78BC;&#x4E86;&#xFF0C;&#x56E0;&#x70BA;&#x5149;&#x7167;&#x4EE3;&#x78BC;&#x5C31;&#x662F;&#x5047;&#x8A2D;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x5728;&#x4E16;&#x754C;&#x7A7A;&#x9593;&#x4E2D;&#x3002;</p>
+<p>&#x6211;&#x5011;&#x540C;&#x6A23;&#x770B;&#x770B;&#x7B2C;&#x4E8C;&#x7A2E;&#x60C5;&#x6CC1;&#xFF0C;&#x6211;&#x5011;&#x7528;TBN&#x77E9;&#x9663;&#x7684;&#x9006;&#x77E9;&#x9663;&#x5C07;&#x6240;&#x6709;&#x76F8;&#x95DC;&#x7684;&#x4E16;&#x754C;&#x7A7A;&#x9593;&#x5411;&#x91CF;&#x8F49;&#x8B8A;&#x5230;&#x63A1;&#x6A23;&#x6240;&#x5F97;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x7684;&#x7A7A;&#x9593;&#xFF1A;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x3002;TBN&#x7684;&#x5EFA;&#x69CB;&#x9084;&#x662F;&#x4E00;&#x6A23;&#xFF0C;&#x4F46;&#x6211;&#x5011;&#x5728;&#x5C07;&#x5176;&#x767C;&#x9001;&#x7D66;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#x4E4B;&#x524D;&#x5148;&#x8981;&#x6C42;&#x9006;&#x77E9;&#x9663;&#xFF1A;</p>
+<pre><code class="lang-c++">vs_out.TBN = transpose(mat3(T, B, N));
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x9019;&#x88E1;&#x6211;&#x5011;&#x4F7F;&#x7528;transpose&#x51FD;&#x6578;&#xFF0C;&#x800C;&#x4E0D;&#x662F;inverse&#x51FD;&#x6578;&#x3002;&#x6B63;&#x4EA4;&#x77E9;&#x9663;&#xFF08;&#x6BCF;&#x500B;&#x8EF8;&#x65E2;&#x662F;&#x55AE;&#x4F4D;&#x5411;&#x91CF;&#x540C;&#x6642;&#x76F8;&#x4E92;&#x5782;&#x76F4;&#xFF09;&#x7684;&#x4E00;&#x5927;&#x5C6C;&#x6027;&#x662F;&#x4E00;&#x500B;&#x6B63;&#x4EA4;&#x77E9;&#x9663;&#x7684;&#x7F6E;&#x63DB;&#x77E9;&#x9663;&#x8207;&#x5B83;&#x7684;&#x9006;&#x77E9;&#x9663;&#x76F8;&#x7B49;&#x3002;&#x9019;&#x500B;&#x5C6C;&#x6027;&#x548C;&#x91CD;&#x8981;&#x56E0;&#x70BA;&#x9006;&#x77E9;&#x9663;&#x7684;&#x6C42;&#x5F97;&#x6BD4;&#x6C42;&#x7F6E;&#x63DB;&#x958B;&#x92B7;&#x5927;&#xFF1B;&#x7D50;&#x679C;&#x537B;&#x662F;&#x4E00;&#x6A23;&#x7684;&#x3002;</p>
+<p>&#x5728;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#x4E2D;&#x6211;&#x5011;&#x4E0D;&#x7528;&#x5C0D;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x8B8A;&#x63DB;&#xFF0C;&#x4F46;&#x6211;&#x5011;&#x8981;&#x628A;&#x5176;&#x4ED6;&#x76F8;&#x95DC;&#x5411;&#x91CF;&#x8F49;&#x63DB;&#x5230;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#xFF0C;&#x5B83;&#x5011;&#x662F;lightDir&#x548C;viewDir&#x3002;&#x9019;&#x6A23;&#x6BCF;&#x500B;&#x5411;&#x91CF;&#x9084;&#x662F;&#x5728;&#x540C;&#x4E00;&#x500B;&#x7A7A;&#x9593;&#xFF08;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#xFF09;&#x4E2D;&#x4E86;&#x3002;</p>
+<pre><code class="lang-c++"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{           
+    vec3 normal = texture(normalMap, fs_in.TexCoords).rgb;
+    normal = normalize(normal * <span class="hljs-number">2.0</span> - <span class="hljs-number">1.0</span>);   
+
+    vec3 lightDir = fs_in.<span class="hljs-function">TBN * <span class="hljs-title">normalize</span><span class="hljs-params">(lightPos - fs_in.FragPos)</span></span>;
+    vec3 viewDir  = fs_in.<span class="hljs-function">TBN * <span class="hljs-title">normalize</span><span class="hljs-params">(viewPos - fs_in.FragPos)</span></span>;    
+    [...]
+}
+</code></pre>
+<p>&#x7B2C;&#x4E8C;&#x7A2E;&#x65B9;&#x6CD5;&#x770B;&#x4F3C;&#x8981;&#x505A;&#x7684;&#x66F4;&#x591A;&#xFF0C;&#x5B83;&#x9084;&#x9700;&#x8981;&#x5728;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#x4E2D;&#x9032;&#x884C;&#x66F4;&#x591A;&#x7684;&#x4E58;&#x6CD5;&#x64CD;&#x4F5C;&#xFF0C;&#x6240;&#x4EE5;&#x70BA;&#x4F55;&#x9084;&#x7528;&#x7B2C;&#x4E8C;&#x7A2E;&#x65B9;&#x6CD5;&#x5462;&#xFF1F;</p>
+<p>&#x5C07;&#x5411;&#x91CF;&#x5F9E;&#x4E16;&#x754C;&#x7A7A;&#x9593;&#x8F49;&#x63DB;&#x5230;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x6709;&#x500B;&#x984D;&#x5916;&#x597D;&#x8655;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x628A;&#x6240;&#x6709;&#x76F8;&#x95DC;&#x5411;&#x91CF;&#x5728;&#x9802;&#x9EDE;&#x8457;&#x8272;&#x5668;&#x4E2D;&#x8F49;&#x63DB;&#x5230;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#xFF0C;&#x4E0D;&#x7528;&#x5728;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#x4E2D;&#x505A;&#x9019;&#x4EF6;&#x4E8B;&#x3002;&#x9019;&#x662F;&#x53EF;&#x884C;&#x7684;&#xFF0C;&#x56E0;&#x70BA;lightPos&#x548C;viewPos&#x4E0D;&#x662F;&#x6BCF;&#x500B;fragment&#x904B;&#x884C;&#x90FD;&#x8981;&#x6539;&#x8B8A;&#xFF0C;&#x5C0D;&#x65BC;fs_in.FragPos&#xFF0C;&#x6211;&#x5011;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x9802;&#x9EDE;&#x8457;&#x8272;&#x5668;&#x8A08;&#x7B97;&#x5B83;&#x7684;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x4F4D;&#x7F6E;&#x3002;&#x57FA;&#x672C;&#x4E0A;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x628A;&#x4EFB;&#x4F55;&#x5411;&#x91CF;&#x5728;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#x4E2D;&#x9032;&#x884C;&#x8B8A;&#x63DB;&#xFF0C;&#x800C;&#x7B2C;&#x4E00;&#x7A2E;&#x65B9;&#x6CD5;&#x4E2D;&#x5C31;&#x662F;&#x5FC5;&#x9808;&#x7684;&#xFF0C;&#x56E0;&#x70BA;&#x63A1;&#x6A23;&#x51FA;&#x4F86;&#x7684;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x5C0D;&#x65BC;&#x6BCF;&#x500B;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#x90FD;&#x4E0D;&#x4E00;&#x6A23;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x73FE;&#x5728;&#x4E0D;&#x662F;&#x628A;TBN&#x77E9;&#x9663;&#x7684;&#x9006;&#x77E9;&#x9663;&#x767C;&#x9001;&#x7D66;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#xFF0C;&#x800C;&#x662F;&#x5C07;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x7684;&#x5149;&#x6E90;&#x4F4D;&#x7F6E;&#xFF0C;&#x89C0;&#x5BDF;&#x4F4D;&#x7F6E;&#x4EE5;&#x53CA;&#x9802;&#x9EDE;&#x4F4D;&#x7F6E;&#x767C;&#x9001;&#x7D66;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#x3002;&#x9019;&#x6A23;&#x6211;&#x5011;&#x5C31;&#x4E0D;&#x7528;&#x5728;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#x88E1;&#x9032;&#x884C;&#x77E9;&#x9663;&#x4E58;&#x6CD5;&#x4E86;&#x3002;&#x9019;&#x662F;&#x4E00;&#x500B;&#x6975;&#x4F73;&#x7684;&#x512A;&#x5316;&#xFF0C;&#x56E0;&#x70BA;&#x9802;&#x9EDE;&#x8457;&#x8272;&#x5668;&#x901A;&#x5E38;&#x6BD4;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#x904B;&#x884C;&#x7684;&#x5C11;&#x3002;&#x9019;&#x4E5F;&#x662F;&#x70BA;&#x4EC0;&#x9EBC;&#x9019;&#x7A2E;&#x65B9;&#x6CD5;&#x662F;&#x4E00;&#x7A2E;&#x66F4;&#x597D;&#x7684;&#x5BE6;&#x73FE;&#x65B9;&#x5F0F;&#x7684;&#x539F;&#x56E0;&#x3002;</p>
+<pre><code class="lang-c++">out VS_OUT {
+    vec3 FragPos;
+    vec2 TexCoords;
+    vec3 TangentLightPos;
+    vec3 TangentViewPos;
+    vec3 TangentFragPos;
+} vs_out;
+
+uniform vec3 lightPos;
+uniform vec3 viewPos;
+
+[...]
+
+void main()
+{    
+    [...]
+    mat3 TBN = transpose(mat3(T, B, N));
+    vs_out.TangentLightPos = TBN * lightPos;
+    vs_out.TangentViewPos  = TBN * viewPos;
+    vs_out.TangentFragPos  = TBN * vec3(model * vec4(position, 0.0));
+}
+</code></pre>
+<p>&#x5728;&#x50CF;&#x7D20;&#x8457;&#x8272;&#x5668;&#x4E2D;&#x6211;&#x5011;&#x4F7F;&#x7528;&#x9019;&#x4E9B;&#x65B0;&#x7684;&#x8F38;&#x5165;&#x8B8A;&#x91CF;&#x4F86;&#x8A08;&#x7B97;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x7684;&#x5149;&#x7167;&#x3002;&#x56E0;&#x70BA;&#x6CD5;&#x7DDA;&#x5411;&#x91CF;&#x5DF2;&#x7D93;&#x5728;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x4E2D;&#x4E86;&#xFF0C;&#x5149;&#x7167;&#x5C31;&#x6709;&#x610F;&#x7FA9;&#x4E86;&#x3002;</p>
+<p>&#x5C07;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x61C9;&#x7528;&#x5230;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x4E0A;&#xFF0C;&#x6211;&#x5011;&#x6703;&#x5F97;&#x5230;&#x6DF7;&#x5408;&#x6559;&#x7A0B;&#x4E00;&#x958B;&#x59CB;&#x90A3;&#x500B;&#x4F8B;&#x5B50;&#x76F8;&#x4F3C;&#x7684;&#x7D50;&#x679C;&#xFF0C;&#x4F46;&#x9019;&#x6B21;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5C07;&#x5E73;&#x9762;&#x671D;&#x5411;&#x5404;&#x500B;&#x65B9;&#x5411;&#xFF0C;&#x5149;&#x7167;&#x4E00;&#x76F4;&#x90FD;&#x6703;&#x662F;&#x6B63;&#x78BA;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-c++">glm::mat4 model;
+model = glm::rotate(model, (GLfloat)glfwGetTime() * -<span class="hljs-number">10</span>, glm::normalize(glm::vec3(<span class="hljs-number">1.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span>)));
+glUniformMatrix4fv(modelLoc <span class="hljs-number">1</span>, GL_FALSE, glm::value_ptr(model));
+RenderQuad();
+</code></pre>
+<p>&#x770B;&#x8D77;&#x4F86;&#x662F;&#x6B63;&#x78BA;&#x7684;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/normal_mapping_correct_tangent.png" alt=""></p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x9019;&#x88E1;&#x627E;&#x5230;<a href="http://www.learnopengl.com/code_viewer.php?code=advanced-lighting/normal_mapping" target="_blank">&#x6E90;&#x4EE3;&#x78BC;</a>&#x3001;<a href="http://www.learnopengl.com/code_viewer.php?code=advanced-lighting/normal_mapping&amp;type=vertex" target="_blank">&#x9802;&#x9EDE;</a>&#x548C;<a href="http://www.learnopengl.com/code_viewer.php?code=advanced-lighting/normal_mapping&amp;type=fragment" target="_blank">&#x50CF;&#x7D20;</a>&#x8457;&#x8272;&#x5668;&#x3002;</p>
+<h3 id="%E8%A4%87%E9%9B%9C%E7%9A%84%E7%89%A9%E9%AB%94">&#x8907;&#x96DC;&#x7684;&#x7269;&#x9AD4;</h3>
+<p>&#x6211;&#x5011;&#x5DF2;&#x7D93;&#x8AAA;&#x660E;&#x4E86;&#x5982;&#x4F55;&#x901A;&#x904E;&#x624B;&#x5DE5;&#x8A08;&#x7B97;&#x5207;&#x7DDA;&#x548C;&#x526F;&#x5207;&#x7DDA;&#x5411;&#x91CF;&#xFF0C;&#x4F86;&#x4F7F;&#x7528;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#x548C;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x3002;&#x5E78;&#x904B;&#x7684;&#x662F;&#xFF0C;&#x8A08;&#x7B97;&#x9019;&#x4E9B;&#x5207;&#x7DDA;&#x548C;&#x526F;&#x5207;&#x7DDA;&#x5411;&#x91CF;&#x5C0D;&#x65BC;&#x4F60;&#x4F86;&#x8AAA;&#x4E0D;&#x662F;&#x7D93;&#x5E38;&#x80FD;&#x9047;&#x5230;&#x7684;&#x4E8B;&#xFF1B;&#x5927;&#x591A;&#x6578;&#x6642;&#x5019;&#xFF0C;&#x5728;&#x6A21;&#x578B;&#x52A0;&#x8F09;&#x5668;&#x4E2D;&#x5BE6;&#x73FE;&#x4E86;&#x4E00;&#x6B21;&#x5C31;&#x884C;&#x4E86;&#xFF0C;&#x6211;&#x5011;&#x662F;&#x5728;&#x4F7F;&#x7528;&#x4E86;Assimp&#x7684;&#x90A3;&#x500B;&#x52A0;&#x8F09;&#x5668;&#x4E2D;&#x5BE6;&#x73FE;&#x7684;&#x3002;</p>
+<p>Assimp&#x6709;&#x500B;&#x5F88;&#x6709;&#x7528;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x5728;&#x6211;&#x5011;&#x52A0;&#x8F09;&#x6A21;&#x578B;&#x7684;&#x6642;&#x5019;&#x8ABF;&#x7528;aiProcess_CalcTangentSpace&#x3002;&#x7576;aiProcess_CalcTangentSpace&#x61C9;&#x7528;&#x5230;Assimp&#x7684;ReadFile&#x51FD;&#x6578;&#x6642;&#xFF0C;Assimp&#x6703;&#x70BA;&#x6BCF;&#x500B;&#x52A0;&#x8F09;&#x7684;&#x9802;&#x9EDE;&#x8A08;&#x7B97;&#x51FA;&#x67D4;&#x548C;&#x7684;&#x5207;&#x7DDA;&#x548C;&#x526F;&#x5207;&#x7DDA;&#x5411;&#x91CF;&#xFF0C;&#x5B83;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x548C;&#x6211;&#x5011;&#x672C;&#x6559;&#x7A0B;&#x4F7F;&#x7528;&#x7684;&#x985E;&#x4F3C;&#x3002;</p>
+<pre><code class="lang-c++"><span class="hljs-keyword">const</span> aiScene* scene = importer.ReadFile(
+    path, aiProcess_Triangulate | aiProcess_FlipUVs | aiProcess_CalcTangentSpace
+);
+</code></pre>
+<p>&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x901A;&#x904E;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x78BC;&#x7528;Assimp&#x7372;&#x53D6;&#x8A08;&#x7B97;&#x51FA;&#x4F86;&#x7684;&#x5207;&#x7DDA;&#x7A7A;&#x9593;&#xFF1A;</p>
+<pre><code class="lang-c++"><span class="hljs-built_in">vector</span>.x = mesh-&gt;mTangents[i].x;
+<span class="hljs-built_in">vector</span>.y = mesh-&gt;mTangents[i].y;
+<span class="hljs-built_in">vector</span>.z = mesh-&gt;mTangents[i].z;
+vertex.Tangent = <span class="hljs-built_in">vector</span>;
+</code></pre>
+<p>&#x7136;&#x5F8C;&#xFF0C;&#x4F60;&#x9084;&#x5FC5;&#x9808;&#x66F4;&#x65B0;&#x6A21;&#x578B;&#x52A0;&#x8F09;&#x5668;&#xFF0C;&#x7528;&#x4EE5;&#x5F9E;&#x5E36;&#x7D0B;&#x7406;&#x6A21;&#x578B;&#x4E2D;&#x52A0;&#x8F09;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x3002;wavefront&#x7684;&#x6A21;&#x578B;&#x683C;&#x5F0F;&#xFF08;.obj&#xFF09;&#x5C0E;&#x51FA;&#x7684;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x6709;&#x9EDE;&#x4E0D;&#x4E00;&#x6A23;&#xFF0C;Assimp&#x7684;aiTextureType_NORMAL&#x4E26;&#x4E0D;&#x6703;&#x52A0;&#x8F09;&#x5B83;&#x7684;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#xFF0C;&#x800C;aiTextureType_HEIGHT&#x537B;&#x80FD;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x5011;&#x7D93;&#x5E38;&#x9019;&#x6A23;&#x52A0;&#x8F09;&#x5B83;&#x5011;&#xFF1A;</p>
+<pre><code class="lang-c++"><span class="hljs-built_in">vector</span>&lt;Texture&gt; specularMaps = <span class="hljs-keyword">this</span>-&gt;loadMaterialTextures(
+    material, aiTextureType_HEIGHT, <span class="hljs-string">&quot;texture_normal&quot;</span>
+);
+</code></pre>
+<p>&#x7576;&#x7136;&#xFF0C;&#x5C0D;&#x65BC;&#x6BCF;&#x500B;&#x6A21;&#x578B;&#x7684;&#x985E;&#x578B;&#x548C;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x4F86;&#x8AAA;&#x90FD;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x3002;&#x540C;&#x6A23;&#x77AD;&#x89E3;aiProcess_CalcTangentSpace&#x4E26;&#x4E0D;&#x80FD;&#x7E3D;&#x662F;&#x5F88;&#x597D;&#x7684;&#x5DE5;&#x4F5C;&#x4E5F;&#x5F88;&#x91CD;&#x8981;&#x3002;&#x8A08;&#x7B97;&#x5207;&#x7DDA;&#x662F;&#x9700;&#x8981;&#x6839;&#x64DA;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#x7684;&#xFF0C;&#x6709;&#x4E9B;&#x6A21;&#x578B;&#x88FD;&#x4F5C;&#x8005;&#x4F7F;&#x7528;&#x4E00;&#x4E9B;&#x7D0B;&#x7406;&#x5C0F;&#x6280;&#x5DE7;&#x6BD4;&#x5982;&#x93E1;&#x50CF;&#x4E00;&#x500B;&#x6A21;&#x578B;&#x4E0A;&#x7684;&#x7D0B;&#x7406;&#x8868;&#x9762;&#x6642;&#x4E5F;&#x93E1;&#x50CF;&#x4E86;&#x53E6;&#x4E00;&#x534A;&#x7684;&#x7D0B;&#x7406;&#x5EA7;&#x6A19;&#xFF1B;&#x9019;&#x6A23;&#x7576;&#x4E0D;&#x8003;&#x616E;&#x9019;&#x500B;&#x93E1;&#x50CF;&#x7684;&#x7279;&#x5225;&#x64CD;&#x4F5C;&#x7684;&#x6642;&#x5019;&#xFF08;Assimp&#x5C31;&#x4E0D;&#x8003;&#x616E;&#xFF09;&#x7D50;&#x679C;&#x5C31;&#x4E0D;&#x5C0D;&#x4E86;&#x3002;</p>
+<p>&#x904B;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x7528;&#x65B0;&#x7684;&#x6A21;&#x578B;&#x52A0;&#x8F09;&#x5668;&#xFF0C;&#x52A0;&#x8F09;&#x4E00;&#x500B;&#x6709;specular&#x548C;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x770B;&#x8D77;&#x4F86;&#x6703;&#x50CF;&#x9019;&#x6A23;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/normal_mapping_complex_compare.png" alt=""></p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5728;&#x6C92;&#x6709;&#x592A;&#x591A;&#x9EDE;&#x7684;&#x984D;&#x5916;&#x958B;&#x92B7;&#x7684;&#x60C5;&#x6CC1;&#x4E0B;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x96E3;&#x4EE5;&#x7F6E;&#x4FE1;&#x5730;&#x63D0;&#x5347;&#x4E86;&#x7269;&#x9AD4;&#x7684;&#x7D30;&#x7BC0;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x4E5F;&#x662F;&#x4E00;&#x7A2E;&#x63D0;&#x5347;&#x4F60;&#x7684;&#x5834;&#x666F;&#x7684;&#x8868;&#x73FE;&#x7684;&#x91CD;&#x8981;&#x65B9;&#x5F0F;&#x3002;&#x5728;&#x4F7F;&#x7528;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x4E4B;&#x524D;&#x4F60;&#x4E0D;&#x5F97;&#x4E0D;&#x4F7F;&#x7528;&#x76F8;&#x7576;&#x591A;&#x7684;&#x9802;&#x9EDE;&#x624D;&#x80FD;&#x8868;&#x73FE;&#x51FA;&#x4E00;&#x500B;&#x66F4;&#x7CBE;&#x7D30;&#x7684;&#x7DB2;&#x683C;&#xFF0C;&#x4F46;&#x4F7F;&#x7528;&#x4E86;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x66F4;&#x5C11;&#x7684;&#x9802;&#x9EDE;&#x8868;&#x73FE;&#x51FA;&#x540C;&#x6A23;&#x8C50;&#x5BCC;&#x7684;&#x7D30;&#x7BC0;&#x3002;&#x4E0B;&#x5716;&#x4F86;&#x81EA;Paolo Cignoni&#xFF0C;&#x5716;&#x4E2D;&#x5C0D;&#x6BD4;&#x4E86;&#x5169;&#x7A2E;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<p><img src="http://learnopengl.com/img/advanced-lighting/normal_mapping_comparison.png" alt=""></p>
+<p>&#x9AD8;&#x7CBE;&#x5EA6;&#x7DB2;&#x683C;&#x548C;&#x4F7F;&#x7528;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x7684;&#x4F4E;&#x7CBE;&#x5EA6;&#x7DB2;&#x683C;&#x5E7E;&#x4E4E;&#x5340;&#x5206;&#x4E0D;&#x51FA;&#x4F86;&#x3002;&#x6240;&#x4EE5;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x4E0D;&#x50C5;&#x770B;&#x8D77;&#x4F86;&#x6F02;&#x4EAE;&#xFF0C;&#x5B83;&#x4E5F;&#x662F;&#x4E00;&#x500B;&#x5C07;&#x9AD8;&#x7CBE;&#x5EA6;&#x591A;&#x908A;&#x5F62;&#x8F49;&#x63DB;&#x70BA;&#x4F4E;&#x7CBE;&#x5EA6;&#x591A;&#x908A;&#x5F62;&#x800C;&#x4E0D;&#x5931;&#x7D30;&#x7BC0;&#x7684;&#x91CD;&#x8981;&#x5DE5;&#x5177;&#x3002;</p>
+<h3 id="%E6%9C%80%E5%BE%8C%E4%B8%80%E4%BB%B6%E4%BA%8B">&#x6700;&#x5F8C;&#x4E00;&#x4EF6;&#x4E8B;</h3>
+<p>&#x95DC;&#x65BC;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x9084;&#x6709;&#x6700;&#x5F8C;&#x4E00;&#x500B;&#x6280;&#x5DE7;&#x8981;&#x8A0E;&#x8AD6;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x5FC5;&#x82B1;&#x8CBB;&#x592A;&#x591A;&#x6027;&#x80FD;&#x958B;&#x92B7;&#x7684;&#x60C5;&#x6CC1;&#x4E0B;&#x7A0D;&#x7A0D;&#x63D0;&#x5347;&#x756B;&#x8CEA;&#x8868;&#x73FE;&#x3002;</p>
+<p>&#x7576;&#x5728;&#x66F4;&#x5927;&#x7684;&#x7DB2;&#x683C;&#x4E0A;&#x8A08;&#x7B97;&#x5207;&#x7DDA;&#x5411;&#x91CF;&#x7684;&#x6642;&#x5019;&#xFF0C;&#x5B83;&#x5011;&#x5F80;&#x5F80;&#x6709;&#x5F88;&#x5927;&#x6578;&#x91CF;&#x7684;&#x5171;&#x4EAB;&#x9802;&#x9EDE;&#xFF0C;&#x7576;&#x767C;&#x4E0B;&#x8CBC;&#x5716;&#x61C9;&#x7528;&#x5230;&#x9019;&#x4E9B;&#x8868;&#x9762;&#x6642;&#x5C07;&#x5207;&#x7DDA;&#x5411;&#x91CF;&#x5E73;&#x5747;&#x5316;&#x901A;&#x5E38;&#x80FD;&#x7372;&#x5F97;&#x66F4;&#x597D;&#x66F4;&#x5E73;&#x6ED1;&#x7684;&#x7D50;&#x679C;&#x3002;&#x9019;&#x6A23;&#x505A;&#x6709;&#x500B;&#x554F;&#x984C;&#xFF0C;&#x5C31;&#x662F;TBN&#x5411;&#x91CF;&#x53EF;&#x80FD;&#x6703;&#x4E0D;&#x80FD;&#x4E92;&#x76F8;&#x5782;&#x76F4;&#xFF0C;&#x9019;&#x610F;&#x5473;&#x8457;TBN&#x77E9;&#x9663;&#x4E0D;&#x518D;&#x662F;&#x6B63;&#x4EA4;&#x77E9;&#x9663;&#x4E86;&#x3002;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x53EF;&#x80FD;&#x6703;&#x7A0D;&#x7A0D;&#x504F;&#x79FB;&#xFF0C;&#x4F46;&#x9019;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x6539;&#x9032;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x53EB;&#x505A;<em>&#x683C;&#x62C9;&#x59C6;-&#x65BD;&#x5BC6;&#x7279;</em>&#x6B63;&#x4EA4;&#x5316;&#x904E;&#x7A0B;&#xFF08;Gram-Schmidt process&#xFF09;&#x7684;&#x6578;&#x5B78;&#x6280;&#x5DE7;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5C0D;TBN&#x5411;&#x91CF;&#x9032;&#x884C;&#x91CD;&#x6B63;&#x4EA4;&#x5316;&#xFF0C;&#x9019;&#x6A23;&#x6BCF;&#x500B;&#x5411;&#x91CF;&#x5C31;&#x53C8;&#x6703;&#x91CD;&#x65B0;&#x5782;&#x76F4;&#x4E86;&#x3002;&#x5728;&#x9802;&#x9EDE;&#x8457;&#x8272;&#x5668;&#x4E2D;&#x6211;&#x5011;&#x9019;&#x6A23;&#x505A;&#xFF1A;</p>
+<pre><code class="lang-c++">vec3 T = normalize(vec3(model * vec4(tangent, 0.0)));
+vec3 N = normalize(vec3(model * vec4(tangent, 0.0)));
+// re-orthogonalize T with respect to N
+T = normalize(T - dot(T, N) * N);
+// then retrieve perpendicular vector B with the cross product of T and N
+vec3 B = cross(T, N);
+
+mat3 TBN = mat3(T, B, N)
+</code></pre>
+<p>&#x9019;&#x6A23;&#x7A0D;&#x5FAE;&#x82B1;&#x8CBB;&#x4E00;&#x4E9B;&#x6027;&#x80FD;&#x958B;&#x92B7;&#x5C31;&#x80FD;&#x5C0D;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x9032;&#x884C;&#x4E00;&#x9EDE;&#x63D0;&#x5347;&#x3002;&#x770B;&#x770B;&#x6700;&#x5F8C;&#x7684;&#x90A3;&#x500B;&#x9644;&#x52A0;&#x8CC7;&#x6E90;&#xFF1A; Normal Mapping Mathematics&#x8996;&#x983B;&#xFF0C;&#x88E1;&#x9762;&#x6709;&#x5C0D;&#x9019;&#x500B;&#x904E;&#x7A0B;&#x7684;&#x89E3;&#x91CB;&#x3002;</p>
+<h3 id="%E9%99%84%E5%8A%A0%E8%B3%87%E6%BA%90">&#x9644;&#x52A0;&#x8CC7;&#x6E90;</h3>
+<ul>
+<li><a href="http://ogldev.atspace.co.uk/www/tutorial26/tutorial26.html" target="_blank">Tutorial 26: Normal Mapping</a>&#xFF1A;ogldev&#x7684;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x6559;&#x7A0B;&#x3002;</li>
+<li><a href="https://www.youtube.com/watch?v=LIOPYmknj5Q" target="_blank">How Normal Mapping Works</a>&#xFF1A;TheBennyBox&#x7684;&#x8B1B;&#x8FF0;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x7684;&#x8996;&#x983B;&#x3002;</li>
+<li><a href="https://www.youtube.com/watch?v=4FaWLgsctqY" target="_blank">Normal Mapping Mathematics</a>&#xFF1A;TheBennyBox&#x95DC;&#x65BC;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x7684;&#x6578;&#x5B78;&#x539F;&#x7406;&#x7684;&#x6559;&#x7A0B;&#x3002;</li>
+<li><a href="http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-13-normal-mapping/" target="_blank">Tutorial 13: Normal Mapping</a>&#xFF1A;opengl-tutorial.org&#x63D0;&#x4F9B;&#x7684;&#x6CD5;&#x7DDA;&#x8CBC;&#x5716;&#x6559;&#x7A0B;&#x3002;</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../05_advanced_lighting/03_shadows/03_csm.html" class="navigation navigation-prev " aria-label="Previous page: CSM"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../05_advanced_lighting/05_parallax_mapping.html" class="navigation navigation-next " aria-label="Next page: 視差貼圖"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-google_code_prettify/google-code-prettify.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-google_code_prettify/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-collapsible-menu/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-maxiang/maxiang.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book LearnOpenGL-CN -->
+</html>
